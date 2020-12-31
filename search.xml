@@ -1351,4 +1351,38 @@
         <tag>风景</tag>
       </tags>
   </entry>
+  <entry>
+    <title>读《Effective Python:编写高质量Python代码的59个有效方法》小记</title>
+    <url>/2020/12/31/du-effective-python-bian-xie-gao-zhi-liang-python-dai-ma-de-59-ge-you-xiao-fang-fa-xiao-ji/</url>
+    <content><![CDATA[<h2 id="读《Effective-Python-编写高质量Python代码的59个有效方法》小记-ING"><a href="#读《Effective-Python-编写高质量Python代码的59个有效方法》小记-ING" class="headerlink" title="读《Effective Python:编写高质量Python代码的59个有效方法》小记 (@ING)"></a>读《Effective Python:编写高质量Python代码的59个有效方法》小记 (@ING)</h2><h4 id="1-Python式编程风格-Pythonic"><a href="#1-Python式编程风格-Pythonic" class="headerlink" title="1. Python式编程风格(Pythonic)"></a>1. Python式编程风格(Pythonic)</h4><p>​    1. 选定合适的python版本</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">&gt;&gt;&gt;  python --version
+# 或
+import sys
+print(sys.version_info)
+print(sys.version)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h4 id="2-遵循PEP8-风格（习惯很重要）"><a href="#2-遵循PEP8-风格（习惯很重要）" class="headerlink" title="2.遵循PEP8 风格（习惯很重要）"></a>2.遵循PEP8 风格（习惯很重要）</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"># PEP 全称为：Python Enhancement Proposal#8 
+# 即8号python增强提案
+# Zen Of Python  
+# Python 之禅
+import this <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="3-Python3与Python2的区别"><a href="#3-Python3与Python2的区别" class="headerlink" title="3. Python3与Python2的区别"></a>3. Python3与Python2的区别</h4><ol>
+<li>python3：bytes 表示二进制 ，str 表示unicode；</li>
+<li>python2：str表示二进制 ，unicode表示unicode;</li>
+<li>转换utftobin  用encode()，解码用decode();</li>
+<li>文件操作上 python3用utf8方式，所以在对二进制操作时候，要rb或wb模式；python2中默认用二进制操作文件，兼容上述表达。</li>
+</ol>
+<h4 id="4-用辅助函数来代替复杂重复的表达式"><a href="#4-用辅助函数来代替复杂重复的表达式" class="headerlink" title="4. 用辅助函数来代替复杂重复的表达式"></a>4. 用辅助函数来代替复杂重复的表达式</h4><ul>
+<li> 在Python中，<strong>空字符串、空列表、零值</strong>都会被评估为<strong>False</strong>；</li>
+<li> 列表切割 会产生另一份全新列表，原列表引用不变；</li>
+<li></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>IT</tag>
+      </tags>
+  </entry>
 </search>
