@@ -373,14 +373,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    221
+                    561
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -395,7 +395,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="读《Effective-Python-编写高质量Python代码的59个有效方法》小记-ING"><a href="#读《Effective-Python-编写高质量Python代码的59个有效方法》小记-ING" class="headerlink" title="读《Effective Python:编写高质量Python代码的59个有效方法》小记 (@ING)"></a>读《Effective Python:编写高质量Python代码的59个有效方法》小记 (@ING)</h2><h4 id="1-Python式编程风格-Pythonic"><a href="#1-Python式编程风格-Pythonic" class="headerlink" title="1. Python式编程风格(Pythonic)"></a>1. Python式编程风格(Pythonic)</h4><p>​    1. 选定合适的python版本</p>
+                <h2 id="读《Effective-Python-编写高质量Python代码的59个有效方法》小记"><a href="#读《Effective-Python-编写高质量Python代码的59个有效方法》小记" class="headerlink" title="读《Effective Python:编写高质量Python代码的59个有效方法》小记"></a>读《Effective Python:编写高质量Python代码的59个有效方法》小记</h2><h4 id="1-Python式编程风格-Pythonic"><a href="#1-Python式编程风格-Pythonic" class="headerlink" title="1. Python式编程风格(Pythonic)"></a>1. Python式编程风格(Pythonic)</h4><p>​    1. 选定合适的python版本</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python">&gt;&gt;&gt;  python --version
 # 或
 import sys
@@ -416,12 +416,56 @@ import this <span aria-hidden="true" class="line-numbers-rows"><span></span><spa
 <li>转换utftobin  用encode()，解码用decode();</li>
 <li>文件操作上 python3用utf8方式，所以在对二进制操作时候，要rb或wb模式；python2中默认用二进制操作文件，兼容上述表达。</li>
 </ol>
-<h4 id="4-用辅助函数来代替复杂重复的表达式"><a href="#4-用辅助函数来代替复杂重复的表达式" class="headerlink" title="4. 用辅助函数来代替复杂重复的表达式"></a>4. 用辅助函数来代替复杂重复的表达式</h4><ul>
-<li> 在Python中，<strong>空字符串、空列表、零值</strong>都会被评估为<strong>False</strong>；</li>
-<li> 列表切割 会产生另一份全新列表，原列表引用不变；</li>
-<li></li>
-</ul>
+<h4 id="4-切片"><a href="#4-切片" class="headerlink" title="4. 切片"></a>4. 切片</h4><ol>
+<li><p>在Python中，<strong>空字符串、空列表、零值</strong>都会被评估为<strong>False</strong>；</p>
+</li>
+<li><p>列表切割 会产生另一份全新列表，原列表引用不变；</p>
+</li>
+<li><p>当列表有起始索引，还有  步进 时候，应先做范围切割，再做步进；</p>
+</li>
+<li><p>对于 -1 步进 对字符串取反的技巧，只适应于 字节串  和  ASCII，Unicode不适合；</p>
+</li>
+</ol>
+<h4 id="5-推导式"><a href="#5-推导式" class="headerlink" title="5. 推导式"></a>5. 推导式</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"># 1. 无参数映射 考虑 列表推导式
+a = [1, 2, 3, 4, 5, 6]
+squares = [x**2 for x in a]
+print(squares)
+&gt;&gt;&gt;&gt;&gt; 
+ [1, 4, 9, 16, 25, 36]
 
+#内置map() 函数写法
+squares = map(lambda x: x ** 2, a)
+
+# 2. 涉及到原列表过滤时候，更方便
+even_squares = [x ** 2 for x in a if x%2 == 0]
+# 实现上述同样功能 需要map() 和filter() 函数使用
+alt = map(lambda x: x**2, filter(lambda x: x%2 == 0,a))
+assert even_squares == list(alt)
+
+# 3. 字典dict() 和 集合set() 同样支持 推导式 comprehension 
+# 对应的范围符号要改为 ‘{ }’
+
+# 4. 矩阵处理 双层循环支持
+#  矩阵 即是包含列表的列表，即二维列表
+matrix = [[1,2,3], [4,5,6], [7,8,9]]
+flat = [x for row in matrix for x in row]
+print(flat)
+&gt;&gt;&gt;&gt;&gt;
+[1, 2, 3, 4, 5, 6 ,7, 8, 9]
+
+# 矩阵每个元素处理，如平方
+# 先由外面'[]'推导，在进入第二层'[]' 
+# 这样理解比较有条理性
+squared = [[x**2 for x in row ] for row in matrix]
+
+# 从矩阵中为3所整除的，且所在行元素之和大于等于10 单元格选择出来
+filtered = [ [x for x in row if x % 3 == 0]
+            for row in matrix if sum(row) &gt;= 10]
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h4 id="6-生成器"><a href="#6-生成器" class="headerlink" title="6. 生成器"></a>6. 生成器</h4>
             </div>
             <hr/>
 
@@ -971,7 +1015,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">23.3k</span>&nbsp;字
+                class="white-color">23.6k</span>&nbsp;字
             
             
             
