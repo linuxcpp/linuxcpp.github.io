@@ -382,7 +382,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.3k
+                    1.4k
                 </div>
                 
 
@@ -458,7 +458,7 @@ class PersonForm(forms.Form):
 <h4 id="第三章-其他创建型模式"><a href="#第三章-其他创建型模式" class="headerlink" title="第三章 其他创建型模式"></a>第三章 其他创建型模式</h4><h5 id="1-原型模式"><a href="#1-原型模式" class="headerlink" title="1. 原型模式"></a>1. 原型模式</h5><blockquote>
 <p>当需要使用 <strong>克隆</strong> 技术，基于<strong>现有对象创建对象</strong>时，原型模式非常有用。</p>
 <p>其思想是使用一个具有某个对象完整结构的副本来生成新的对象。</p>
-<p>当现有对象需要保持不变，而通过创建它的精确副本，一边更改副本的某些部分时候，原型模式应用意义在此。</p>
+<p>当现有对象需要保持不变，而通过创建它的精确副本，以便更改副本的某些部分时候，原型模式应用意义在此。</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"># 该模式为python内置特性
 # clone()函数
 # 参数为一个对象，返回副本
@@ -467,10 +467,16 @@ A2 = copy.deepcopy(A1)<span aria-hidden="true" class="line-numbers-rows"><span><
 <p>用例：日常DevOps团队管理对个网站时候，需要共同维护一些数据。</p>
 </blockquote>
 <h5 id="2-单例模式"><a href="#2-单例模式" class="headerlink" title="2. 单例模式"></a>2. 单例模式</h5><blockquote>
-<p>单例模式 提供了一种实现类的方法，从该类中只能创建一个对象，因此成为 单例。</p>
+<p><strong>单例模式</strong> 提供了一种实现类的方法，从该类中只能创建一个对象，因此成为 单例。</p>
 <p>例如为程序存储和维护一个全局状态。</p>
+<p>单例模式 将类的实例化限制为<strong>一个</strong>对象，需要一些机制来防止类的多次实例化，并<strong>防止克隆</strong>。</p>
+<p><strong>用例</strong>：控制对共享资源的并发访问等。</p>
+<p>实现：Python3中使用 <strong>元类</strong> 技巧。首先为单例模式实现一个元类，它是用于实现单例模式的类的类（或类型）。</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"># 假设一个网页抓取类
+class URLFetcher(metaclass=SingletonType):
+    pass<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 </blockquote>
-
+<h4 id="第四章：-适配器模式"><a href="#第四章：-适配器模式" class="headerlink" title="第四章： 适配器模式"></a>第四章： 适配器模式</h4>
             </div>
             <hr/>
 
@@ -1028,7 +1034,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">25.6k</span>&nbsp;字
+                class="white-color">25.7k</span>&nbsp;字
             
             
             
