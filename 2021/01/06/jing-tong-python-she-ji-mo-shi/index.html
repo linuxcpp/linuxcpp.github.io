@@ -382,14 +382,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.4k
+                    1.7k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    6 分
                 </div>
                 
 
@@ -415,6 +415,15 @@
 </blockquote>
 <img src="/2021/01/06/jing-tong-python-she-ji-mo-shi/cover.jpg" class="" title="封面">
 
+<h4 id="面向对象设计"><a href="#面向对象设计" class="headerlink" title="面向对象设计"></a>面向对象设计</h4><blockquote>
+<p>面向对象设计（<strong>OOD</strong>） 遵循“SOLID（稳定的）”原则。</p>
+<p><strong>单一职责原则</strong>（<strong>S</strong>ingle Responsibility Principle）：一个类只负责一个功能，是实现“高内聚、低耦合”方针；</p>
+<p><strong>开闭原则</strong>（<strong>O</strong>pen Closed Principle）： 对扩展开放，对修改关闭。</p>
+<p><strong>里氏替换</strong>原则（<strong>L</strong>iskov Substitution Principle）：基类出现的地方，子类一定能替换。程序中尽量使用基类类型对 对象进行定义，运行时候再确定子类的类型，用子类对象来替换基类对象。</p>
+<p><strong>接口隔离原则</strong>（<strong>I</strong>nterface Segregation Principle）：使用多个接口，比使用单一接口好的多，保证接口纯洁性，降低耦合度。</p>
+<p><strong>依赖倒置原则</strong>（<strong>D</strong>ependence Inversion Principle）：是开闭原则基础，针对接口编程，依赖于抽象 不依赖于具体。</p>
+<p><strong>迪米特法则</strong>（<strong>L</strong>aw of Demeter）：最小知道原则，一个实体应当尽量减少与其他实体之间的相互作用，使得模块相对独立。</p>
+</blockquote>
 <h4 id="模式分类"><a href="#模式分类" class="headerlink" title="模式分类"></a>模式分类</h4><blockquote>
 <p><strong>三类</strong>：创建型、结构型、行为型。</p>
 <p><strong>创建型</strong>：指用来创建的对象的一系列模式的统称；</p>
@@ -468,13 +477,15 @@ A2 = copy.deepcopy(A1)<span aria-hidden="true" class="line-numbers-rows"><span><
 </blockquote>
 <h5 id="2-单例模式"><a href="#2-单例模式" class="headerlink" title="2. 单例模式"></a>2. 单例模式</h5><blockquote>
 <p><strong>单例模式</strong> 提供了一种实现类的方法，从该类中只能创建一个对象，因此成为 单例。</p>
-<p>例如为程序存储和维护一个全局状态。</p>
-<p>单例模式 将类的实例化限制为<strong>一个</strong>对象，需要一些机制来防止类的多次实例化，并<strong>防止克隆</strong>。</p>
-<p><strong>用例</strong>：控制对共享资源的并发访问等。</p>
-<p>实现：Python3中使用 <strong>元类</strong> 技巧。首先为单例模式实现一个元类，它是用于实现单例模式的类的类（或类型）。</p>
+<p><strong>例如</strong>为程序存储和维护一个全局状态。</p>
+<p><strong>单例模式</strong> 将类的实例化限制为<strong>一个</strong>对象，需要一些机制来防止类的多次实例化，并<strong>防止克隆</strong>。</p>
+<p><strong>用例</strong>：通用：控制对共享资源的并发访问、发号器（自增序号生成器）、Redis连接对象等。</p>
+<p><strong>分类</strong>：懒汉和饿汉模式。<strong>懒汉模式</strong>：所谓懒加载，延迟创建对象，再用的时候再创建；加载cls时候，对象就创建好了，是为<strong>饿汉模式</strong>。</p>
+<p><strong>实现</strong>：Python3中使用 <strong>元类</strong> 技巧。首先为单例模式实现一个元类，它是用于实现单例模式的类的类（或类型）。</p>
+<p><strong>元类实现</strong>：通过构造函数私有化，懒汉模式时需保证多线程安全（类似Synchronized)加锁，基于双重检查锁定 DCL（Double-Checked-Locking）。</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"># 假设一个网页抓取类
 class URLFetcher(metaclass=SingletonType):
-    pass<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+ pass<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 </blockquote>
 <h4 id="第四章：-适配器模式"><a href="#第四章：-适配器模式" class="headerlink" title="第四章： 适配器模式"></a>第四章： 适配器模式</h4>
             </div>
@@ -1034,7 +1045,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">25.7k</span>&nbsp;字
+                class="white-color">26.1k</span>&nbsp;字
             
             
             
