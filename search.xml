@@ -982,6 +982,25 @@
       </tags>
   </entry>
   <entry>
+    <title>精通Python设计模式</title>
+    <url>/2021/01/06/jing-tong-python-she-ji-mo-shi/</url>
+    <content><![CDATA[<h1 align="center">精通Python设计模式</h1>
+
+<h4 id="写在前面的话"><a href="#写在前面的话" class="headerlink" title="写在前面的话"></a>写在前面的话</h4><blockquote>
+<p><strong>模式</strong> 即是 一类问题成熟的解决方案，可复用编程解决方案。</p>
+<p>通俗来说，就是“<strong>套路</strong>”，自古套路得人心，所有的应用都是基于生活的抽象，IT也不例外。</p>
+<p><strong>设计模式</strong>，基于面向对象系统中重复出现的设计问题。之于个人，一个老派的coder出身的ITer，对面向对象的把握也是泛泛了解，当下从<strong>面向对象</strong>（OO）—&gt; <strong>面向构件</strong>（OC）—&gt; <strong>面向服务</strong>（SO），各种抽象层级没有透彻的了解。</p>
+<p><strong>题外</strong>：呜呼，正因此领域的不深入，导致个人第一次的 <strong>系统分析师</strong> 考试 此方面失分太多，导致结果不尽如人意（差3分）<span class="github-emoji"><span>😺</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f63a.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>ITstudy</category>
+      </categories>
+      <tags>
+        <tag>IT</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>读《Effective Python:编写高质量Python代码的59个有效方法》小记</title>
     <url>/2020/12/31/du-effective-python-bian-xie-gao-zhi-liang-python-dai-ma-de-59-ge-you-xiao-fang-fa-xiao-ji/</url>
     <content><![CDATA[<h2 id="读《Effective-Python-编写高质量Python代码的59个有效方法》小记"><a href="#读《Effective-Python-编写高质量Python代码的59个有效方法》小记" class="headerlink" title="读《Effective Python:编写高质量Python代码的59个有效方法》小记"></a>读《Effective Python:编写高质量Python代码的59个有效方法》小记</h2><h3 id="Chapter-1：-用Pythonic-方式思考"><a href="#Chapter-1：-用Pythonic-方式思考" class="headerlink" title="Chapter 1： 用Pythonic 方式思考"></a>Chapter 1： 用Pythonic 方式思考</h3><h4 id="1-Python式编程风格-Pythonic"><a href="#1-Python式编程风格-Pythonic" class="headerlink" title="1. Python式编程风格(Pythonic)"></a>1. Python式编程风格(Pythonic)</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"># 选定合适的python版本
@@ -1112,6 +1131,9 @@ finally:
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 ]]></content>
+      <categories>
+        <category>ITstudy</category>
+      </categories>
       <tags>
         <tag>IT</tag>
       </tags>
