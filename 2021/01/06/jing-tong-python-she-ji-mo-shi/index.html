@@ -382,14 +382,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    200
+                    1.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    3 分
                 </div>
                 
 
@@ -408,9 +408,50 @@
 
 <h4 id="写在前面的话"><a href="#写在前面的话" class="headerlink" title="写在前面的话"></a>写在前面的话</h4><blockquote>
 <p><strong>模式</strong> 即是 一类问题成熟的解决方案，可复用编程解决方案。</p>
-<p>通俗来说，就是“<strong>套路</strong>”，自古套路得人心，所有的应用都是基于生活的抽象，IT也不例外。</p>
-<p><strong>设计模式</strong>，基于面向对象系统中重复出现的设计问题。之于个人，一个老派的coder出身的ITer，对面向对象的把握也是泛泛了解，当下从<strong>面向对象</strong>（OO）—&gt; <strong>面向构件</strong>（OC）—&gt; <strong>面向服务</strong>（SO），各种抽象层级没有透彻的了解。</p>
-<p><strong>题外</strong>：呜呼，正因此领域的不深入，导致个人第一次的 <strong>系统分析师</strong> 考试 此方面失分太多，导致结果不尽如人意（差3分）<span class="github-emoji"><span>😺</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f63a.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></p>
+<p>通俗来说，就是“<strong>套路</strong>”，自古套路得人心，所有的应用都是基于生活的抽象，IT应用也不例外。</p>
+<p><strong>设计模式</strong>是基于面向对象系统中重复出现的设计问题。之于个人，一个老派的coder出身的ITer，对面向对象的把握也是泛泛了解，当下从<strong>面向对象</strong>（OO）—&gt; <strong>面向构件</strong>（OC）—&gt; <strong>面向服务</strong>（SO），各种层级具有一定抽象。</p>
+<p><strong>题外</strong>：呜呼，正因此领域的不深入，导致个人第一次的 <strong>系统分析师</strong> 考试 <strong>案例分析</strong> 此方面失分太多，导致结果不尽如人意（差3分）<span class="github-emoji"><span>😺</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f63a.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>。</p>
+<p><strong>目标</strong>：强化面向对象思维，用OO视角去思考问题。</p>
+</blockquote>
+<p><img src="/2021/01/06/jing-tong-python-she-ji-mo-shi/cover.jpg"></p>
+<h4 id="模式分类"><a href="#模式分类" class="headerlink" title="模式分类"></a>模式分类</h4><blockquote>
+<p><strong>三类</strong>：创建型、结构型、行为型。</p>
+<p><strong>创建型</strong>：指用来创建的对象的一系列模式的统称；</p>
+<p><strong>结构型</strong>：主要用来表示对象与类之间的组合关系；</p>
+<p><strong>行为型</strong>：表示类与对象或对象与对象之间的交互关系。</p>
+<p>常用的 <strong>大致</strong> 分为 23种。</p>
+</blockquote>
+<p><img src="/2021/01/06/jing-tong-python-she-ji-mo-shi/DesignPattern.png"></p>
+<h4 id="第一章：-工厂模式-Factory"><a href="#第一章：-工厂模式-Factory" class="headerlink" title="第一章： 工厂模式(Factory)"></a>第一章： 工厂模式(Factory)</h4><blockquote>
+<p>顾名思义，典型的<strong>创建型</strong>模式，包含 <strong>工厂</strong> 和 <strong>抽象工厂</strong> 两种。</p>
+<p><strong>客户端</strong>(调用对象的代码) 在不知道对象来源(对象由哪个类产生)的情况下，要求创建一个对象。思想出发点是：通过将<strong>创建对象</strong>的代码 与 <strong>使用对象</strong>的代码<strong>解耦</strong>，简化对象创建过程。</p>
+</blockquote>
+<h5 id="1-工厂方法"><a href="#1-工厂方法" class="headerlink" title="1. 工厂方法"></a>1. 工厂方法</h5><blockquote>
+<p><strong>工厂方法</strong>：基于单一的函数来处理对象创建任务。通过传参数，体现意图，创建需要的对象。每个工厂方法从逻辑上将具有相同点的对象创建过程划分为一组。有链接数据库的工厂方法，有创建图形的工厂方法。</p>
+<p><strong>用例</strong>：1. 塑料玩具制造，材料相同，使用不同模具生产不同的玩具。</p>
+<p>​           2. Django 框架中的  表单 就是基于工厂方法，支持创建不同的种类的字段。</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"># 示例
+from django import forms
+class PersonForm(forms.Form):
+    name = forms.CharField(max_length=100)
+    birth_date = forms.DateField(required=Flase)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</blockquote>
+<h5 id="2-抽象工厂"><a href="#2-抽象工厂" class="headerlink" title="2. 抽象工厂"></a>2. 抽象工厂</h5><blockquote>
+<p>抽象工厂 是<strong>一般化的工厂方法</strong>，可以理解为 工厂过程的 <strong>泛化</strong>(generalization)。</p>
+<p>一个抽象工厂 是 <strong>一些工厂方法 逻辑的 集合</strong>，这其中，每一个工厂方法负责生成一种不同的对象。</p>
+<p><strong>用例</strong>：1. 汽车制造方面，机械冲压不同车型的零件（车门、发动机盖子、挡泥板等）。</p>
+<p>如何知道使用 <strong>工厂方法</strong> 还是 <strong>抽象工厂</strong> 方法？</p>
+<p><strong>答</strong>： 通常从简单的工厂方法开始。若发现需要多个工厂方法，且将这些方法组合起来创建一系列对象是有意义的，就用抽象工厂。</p>
+</blockquote>
+<h4 id="第二章：建造者模式-Builder"><a href="#第二章：建造者模式-Builder" class="headerlink" title="第二章：建造者模式(Builder)"></a>第二章：建造者模式(Builder)</h4><blockquote>
+<p> 如需创建  一个由多个部分组成的对象，而且创建过程需要一步一步地完成，只有创建了所有部分，该对象才是完整的。这种情况下 建造者模式 可以提供帮助。</p>
+<p>建造者模式：将<strong>复杂</strong>对象的<strong>构建</strong>与其<strong>表示</strong>分离。参与者包含两方面：<strong>建造者</strong>(builder)和<strong>指挥者</strong>(director)。</p>
+<p><strong>建造者</strong>：负责创建复杂对象的各个部分的组件。例如：HTML页面生成器，中的部分有：标题、主体、脚注等；</p>
+<p><strong>指挥者</strong>：使用 建造者实例  控制构建过程的组件。如调用建造者函数来设置标题，头部等等。</p>
+</blockquote>
+<blockquote>
+<p><strong>用例</strong>：快餐店场景。不同的汉堡（经典、芝士等）和不同包装(大杯、中杯、超大杯)，制作汉堡和包装过程相同，区别表现形式不同。这种情况下 <strong>指挥者</strong>是 <strong>收银员</strong>，<strong>建造者</strong>是负责处理订单的<strong>员工</strong>。</p>
+<p>与工厂模式 <strong>区别</strong>：工厂模式实在<strong>单个步骤</strong>中创建对象，而建造者是在<strong>多个步骤</strong>中创建对象，几乎总是使用指挥者。</p>
 </blockquote>
 
             </div>
@@ -970,7 +1011,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">24.5k</span>&nbsp;字
+                class="white-color">25.4k</span>&nbsp;字
             
             
             
