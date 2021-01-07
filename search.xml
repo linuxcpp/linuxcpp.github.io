@@ -1044,7 +1044,7 @@ class PersonForm(forms.Form):
 <p><strong>用例</strong>：快餐店场景。不同的汉堡（经典、芝士等）和不同包装(大杯、中杯、超大杯)，制作汉堡和包装过程相同，区别表现形式不同。这种情况下 <strong>指挥者</strong>是 <strong>收银员</strong>，<strong>建造者</strong>是负责处理订单的<strong>员工</strong>。</p>
 <p>与工厂模式 <strong>区别</strong>：工厂模式实在<strong>单个步骤</strong>中创建对象，而建造者是在<strong>多个步骤</strong>中创建对象，几乎总是使用指挥者。</p>
 </blockquote>
-<h4 id="第三章-其他创建型模式"><a href="#第三章-其他创建型模式" class="headerlink" title="第三章 其他创建型模式"></a>第三章 其他创建型模式</h4><h5 id="1-原型模式"><a href="#1-原型模式" class="headerlink" title="1. 原型模式"></a>1. 原型模式</h5><blockquote>
+<h4 id="第三章-：其他创建型模式"><a href="#第三章-：其他创建型模式" class="headerlink" title="第三章 ：其他创建型模式"></a>第三章 ：其他创建型模式</h4><h5 id="1-原型模式"><a href="#1-原型模式" class="headerlink" title="1. 原型模式"></a>1. 原型模式</h5><blockquote>
 <p>当需要使用 <strong>克隆</strong> 技术，基于<strong>现有对象创建对象</strong>时，原型模式非常有用。</p>
 <p>其思想是使用一个具有某个对象完整结构的副本来生成新的对象。</p>
 <p>当现有对象需要保持不变，而通过创建它的精确副本，以便更改副本的某些部分时候，原型模式应用意义在此。</p>
@@ -1067,7 +1067,47 @@ A2 = copy.deepcopy(A1)<span aria-hidden="true" class="line-numbers-rows"><span><
 class URLFetcher(metaclass=SingletonType):
  pass<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 </blockquote>
-<h4 id="第四章：-适配器模式"><a href="#第四章：-适配器模式" class="headerlink" title="第四章： 适配器模式"></a>第四章： 适配器模式</h4>]]></content>
+<h4 id="第四章-：适配器模式"><a href="#第四章-：适配器模式" class="headerlink" title="第四章 ：适配器模式"></a>第四章 ：适配器模式</h4><blockquote>
+<p>适配器属于<strong>结构型</strong>设计模式，提出了一种组合对象以创建新功能的方法。</p>
+<p><strong>适配器模式</strong>，使得两个或多个不兼容的接口兼容，允许将具有不同接口的血多对象调整为一个统一的接口。或可以理解为：调整已经存在（实现）的接口的对象，以实现另一个接口，这也称之为 <strong>接口适应</strong>。</p>
+<p><strong>用例</strong>： 到国外，欧美充电器接口（iterface_a())，不兼容 大陆的 充电器接口（iterface_b()) ,这时候需要将 a 接口 转换为  b接口。软件上，Python中的Pyramid Web框架利用适配器使现有想能够符合特定的API。</p>
+<p><strong>实现</strong>：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"># 定义一个适配器类
+# __init__()方法的obj参数就是我们想要修改的对象
+# adapted_methods 是一个字典，它包含与客户端调用的方法 和应该调用方法匹配的键值对
+class Adapter:
+    def __init__(self, obj, adapted_methods):
+        self.obj = obj
+        self.__dict__.update(adapted_methods)
+    def __str__(self):
+        return str(self.obj)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+</blockquote>
+<h4 id="第五章-：装饰器模式"><a href="#第五章-：装饰器模式" class="headerlink" title="第五章 ：装饰器模式"></a>第五章 ：装饰器模式</h4><blockquote>
+<p><strong>装饰器模式</strong>：通常用于扩展函数、方法或类行为的技术，可以在不适用继承的情况下扩展对象的行为，降低耦合；透明，跟适配器 显式方式不一样。</p>
+<p><strong>用例</strong>：枪上面 安装  消音器，或者相机 安装不同的镜头。</p>
+<p><strong>实现</strong>：它获取函数对象func_in 作为输入，并返回另一个函数对象 func_out。</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"># Python 的functools.wraps() 为创建装饰器时候提供方便
+# 创建一个memoize()装饰器
+# 接受一个需要缓存的函数fn作为输入，使用一个名为cache的dict作为缓存的数据容器。
+
+import functools
+
+def memoize(fn):
+    cache =  dict()
+    
+    @functools.wraps(fn)
+    def memoizer(*args):
+        if args not in cache:
+            cache[args] =  fn(*args)
+        return cache[args]
+    
+    return memoizer<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+</blockquote>
+<h4 id="第六章：桥接模式"><a href="#第六章：桥接模式" class="headerlink" title="第六章：桥接模式"></a>第六章：桥接模式</h4>]]></content>
       <categories>
         <category>ITstudy</category>
       </categories>
