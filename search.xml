@@ -1148,13 +1148,16 @@ def memoize(fn):
 # command line mode 模式
 &gt;&gt;&gt; import this <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="3-Python3与Python2的区别"><a href="#3-Python3与Python2的区别" class="headerlink" title="3. Python3与Python2的区别"></a>3. Python3与Python2的区别</h4><ol>
+<h4 id="3-Python3与Python2的区别"><a href="#3-Python3与Python2的区别" class="headerlink" title="3. Python3与Python2的区别"></a>3. Python3与Python2的区别</h4><blockquote>
+<ol>
 <li>python3：bytes 表示二进制 ，str 表示unicode；</li>
 <li>python2：str表示二进制 ，unicode表示unicode;</li>
 <li>转换utftobin  用encode()，解码用decode();</li>
 <li>文件操作上 python3用utf8方式，所以在对二进制操作时候，要rb或wb模式；python2中默认用二进制操作文件，兼容上述表达。</li>
 </ol>
-<h4 id="4-切片"><a href="#4-切片" class="headerlink" title="4. 切片"></a>4. 切片</h4><ol>
+</blockquote>
+<h4 id="4-切片"><a href="#4-切片" class="headerlink" title="4. 切片"></a>4. 切片</h4><blockquote>
+<ol>
 <li><p>在Python中，<strong>空字符串、空列表、零值</strong>都会被评估为<strong>False</strong>；</p>
 </li>
 <li><p>列表切割 会产生另一份全新列表，原列表引用不变；</p>
@@ -1164,6 +1167,7 @@ def memoize(fn):
 <li><p>对于 -1 步进 对字符串取反的技巧，只适应于 字节串  和  ASCII，Unicode不适合；</p>
 </li>
 </ol>
+</blockquote>
 <h4 id="5-推导式"><a href="#5-推导式" class="headerlink" title="5. 推导式"></a>5. 推导式</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"># 1. 无参数映射 考虑 列表推导式
 a = [1, 2, 3, 4, 5, 6]
 squares = [x**2 for x in a]
@@ -1261,6 +1265,10 @@ finally:
 # try 无异常，执行else  这方面往往会产生误解
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
+<h4 id="10-函数与异常"><a href="#10-函数与异常" class="headerlink" title="10. 函数与异常"></a>10. 函数与异常</h4><blockquote>
+<p>尽量用异常来表示特殊情况，而不要返回None；</p>
+<p>原因在于：None 和 0 以及 空字符串之类的值，在条件表达式里都会评估为False。</p>
+</blockquote>
 ]]></content>
       <categories>
         <category>ITstudy</category>
