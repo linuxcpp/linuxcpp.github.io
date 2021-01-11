@@ -382,14 +382,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.2k
+                    2.7k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    7 分
+                    9 分
                 </div>
                 
 
@@ -527,7 +527,103 @@ def memoize(fn):
 
 
 </blockquote>
-<h4 id="第六章：桥接模式"><a href="#第六章：桥接模式" class="headerlink" title="第六章：桥接模式"></a>第六章：桥接模式</h4>
+<h4 id="第六章：桥接模式"><a href="#第六章：桥接模式" class="headerlink" title="第六章：桥接模式"></a>第六章：桥接模式</h4><blockquote>
+<p>桥接模式  是预先设计，以便将实现与抽象解耦；</p>
+<p>用例：在多个对象中<strong>共享实现</strong>时候，网络上的信息产品共享，说明书等，软件中像设备驱动程序。</p>
+<p>实现： 1 为抽象的接口 定义类（Cls）</p>
+<p>​            2 为实现者定义ClsFetcher类</p>
+<p>​            3 定义多个实现类 implementation</p>
+</blockquote>
+<h4 id="第七章-外观模式"><a href="#第七章-外观模式" class="headerlink" title="第七章 外观模式"></a>第七章 外观模式</h4><blockquote>
+<p>外观设计： 帮助我们隐藏系统内部复杂特性，并通过一个简化的接口，只向客户端公开需要的内容。</p>
+<p>用例： 计算机启动过程的封装；汽车/摩托车钥匙；银行客服等；</p>
+<p>实现： </p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"># 客户端调用 透明，内部修改透明；
+# 实现一个简单的 微内核 操作系统
+# 功能有文件服务器、进程服务器、内核服务器
+from enum import Enum
+from abc import ABCMeta,abstractmethod
+
+class User:
+    pass
+
+class Process:
+    pass
+
+class File:
+    pass
+
+# 定义server 类
+State = Enum('State', 'new running sleeping restart zombie')
+class Server(metaclass=ABCMeta):
+    @abstractmethod
+    def __init__(self):
+        pass
+    
+    def __str__(self):
+        return self.name
+    
+    @abstractmethod
+    def boot(self):
+        pass
+    
+    @abstractmethod
+    def kill(self, restart=True):
+        pass
+    
+# 定义 FileServer 类
+class FileServer(Sever):
+    def __init__(self):
+        self.name = 'FileSever'
+        self.state = State.new
+        
+    def boot(self):
+        print(f'boot the {self.name}')
+        ''' 启动文件服务器操作 '''
+        self.state = State.running
+    
+    def kill(self,restart=True):
+        print(f'Kill {self}')
+        '''终止文件服务器所需要的操作'''
+        self.state = State.restart if restart else State.zombie
+        
+    def create_file(self, user, name, permissions):
+        '''检查访问权限、用户权限的有效性'''
+        print(f" trying to create the file '{name}' for user '{user}' with permissions {permissions} ")
+    
+    
+# 定义 ProcessServer
+# 方法同上
+def ProcessServer(Server):
+    pass
+
+# 定义客户端调用外观
+
+class OperatingSystem:
+    '''外观'''
+    def __init__(self):
+        self.fs = FileServer()
+        self.ps = ProcessServer()
+        
+    def start(self):
+        [i.boot() for i in (self.fs,self.ps)]
+        
+    def create_file(self, user, name, permissions):
+        return self.fs.create_file(user, name, permissions)
+    
+    def create_process(self, user, name):
+        return self.ps.create_process(user, name)
+    
+    
+def main():
+    os = OperatingSysterm()
+    os.start()
+    os.create_file('foo', 'hello', '-rw-r-r')
+    os.create_process('bar', 'ls /tmp')
+    
+if __name__ == '__main__':
+    main()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></blockquote>
+
             </div>
             <hr/>
 
@@ -1085,7 +1181,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">26.6k</span>&nbsp;字
+                class="white-color">27.1k</span>&nbsp;字
             
             
             

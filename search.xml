@@ -1107,168 +1107,102 @@ def memoize(fn):
 
 
 </blockquote>
-<h4 id="第六章：桥接模式"><a href="#第六章：桥接模式" class="headerlink" title="第六章：桥接模式"></a>第六章：桥接模式</h4>]]></content>
-      <categories>
-        <category>ITstudy</category>
-      </categories>
-      <tags>
-        <tag>IT</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>读《Effective Python:编写高质量Python代码的59个有效方法》小记</title>
-    <url>/2020/12/31/du-effective-python-bian-xie-gao-zhi-liang-python-dai-ma-de-59-ge-you-xiao-fang-fa-xiao-ji/</url>
-    <content><![CDATA[<h1 align="center">读《Effective Python:编写高质量Python代码的59个有效方法》小记 </h1>
-
-<h3 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h3><blockquote>
-<p> Python 很优美的语言，近几年迅速成为最流行的语言，为什么？</p>
-<blockquote>
-<ol>
-<li><strong>语言的全面性</strong>：啥都能干，数学计算，GUI开发，WEB开发（框架近百种），AI分析，数据量化分析、爬虫、文档处理等等；</li>
-<li><strong>易用性</strong>： 很多非IT的人群，学习该语言，入门简单，易于使用。毫不夸张的说：有时候，Python的一行代码可以抵得上C语言100行代码，效率上还相近，Why not 不用？</li>
-</ol>
+<h4 id="第六章：桥接模式"><a href="#第六章：桥接模式" class="headerlink" title="第六章：桥接模式"></a>第六章：桥接模式</h4><blockquote>
+<p>桥接模式  是预先设计，以便将实现与抽象解耦；</p>
+<p>用例：在多个对象中<strong>共享实现</strong>时候，网络上的信息产品共享，说明书等，软件中像设备驱动程序。</p>
+<p>实现： 1 为抽象的接口 定义类（Cls）</p>
+<p>​            2 为实现者定义ClsFetcher类</p>
+<p>​            3 定义多个实现类 implementation</p>
 </blockquote>
-<p> <strong>2010年</strong>，个人在IT公司，进驻华东某省分行进行中间业务平台建设，用的Python2.3 语言开发项目，当时纯粹作为应用，没有深入去思考该脚本语言的起始，如今从Python 3.6+ 入手，无论从风格，还是封装性，全面性都有本质的提升。</p>
-<p> 随着年龄增长，Python很显然让我有了抛弃C/C++ 、java语言的想法。尽管google公司依据python，开发了编译型的GO语言，但仅是在某些方面表现卓越，不如Python的通用性。</p>
-<p> <strong>未来是脚本语言的天下，Python必然是这方面的王者。</strong></p>
-</blockquote>
-<img src="/2020/12/31/du-effective-python-bian-xie-gao-zhi-liang-python-dai-ma-de-59-ge-you-xiao-fang-fa-xiao-ji/cover.jpg" class="" title="封面">
+<h4 id="第七章-外观模式"><a href="#第七章-外观模式" class="headerlink" title="第七章 外观模式"></a>第七章 外观模式</h4><blockquote>
+<p>外观设计： 帮助我们隐藏系统内部复杂特性，并通过一个简化的接口，只向客户端公开需要的内容。</p>
+<p>用例： 计算机启动过程的封装；汽车/摩托车钥匙；银行客服等；</p>
+<p>实现： </p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"># 客户端调用 透明，内部修改透明；
+# 实现一个简单的 微内核 操作系统
+# 功能有文件服务器、进程服务器、内核服务器
+from enum import Enum
+from abc import ABCMeta,abstractmethod
 
-<h3 id="Chapter-1：-用Pythonic-方式思考"><a href="#Chapter-1：-用Pythonic-方式思考" class="headerlink" title="Chapter 1： 用Pythonic 方式思考"></a>Chapter 1： 用Pythonic 方式思考</h3><h4 id="1-Python式编程风格-Pythonic"><a href="#1-Python式编程风格-Pythonic" class="headerlink" title="1. Python式编程风格(Pythonic)"></a>1. Python式编程风格(Pythonic)</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"># 选定合适的python版本
-&gt;&gt;&gt;  python --version
-# 或
-&gt;&gt;&gt; import sys
-&gt;&gt;&gt; print(sys.version_info)
-&gt;&gt;&gt; print(sys.version)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+class User:
+    pass
 
-<h4 id="2-遵循PEP8-风格（习惯很重要）"><a href="#2-遵循PEP8-风格（习惯很重要）" class="headerlink" title="2.遵循PEP8 风格（习惯很重要）"></a>2.遵循PEP8 风格（习惯很重要）</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"># PEP 全称为：Python Enhancement Proposal#8 
-# 即8号python增强提案
-# Zen Of Python  
-# Python 之禅
-# command line mode 模式
-&gt;&gt;&gt; import this <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+class Process:
+    pass
 
-<h4 id="3-Python3与Python2的区别"><a href="#3-Python3与Python2的区别" class="headerlink" title="3. Python3与Python2的区别"></a>3. Python3与Python2的区别</h4><blockquote>
-<ol>
-<li>python3：bytes 表示二进制 ，str 表示unicode；</li>
-<li>python2：str表示二进制 ，unicode表示unicode;</li>
-<li>转换utftobin  用encode()，解码用decode();</li>
-<li>文件操作上 python3用utf8方式，所以在对二进制操作时候，要rb或wb模式；python2中默认用二进制操作文件，兼容上述表达。</li>
-</ol>
-</blockquote>
-<h4 id="4-切片"><a href="#4-切片" class="headerlink" title="4. 切片"></a>4. 切片</h4><blockquote>
-<ol>
-<li><p>在Python中，<strong>空字符串、空列表、零值</strong>都会被评估为<strong>False</strong>；</p>
-</li>
-<li><p>列表切割 会产生另一份全新列表，原列表引用不变；</p>
-</li>
-<li><p>当列表有起始索引，还有  步进 时候，应先做范围切割，再做步进；</p>
-</li>
-<li><p>对于 -1 步进 对字符串取反的技巧，只适应于 字节串  和  ASCII，Unicode不适合；</p>
-</li>
-</ol>
-</blockquote>
-<h4 id="5-推导式"><a href="#5-推导式" class="headerlink" title="5. 推导式"></a>5. 推导式</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"># 1. 无参数映射 考虑 列表推导式
-a = [1, 2, 3, 4, 5, 6]
-squares = [x**2 for x in a]
-print(squares)
-&gt;&gt;&gt;&gt;&gt; 
- [1, 4, 9, 16, 25, 36]
+class File:
+    pass
 
-#内置map() 函数写法
-squares = map(lambda x: x ** 2, a)
+# 定义server 类
+State = Enum('State', 'new running sleeping restart zombie')
+class Server(metaclass=ABCMeta):
+    @abstractmethod
+    def __init__(self):
+        pass
+    
+    def __str__(self):
+        return self.name
+    
+    @abstractmethod
+    def boot(self):
+        pass
+    
+    @abstractmethod
+    def kill(self, restart=True):
+        pass
+    
+# 定义 FileServer 类
+class FileServer(Sever):
+    def __init__(self):
+        self.name = 'FileSever'
+        self.state = State.new
+        
+    def boot(self):
+        print(f'boot the {self.name}')
+        ''' 启动文件服务器操作 '''
+        self.state = State.running
+    
+    def kill(self,restart=True):
+        print(f'Kill {self}')
+        '''终止文件服务器所需要的操作'''
+        self.state = State.restart if restart else State.zombie
+        
+    def create_file(self, user, name, permissions):
+        '''检查访问权限、用户权限的有效性'''
+        print(f" trying to create the file '{name}' for user '{user}' with permissions {permissions} ")
+    
+    
+# 定义 ProcessServer
+# 方法同上
+def ProcessServer(Server):
+    pass
 
-# 2. 涉及到原列表过滤时候，更方便
-even_squares = [x ** 2 for x in a if x%2 == 0]
-# 实现上述同样功能 需要map() 和filter() 函数使用
-alt = map(lambda x: x**2, filter(lambda x: x%2 == 0,a))
-assert even_squares == list(alt)
+# 定义客户端调用外观
 
-# 3. 字典dict() 和 集合set() 同样支持 推导式 comprehension 
-# 对应的范围符号要改为 ‘{ }’
-
-# 4. 矩阵处理 双层循环支持
-#  矩阵 即是包含列表的列表，即二维列表
-matrix = [[1,2,3], [4,5,6], [7,8,9]]
-flat = [x for row in matrix for x in row]
-print(flat)
-&gt;&gt;&gt;&gt;&gt;
-[1, 2, 3, 4, 5, 6 ,7, 8, 9]
-
-# 矩阵每个元素处理，如平方
-# 先由外面'[]'推导，在进入第二层'[]' 
-# 这样理解比较有条理性
-squared = [[x**2 for x in row ] for row in matrix]
-
-# 从矩阵中为3所整除的，且所在行元素之和大于等于10 单元格选择出来
-filtered = [ [x for x in row if x % 3 == 0]
-            for row in matrix if sum(row) &gt;= 10]
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="6-生成器"><a href="#6-生成器" class="headerlink" title="6. 生成器"></a>6. 生成器</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"># 生成器表达式(generator expression) 相比于列表推导式(comprehension) 内存使用上有效率
-# 用生成器表达式改写 推导式，针对文件操作 大数据操作  采用生成器
-# 用'()' 替代 '[]' 就变成 生成器，返回 迭代器(iterator)
-it = (len(x) for x in open('/tmp/leige_file.txt'))
-print(it)
-&gt;&gt;&gt;  
-   &lt;generator object &lt;genexpr&gt; at 0x101b81480&gt;
-
-print(next(it))
-print(next(it))
-&gt;&gt;&gt;
-   100
-   57
-# 生成器 组合使用  执行效率表现很好
-roots = ((x,x ** 0.5) for x in it)
-print(next(roots))
-&gt;&gt;&gt;
-   (15, 3.87298334)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="7-enumerate-与-range"><a href="#7-enumerate-与-range" class="headerlink" title="7. enumerate() 与 range()"></a>7. enumerate() 与 range()</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"># range() 一般针对整数 序列进行迭代操作
-# enumerate() 针对 字符串序列，需要自动生成索引下标，成对出现 使用
-flavor_list =  ['vanilla', 'chocolate', 'pecan', 'strawberry']
-# 列表写法
-for i in range(len(flavor_list)):
-    flavor = flavor_list[i]
-    print('%d:%s'%(i+1, flavor))
-# enumerate()写法
-for i,flavor in enumerate(flavor_list):
-    print('%d: %s' % (i+1,flavor))
-#或 提供第二个参数，以指定开始计数时所用的值(默认为0)
-for i,flavor in enumerate(flavor_list, 1):
-    print('%d: %s' % (i,flavor))
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="8-Zip-函数"><a href="#8-Zip-函数" class="headerlink" title="8. Zip()函数"></a>8. Zip()函数</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"># zip() 平行遍历2个迭代器
-# 一般两个迭代器存在关联，等长关系，不等长 以最短提前终止
-# 示例
-names = ['Cecilia', 'Lise', 'Marie']
-letters = [len(n) for n in names]
-
-longest_name = None
-max_letters = 0
-
-for name,count in zip(names, letters):
-    if count &gt; max_letters:
-        longest_name = name
-        max_letters = count<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="9-异常模块组合"><a href="#9-异常模块组合" class="headerlink" title="9.  异常模块组合"></a>9.  异常模块组合</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"># try/except/else/finally
-# finally 最后 必须执行的模块，常用来执行 清理收尾 或 关闭句柄
-# exp
-handle = open('/tmp/random_data.txt')
-try:
-    data = handle.read()
-finally:
-    handle.close()
-# try except else 
-# try 无异常，执行else  这方面往往会产生误解
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="10-函数与异常"><a href="#10-函数与异常" class="headerlink" title="10. 函数与异常"></a>10. 函数与异常</h4><blockquote>
-<p>尽量用异常来表示特殊情况，而不要返回None；</p>
-<p>原因在于：None 和 0 以及 空字符串之类的值，在条件表达式里都会评估为False。</p>
-</blockquote>
+class OperatingSystem:
+    '''外观'''
+    def __init__(self):
+        self.fs = FileServer()
+        self.ps = ProcessServer()
+        
+    def start(self):
+        [i.boot() for i in (self.fs,self.ps)]
+        
+    def create_file(self, user, name, permissions):
+        return self.fs.create_file(user, name, permissions)
+    
+    def create_process(self, user, name):
+        return self.ps.create_process(user, name)
+    
+    
+def main():
+    os = OperatingSysterm()
+    os.start()
+    os.create_file('foo', 'hello', '-rw-r-r')
+    os.create_process('bar', 'ls /tmp')
+    
+if __name__ == '__main__':
+    main()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></blockquote>
 ]]></content>
       <categories>
         <category>ITstudy</category>
@@ -1434,6 +1368,169 @@ finally:
       </categories>
       <tags>
         <tag>生活记录</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>读《Effective Python:编写高质量Python代码的59个有效方法》小记</title>
+    <url>/2020/12/31/du-effective-python-bian-xie-gao-zhi-liang-python-dai-ma-de-59-ge-you-xiao-fang-fa-xiao-ji/</url>
+    <content><![CDATA[<h1 align="center">读《Effective Python:编写高质量Python代码的59个有效方法》小记 </h1>
+
+<h3 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h3><blockquote>
+<p> Python 很优美的语言，近几年迅速成为最流行的语言，为什么？</p>
+<blockquote>
+<ol>
+<li><strong>语言的全面性</strong>：啥都能干，数学计算，GUI开发，WEB开发（框架近百种），AI分析，数据量化分析、爬虫、文档处理等等；</li>
+<li><strong>易用性</strong>： 很多非IT的人群，学习该语言，入门简单，易于使用。毫不夸张的说：有时候，Python的一行代码可以抵得上C语言100行代码，效率上还相近，Why not 不用？</li>
+</ol>
+</blockquote>
+<p> <strong>2010年</strong>，个人在IT公司，进驻华东某省分行进行中间业务平台建设，用的Python2.3 语言开发项目，当时纯粹作为应用，没有深入去思考该脚本语言的起始，如今从Python 3.6+ 入手，无论从风格，还是封装性，全面性都有本质的提升。</p>
+<p> 随着年龄增长，Python很显然让我有了抛弃C/C++ 、java语言的想法。尽管google公司依据python，开发了编译型的GO语言，但仅是在某些方面表现卓越，不如Python的通用性。</p>
+<p> <strong>未来是脚本语言的天下，Python必然是这方面的王者。</strong></p>
+</blockquote>
+<img src="/2020/12/31/du-effective-python-bian-xie-gao-zhi-liang-python-dai-ma-de-59-ge-you-xiao-fang-fa-xiao-ji/cover.jpg" class="" title="封面">
+
+<h3 id="Chapter-1：-用Pythonic-方式思考"><a href="#Chapter-1：-用Pythonic-方式思考" class="headerlink" title="Chapter 1： 用Pythonic 方式思考"></a>Chapter 1： 用Pythonic 方式思考</h3><h4 id="1-Python式编程风格-Pythonic"><a href="#1-Python式编程风格-Pythonic" class="headerlink" title="1. Python式编程风格(Pythonic)"></a>1. Python式编程风格(Pythonic)</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"># 选定合适的python版本
+&gt;&gt;&gt;  python --version
+# 或
+&gt;&gt;&gt; import sys
+&gt;&gt;&gt; print(sys.version_info)
+&gt;&gt;&gt; print(sys.version)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="2-遵循PEP8-风格（习惯很重要）"><a href="#2-遵循PEP8-风格（习惯很重要）" class="headerlink" title="2.遵循PEP8 风格（习惯很重要）"></a>2.遵循PEP8 风格（习惯很重要）</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"># PEP 全称为：Python Enhancement Proposal#8 
+# 即8号python增强提案
+# Zen Of Python  
+# Python 之禅
+# command line mode 模式
+&gt;&gt;&gt; import this <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="3-Python3与Python2的区别"><a href="#3-Python3与Python2的区别" class="headerlink" title="3. Python3与Python2的区别"></a>3. Python3与Python2的区别</h4><blockquote>
+<ol>
+<li>python3：bytes 表示二进制 ，str 表示unicode；</li>
+<li>python2：str表示二进制 ，unicode表示unicode;</li>
+<li>转换utftobin  用encode()，解码用decode();</li>
+<li>文件操作上 python3用utf8方式，所以在对二进制操作时候，要rb或wb模式；python2中默认用二进制操作文件，兼容上述表达。</li>
+</ol>
+</blockquote>
+<h4 id="4-切片"><a href="#4-切片" class="headerlink" title="4. 切片"></a>4. 切片</h4><blockquote>
+<ol>
+<li><p>在Python中，<strong>空字符串、空列表、零值</strong>都会被评估为<strong>False</strong>；</p>
+</li>
+<li><p>列表切割 会产生另一份全新列表，原列表引用不变；</p>
+</li>
+<li><p>当列表有起始索引，还有  步进 时候，应先做范围切割，再做步进；</p>
+</li>
+<li><p>对于 -1 步进 对字符串取反的技巧，只适应于 字节串  和  ASCII，Unicode不适合；</p>
+</li>
+</ol>
+</blockquote>
+<h4 id="5-推导式"><a href="#5-推导式" class="headerlink" title="5. 推导式"></a>5. 推导式</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"># 1. 无参数映射 考虑 列表推导式
+a = [1, 2, 3, 4, 5, 6]
+squares = [x**2 for x in a]
+print(squares)
+&gt;&gt;&gt;&gt;&gt; 
+ [1, 4, 9, 16, 25, 36]
+
+#内置map() 函数写法
+squares = map(lambda x: x ** 2, a)
+
+# 2. 涉及到原列表过滤时候，更方便
+even_squares = [x ** 2 for x in a if x%2 == 0]
+# 实现上述同样功能 需要map() 和filter() 函数使用
+alt = map(lambda x: x**2, filter(lambda x: x%2 == 0,a))
+assert even_squares == list(alt)
+
+# 3. 字典dict() 和 集合set() 同样支持 推导式 comprehension 
+# 对应的范围符号要改为 ‘{ }’
+
+# 4. 矩阵处理 双层循环支持
+#  矩阵 即是包含列表的列表，即二维列表
+matrix = [[1,2,3], [4,5,6], [7,8,9]]
+flat = [x for row in matrix for x in row]
+print(flat)
+&gt;&gt;&gt;&gt;&gt;
+[1, 2, 3, 4, 5, 6 ,7, 8, 9]
+
+# 矩阵每个元素处理，如平方
+# 先由外面'[]'推导，在进入第二层'[]' 
+# 这样理解比较有条理性
+squared = [[x**2 for x in row ] for row in matrix]
+
+# 从矩阵中为3所整除的，且所在行元素之和大于等于10 单元格选择出来
+filtered = [ [x for x in row if x % 3 == 0]
+            for row in matrix if sum(row) &gt;= 10]
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="6-生成器"><a href="#6-生成器" class="headerlink" title="6. 生成器"></a>6. 生成器</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"># 生成器表达式(generator expression) 相比于列表推导式(comprehension) 内存使用上有效率
+# 用生成器表达式改写 推导式，针对文件操作 大数据操作  采用生成器
+# 用'()' 替代 '[]' 就变成 生成器，返回 迭代器(iterator)
+it = (len(x) for x in open('/tmp/leige_file.txt'))
+print(it)
+&gt;&gt;&gt;  
+   &lt;generator object &lt;genexpr&gt; at 0x101b81480&gt;
+
+print(next(it))
+print(next(it))
+&gt;&gt;&gt;
+   100
+   57
+# 生成器 组合使用  执行效率表现很好
+roots = ((x,x ** 0.5) for x in it)
+print(next(roots))
+&gt;&gt;&gt;
+   (15, 3.87298334)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="7-enumerate-与-range"><a href="#7-enumerate-与-range" class="headerlink" title="7. enumerate() 与 range()"></a>7. enumerate() 与 range()</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"># range() 一般针对整数 序列进行迭代操作
+# enumerate() 针对 字符串序列，需要自动生成索引下标，成对出现 使用
+flavor_list =  ['vanilla', 'chocolate', 'pecan', 'strawberry']
+# 列表写法
+for i in range(len(flavor_list)):
+    flavor = flavor_list[i]
+    print('%d:%s'%(i+1, flavor))
+# enumerate()写法
+for i,flavor in enumerate(flavor_list):
+    print('%d: %s' % (i+1,flavor))
+#或 提供第二个参数，以指定开始计数时所用的值(默认为0)
+for i,flavor in enumerate(flavor_list, 1):
+    print('%d: %s' % (i,flavor))
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="8-Zip-函数"><a href="#8-Zip-函数" class="headerlink" title="8. Zip()函数"></a>8. Zip()函数</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"># zip() 平行遍历2个迭代器
+# 一般两个迭代器存在关联，等长关系，不等长 以最短提前终止
+# 示例
+names = ['Cecilia', 'Lise', 'Marie']
+letters = [len(n) for n in names]
+
+longest_name = None
+max_letters = 0
+
+for name,count in zip(names, letters):
+    if count &gt; max_letters:
+        longest_name = name
+        max_letters = count<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="9-异常模块组合"><a href="#9-异常模块组合" class="headerlink" title="9.  异常模块组合"></a>9.  异常模块组合</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"># try/except/else/finally
+# finally 最后 必须执行的模块，常用来执行 清理收尾 或 关闭句柄
+# exp
+handle = open('/tmp/random_data.txt')
+try:
+    data = handle.read()
+finally:
+    handle.close()
+# try except else 
+# try 无异常，执行else  这方面往往会产生误解
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="10-函数与异常"><a href="#10-函数与异常" class="headerlink" title="10. 函数与异常"></a>10. 函数与异常</h4><blockquote>
+<p>尽量用异常来表示特殊情况，而不要返回None；</p>
+<p>原因在于：None 和 0 以及 空字符串之类的值，在条件表达式里都会评估为False。</p>
+<p>yield 和可变位置参数 star args</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>ITstudy</category>
+      </categories>
+      <tags>
+        <tag>IT</tag>
       </tags>
   </entry>
   <entry>
