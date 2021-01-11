@@ -382,14 +382,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.3k
+                    1.5k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    5 分
+                    6 分
                 </div>
                 
 
@@ -555,6 +555,35 @@ finally:
 <p>尽量用异常来表示特殊情况，而不要返回None；</p>
 <p>原因在于：None 和 0 以及 空字符串之类的值，在条件表达式里都会评估为False。</p>
 <p>yield 和可变位置参数 star args</p>
+</blockquote>
+<h4 id="11-关键字参数和动态参数"><a href="#11-关键字参数和动态参数" class="headerlink" title="11. 关键字参数和动态参数"></a>11. 关键字参数和动态参数</h4><blockquote>
+<p><strong>关键字参数：</strong></p>
+<blockquote>
+<ol>
+<li>所有的位置参数，都可以按关键字传递；</li>
+<li>位置参数必须出现在关键字参数之前；</li>
+<li>关键字参数提高可读性，也可以为函数定义提供默认值；</li>
+<li>为函数扩充有效参数提供了有效方式；</li>
+<li>关键字参数设置，关键字参数调用。</li>
+</ol>
+</blockquote>
+<p><strong>动态默认值参数：</strong></p>
+<blockquote>
+<ol>
+<li><p>参数的默认值，只会在程序加载模块并读到本函数的定义时评估一次。对于{}和[]等动态值，可能会导致奇怪的行为。</p>
+</li>
+<li><p>动态值作为参数，应该默认值是None。</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"># 程序执行日志示例
+def log(msg, when=None):
+    '''
+      Log a message with a timestamp
+    '''
+    when = datetime.now() if when else when
+    print('%s:%s' % (when,message))<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+</li>
+</ol>
+</blockquote>
 </blockquote>
 
             </div>
@@ -1108,7 +1137,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">27.1k</span>&nbsp;字
+                class="white-color">27.3k</span>&nbsp;字
             
             
             
