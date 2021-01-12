@@ -382,14 +382,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.7k
+                    3.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    9 分
+                    12 分
                 </div>
                 
 
@@ -622,7 +622,40 @@ def main():
     os.create_process('bar', 'ls /tmp')
     
 if __name__ == '__main__':
-    main()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></blockquote>
+    main()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</blockquote>
+<h4 id="第八章-其他结构型模式"><a href="#第八章-其他结构型模式" class="headerlink" title="第八章 其他结构型模式"></a>第八章 其他结构型模式</h4><blockquote>
+<p>还存在其他结构型模式：享元模式、MVC模式、代理模式。</p>
+</blockquote>
+<h5 id="1-享元模式"><a href="#1-享元模式" class="headerlink" title="1. 享元模式"></a>1. 享元模式</h5><blockquote>
+<p><strong>WHY</strong>： OOP’System 可能会由于对象创建的开销面临性能问题。这在嵌入式系统、PDA等移动设备中非常明显。</p>
+<p><strong>WHAT</strong>：享元模式可以让相似的对象共享资源来最小化内存的使用。 通过在相似对象之间引入数据共享技术来提高性能。一个享元就是一个共享对象，包含状态独立，不可变的数据(内部数据)。</p>
+<p><strong>用例</strong>：游戏中的 队伍中的士兵，森林中的树木等；</p>
+<p><strong>WHERE</strong>：应用程序需要使用大量的对象，对象之间存在相似度；应用程序不依赖于对象ID；对象太多，以至于存储/渲染代价太大。</p>
+<p><strong>HOW</strong>： 示例见书本P57页，停车场范例。</p>
+</blockquote>
+<h5 id="2-MVC模式"><a href="#2-MVC模式" class="headerlink" title="2. MVC模式"></a>2. MVC模式</h5><blockquote>
+<p><strong>关注点分离（SOC）</strong>原则是软件工程设计原则之一。背后思想应用程序分成不同的部分，每一个部分处理一个单独的关注点。分层设计中的层就是关注点的一个实例。</p>
+<p><strong>MVC</strong>：Model-模型+View-视图+Controller-控制器的简称，实现了模型与其表示之间的解耦。通常来说MVC是架构模式，涉及面较设计模式宽泛；惯用法—-&gt; 设计模式—-&gt;架构模式  三层递进。</p>
+<p>Model是应用的核心组件，代表信息的源头，包含应用程序的业务逻辑、数据状态和规则。View是模型的可视化表示，是数据的表现形式。Controller是模型与试图之间的连接器或粘合剂，M和V之间的通信需要通过C进行。</p>
+<p>基于MVC衍生出很多不同的模式：如MVT(Python的WEB框架Django)、MVA(模型-视图-适配器)、MVP(模型-视图-演示者)等。带来好处是，分工明确，维护容易。</p>
+<p><strong>用例</strong>：盖房子，水电工、瓦工等，餐馆里服务员接受订单，饭菜厨师做。</p>
+<p><strong>实现</strong>:   智能的模型、纤薄的控制器和傻瓜式的视图。</p>
+<p>​           示例：P67页  打印引用语例子</p>
+</blockquote>
+<h5 id="3-代理模式"><a href="#3-代理模式" class="headerlink" title="3. 代理模式"></a>3. 代理模式</h5><blockquote>
+<p>**代理模式(Proxy)**：顾名思义，代理被访问的对象或访问的对象，该模式用于在访问实际对象之前要执行相关的操作。有如下四种：</p>
+<blockquote>
+<ol>
+<li><strong>远程代理</strong>：作为实际存在于不同地址空间（网络服务器）中的对象的本地表示。</li>
+<li><strong>虚拟代理</strong>：使用延迟初始化将计算开销大的对象的创建延迟到需要的时候进行。</li>
+<li><strong>保护/防护代理</strong>，控制对于敏感对象的访问。</li>
+<li><strong>智能代理/引用代理</strong>：对象被访问时候执行额外的操作，如引用计数或线程安全检查。</li>
+</ol>
+</blockquote>
+<p><strong>用例</strong>：<strong>正向代理</strong>（VPN)，代理的对象是客户端，服务器不知道是谁在访问；</p>
+<p>​          **反向代理(**Nginx), 代理的对象是访问的服务器，客户端不知道访问的是哪个服务器。</p>
+</blockquote>
 
             </div>
             <hr/>
@@ -1181,7 +1214,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">27.5k</span>&nbsp;字
+                class="white-color">28.3k</span>&nbsp;字
             
             
             
