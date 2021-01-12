@@ -382,14 +382,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.5k
+                    1.8k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    7 分
                 </div>
                 
 
@@ -417,15 +417,40 @@
 <p> <strong>2010年</strong>，个人在IT公司，进驻华东某省分行进行中间业务平台建设，用的Python2.3 语言开发项目，当时纯粹作为应用，没有深入去思考该脚本语言的起始，如今从Python 3.6+ 入手，无论从风格，还是封装性，全面性都有本质的提升。</p>
 <p> 随着年龄增长，Python很显然让我有了抛弃C/C++ 、java语言的想法。尽管google公司依据python，开发了编译型的GO语言，但仅是在某些方面表现卓越，不如Python的通用性。</p>
 <p> <strong>未来是脚本语言的天下，Python必然是这方面的王者。</strong></p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"># 任何部分的知识点 都应该遵循”WHY、WHAT、HOW、WHERE“去学习。
+# WHY：为什么存在，即背景；
+# WHAT: 是什么，概念；
+# HOW： 怎么使用；
+# WHERE: 什么时候使用 或 在哪里需要使用。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
 </blockquote>
 <img src="/2020/12/31/du-effective-python-bian-xie-gao-zhi-liang-python-dai-ma-de-59-ge-you-xiao-fang-fa-xiao-ji/cover.jpg" class="" title="封面">
 
 <h3 id="Chapter-1：-用Pythonic-方式思考"><a href="#Chapter-1：-用Pythonic-方式思考" class="headerlink" title="Chapter 1： 用Pythonic 方式思考"></a>Chapter 1： 用Pythonic 方式思考</h3><h4 id="1-Python式编程风格-Pythonic"><a href="#1-Python式编程风格-Pythonic" class="headerlink" title="1. Python式编程风格(Pythonic)"></a>1. Python式编程风格(Pythonic)</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"># 选定合适的python版本
+# Python是解释型、强类型语言
+
 &gt;&gt;&gt;  python --version
 # 或
 &gt;&gt;&gt; import sys
 &gt;&gt;&gt; print(sys.version_info)
-&gt;&gt;&gt; print(sys.version)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+&gt;&gt;&gt; print(sys.version)
+
+# 变量 ：驼峰或下划线单词间隔（推荐后一种）
+# 常量 ：约定俗成 全部大写 代表不修改，实际语言上是可以修改，Python中无C语言中的const 修饰符。 示例：BIRTH_OF_CHINA = 1949
+# 注释: 出于阅读理解的需要，注释是个很好的习惯。
+# 单行注释：#；多行注释 ‘’‘注释内容’‘’  或 “”“注释的内容 ”“”
+”“”
+     基础数据类型：是对现实信息的精准划分。数字、汉字、英文……；机器很傻 需要指定类型 告诉计算机 数据的类型。
+    整形：1, 10 等 加减乘除
+    字符串：单引号 和 双引号 等价；还有三引号  ’‘’  用于换行的字符串
+            单引号 和 双引号 可以配合使用。
+            示例： age = ” I’am lei.wang “
+    布尔类型：True 或 False
+    查看变量类型  type(var)
+“”“ 
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h4 id="2-遵循PEP8-风格（习惯很重要）"><a href="#2-遵循PEP8-风格（习惯很重要）" class="headerlink" title="2.遵循PEP8 风格（习惯很重要）"></a>2.遵循PEP8 风格（习惯很重要）</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"># PEP 全称为：Python Enhancement Proposal#8 
 # 即8号python增强提案
@@ -1137,7 +1162,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">27.3k</span>&nbsp;字
+                class="white-color">27.5k</span>&nbsp;字
             
             
             
