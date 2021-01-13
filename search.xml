@@ -1040,15 +1040,23 @@ class PersonForm(forms.Form):
 <p> <strong>建造者</strong>：负责创建复杂对象的各个部分的组件。例如：HTML页面生成器，中的部分有：标题、主体、脚注等；</p>
 <p> <strong>指挥者</strong>：使用 建造者实例  控制构建过程的组件。如调用建造者函数来设置标题，头部等等。</p>
 <p> <strong>用例</strong>： </p>
-<pre><code>  1.  **快餐店场景**。不同的汉堡（经典、芝士等）和不同包装(大杯、中杯、超大杯)，制作汉堡和包装过程相同，区别表现形式不同。这种情况下 **指挥者**是 **收银员**，**建造者**是负责处理订单的**员工**。
-  2.  **组装电脑**。 有CPU、内存、硬盘、电源、主板、键盘、显示器 不同的组合。这种情况下，组装工程师  是 指挥者。</code></pre>
+<blockquote>
+<ol>
+<li><strong>快餐店场景。</strong>不同的汉堡（经典、芝士等）和不同包装(大杯、中杯、超大杯)，制作汉堡和包装过程相同，区别表现形式不同。这种情况下 <strong>指挥者</strong>是 <strong>收银员</strong>，<strong>建造者</strong> 是负责处理订单的<strong>员工</strong>。</li>
+<li><strong>组装电脑</strong>。 有CPU、内存、硬盘、电源、主板、键盘、显示器 不同的组合。这种情况下，组装工程师  是 指挥者。</li>
+</ol>
+</blockquote>
 <p> 与工厂模式 <strong>区别</strong>：工厂模式实在<strong>单个步骤</strong>中创建对象，而建造者是在<strong>多个步骤</strong>中创建对象，几乎总是使用指挥者。</p>
 <p> <strong>实现</strong>：</p>
-<p> ​     核心组成几个类</p>
-<pre><code>  1. Builder ：抽象建造者，定义多个通用方法及构建方法；
-     2. ConcreteBuilder：具体建造者，可有多个（产品高低中配流程建造）；
-     3. Director:指挥者 ，具体控制整个组合过程，将需求交给建造者，由建造者去创建对象；
-     4. Product: 具体产品角色。</code></pre>
+<p> ​     核心组成几个类:</p>
+<blockquote>
+<ol>
+<li>Builder ：抽象建造者，定义多个通用方法及构建方法；</li>
+<li>ConcreteBuilder：具体建造者，可有多个（产品高低中配流程建造）；</li>
+<li>Director:指挥者 ，具体控制整个组合过程，将需求交给建造者，由建造者去创建对象；</li>
+<li>Product: 具体产品角色。</li>
+</ol>
+</blockquote>
 </blockquote>
 <h4 id="第三章-：其他创建型模式"><a href="#第三章-：其他创建型模式" class="headerlink" title="第三章 ：其他创建型模式"></a>第三章 ：其他创建型模式</h4><h5 id="1-原型模式"><a href="#1-原型模式" class="headerlink" title="1. 原型模式"></a>1. 原型模式</h5><blockquote>
 <p><strong>情况1</strong>：当创建对象比较复杂，为提高对象实例创建的效率；<strong>情况2</strong>：需要保存对象的状态，以便未来某个时间点通过副本恢复。以上两种情况需要使用 <strong>克隆</strong> 技术，基于<strong>现有对象创建对象</strong>时，原型模式非常有用。</p>
