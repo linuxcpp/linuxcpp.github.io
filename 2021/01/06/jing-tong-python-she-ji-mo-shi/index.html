@@ -382,14 +382,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3.4k
+                    3.7k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    12 分
+                    13 分
                 </div>
                 
 
@@ -456,16 +456,22 @@ class PersonForm(forms.Form):
 </blockquote>
 <h4 id="第二章：建造者模式-Builder"><a href="#第二章：建造者模式-Builder" class="headerlink" title="第二章：建造者模式(Builder)"></a>第二章：建造者模式(Builder)</h4><blockquote>
 <p> 如需创建  一个由多个部分组成的对象，而且创建过程需要一步一步地完成，只有创建了所有部分，该对象才是完整的。这种情况下 建造者模式 可以提供帮助。</p>
-<p>建造者模式：将<strong>复杂</strong>对象的<strong>构建</strong>与其<strong>表示</strong>分离。参与者包含两方面：<strong>建造者</strong>(builder)和<strong>指挥者</strong>(director)。</p>
-<p><strong>建造者</strong>：负责创建复杂对象的各个部分的组件。例如：HTML页面生成器，中的部分有：标题、主体、脚注等；</p>
-<p><strong>指挥者</strong>：使用 建造者实例  控制构建过程的组件。如调用建造者函数来设置标题，头部等等。</p>
-</blockquote>
-<blockquote>
-<p><strong>用例</strong>：快餐店场景。不同的汉堡（经典、芝士等）和不同包装(大杯、中杯、超大杯)，制作汉堡和包装过程相同，区别表现形式不同。这种情况下 <strong>指挥者</strong>是 <strong>收银员</strong>，<strong>建造者</strong>是负责处理订单的<strong>员工</strong>。</p>
-<p>与工厂模式 <strong>区别</strong>：工厂模式实在<strong>单个步骤</strong>中创建对象，而建造者是在<strong>多个步骤</strong>中创建对象，几乎总是使用指挥者。</p>
+<p> 建造者模式：将<strong>复杂</strong>对象的<strong>构建</strong>与其<strong>表示</strong>分离。参与者包含两方面：<strong>建造者</strong>(builder)和<strong>指挥者</strong>(director)。</p>
+<p> <strong>建造者</strong>：负责创建复杂对象的各个部分的组件。例如：HTML页面生成器，中的部分有：标题、主体、脚注等；</p>
+<p> <strong>指挥者</strong>：使用 建造者实例  控制构建过程的组件。如调用建造者函数来设置标题，头部等等。</p>
+<p> <strong>用例</strong>： </p>
+<pre><code>  1.  **快餐店场景**。不同的汉堡（经典、芝士等）和不同包装(大杯、中杯、超大杯)，制作汉堡和包装过程相同，区别表现形式不同。这种情况下 **指挥者**是 **收银员**，**建造者**是负责处理订单的**员工**。
+  2.  **组装电脑**。 有CPU、内存、硬盘、电源、主板、键盘、显示器 不同的组合。这种情况下，组装工程师  是 指挥者。</code></pre>
+<p> 与工厂模式 <strong>区别</strong>：工厂模式实在<strong>单个步骤</strong>中创建对象，而建造者是在<strong>多个步骤</strong>中创建对象，几乎总是使用指挥者。</p>
+<p> <strong>实现</strong>：</p>
+<p> ​     核心组成几个类</p>
+<pre><code>  1. Builder ：抽象建造者，定义多个通用方法及构建方法；
+     2. ConcreteBuilder：具体建造者，可有多个（产品高低中配流程建造）；
+     3. Director:指挥者 ，具体控制整个组合过程，将需求交给建造者，由建造者去创建对象；
+     4. Product: 具体产品角色。</code></pre>
 </blockquote>
 <h4 id="第三章-：其他创建型模式"><a href="#第三章-：其他创建型模式" class="headerlink" title="第三章 ：其他创建型模式"></a>第三章 ：其他创建型模式</h4><h5 id="1-原型模式"><a href="#1-原型模式" class="headerlink" title="1. 原型模式"></a>1. 原型模式</h5><blockquote>
-<p>当需要使用 <strong>克隆</strong> 技术，基于<strong>现有对象创建对象</strong>时，原型模式非常有用。</p>
+<p><strong>情况1</strong>：当创建对象比较复杂，为提高对象实例创建的效率；<strong>情况2</strong>：需要保存对象的状态，以便未来某个时间点通过副本恢复。以上两种情况需要使用 <strong>克隆</strong> 技术，基于<strong>现有对象创建对象</strong>时，原型模式非常有用。</p>
 <p>其思想是使用一个具有某个对象完整结构的副本来生成新的对象。</p>
 <p>当现有对象需要保持不变，而通过创建它的精确副本，以便更改副本的某些部分时候，原型模式应用意义在此。</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"># 该模式为python内置特性
@@ -473,7 +479,9 @@ class PersonForm(forms.Form):
 # 参数为一个对象，返回副本
 A2 = copy.deepcopy(A1)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>用例：日常DevOps团队管理对个网站时候，需要共同维护一些数据。</p>
+<p><strong>用例</strong>：日常DevOps团队管理对个网站时候，需要共同维护一些数据。</p>
+<p><strong>浅拷贝</strong>: 只会拷贝一些基本数据类型的副本(int、string、boolean), 复杂数据类型不会拷贝，仅拷贝引用；</p>
+<p><strong>深拷贝</strong>：基于serializeable 序列化读取二进制流实现。此处涉及  序列化 和 反序列化操作。</p>
 </blockquote>
 <h5 id="2-单例模式"><a href="#2-单例模式" class="headerlink" title="2. 单例模式"></a>2. 单例模式</h5><blockquote>
 <p><strong>单例模式</strong> 提供了一种实现类的方法，从该类中只能创建一个对象，因此成为 单例。</p>
@@ -524,7 +532,6 @@ def memoize(fn):
         return cache[args]
     
     return memoizer<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 
 </blockquote>
 <h4 id="第六章：桥接模式"><a href="#第六章：桥接模式" class="headerlink" title="第六章：桥接模式"></a>第六章：桥接模式</h4><blockquote>
@@ -1214,7 +1221,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">28.3k</span>&nbsp;字
+                class="white-color">28.6k</span>&nbsp;字
             
             
             
