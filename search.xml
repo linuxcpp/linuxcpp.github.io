@@ -982,284 +982,6 @@
       </tags>
   </entry>
   <entry>
-    <title>精通Python设计模式</title>
-    <url>/2021/01/06/jing-tong-python-she-ji-mo-shi/</url>
-    <content><![CDATA[<h1 align="center">精通Python设计模式</h1>
-
-<h4 id="写在前面的话"><a href="#写在前面的话" class="headerlink" title="写在前面的话"></a>写在前面的话</h4><blockquote>
-<p> <strong>模式</strong> 即是 一类问题成熟的解决方案，可复用编程解决方案。</p>
-<p> 通俗来说，就是“<strong>套路</strong>”，自古套路得人心，所有的应用都是基于生活的抽象，IT应用也不例外。</p>
-<p> <strong>设计模式</strong>是基于面向对象系统中重复出现的设计问题。之于个人，一个老派的coder出身的ITer，对面向对象的把握也是泛泛了解，当下从<strong>面向对象</strong>（OO）—&gt; <strong>面向构件</strong>（OC）—&gt; <strong>面向服务</strong>（SO），各种层级具有一定抽象。</p>
-<p> <strong>题外</strong>：呜呼，正因此领域的不深入，导致个人第一次的 <strong>系统分析师</strong> 考试 <strong>案例分析</strong> 此方面失分太多，导致结果不尽如人意（差3分）<span class="github-emoji"><span>😺</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f63a.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>。</p>
-<p> <strong>目标</strong>：强化面向对象思维，用OO视角去思考问题。</p>
-</blockquote>
-<img src="/2021/01/06/jing-tong-python-she-ji-mo-shi/cover.jpg" class="" title="封面">
-
-<h4 id="面向对象设计"><a href="#面向对象设计" class="headerlink" title="面向对象设计"></a>面向对象设计</h4><blockquote>
-<p>面向对象设计（<strong>OOD</strong>） 遵循“SOLID（稳定的）”原则。</p>
-<p><strong>单一职责原则</strong>（<strong>S</strong>ingle Responsibility Principle）：一个类只负责一个功能，是实现“高内聚、低耦合”方针；</p>
-<p><strong>开闭原则</strong>（<strong>O</strong>pen Closed Principle）： 对扩展开放，对修改关闭。</p>
-<p><strong>里氏替换</strong>原则（<strong>L</strong>iskov Substitution Principle）：基类出现的地方，子类一定能替换。程序中尽量使用基类类型对 对象进行定义，运行时候再确定子类的类型，用子类对象来替换基类对象。</p>
-<p><strong>接口隔离原则</strong>（<strong>I</strong>nterface Segregation Principle）：使用多个接口，比使用单一接口好的多，保证接口纯洁性，降低耦合度。</p>
-<p><strong>依赖倒置原则</strong>（<strong>D</strong>ependence Inversion Principle）：是开闭原则基础，针对接口编程，依赖于抽象 不依赖于具体。</p>
-<p><strong>迪米特法则</strong>（<strong>L</strong>aw of Demeter）：最小知道原则，一个实体应当尽量减少与其他实体之间的相互作用，使得模块相对独立。</p>
-</blockquote>
-<h4 id="模式分类"><a href="#模式分类" class="headerlink" title="模式分类"></a>模式分类</h4><blockquote>
-<p><strong>三类</strong>：创建型、结构型、行为型。</p>
-<p><strong>创建型</strong>：指用来创建的对象的一系列模式的统称；</p>
-<p><strong>结构型</strong>：主要用来表示对象与类之间的组合关系；</p>
-<p><strong>行为型</strong>：表示类与对象或对象与对象之间的交互关系。</p>
-<p>常用的 <strong>大致</strong> 分为 23种。</p>
-</blockquote>
-<img src="/2021/01/06/jing-tong-python-she-ji-mo-shi/DesignPattern.png" class="" title="封面">
-
-<h4 id="第一章：-工厂模式-Factory"><a href="#第一章：-工厂模式-Factory" class="headerlink" title="第一章： 工厂模式(Factory)"></a>第一章： 工厂模式(Factory)</h4><blockquote>
-<p>顾名思义，典型的<strong>创建型</strong>模式，包含 <strong>工厂</strong> 和 <strong>抽象工厂</strong> 两种。</p>
-<p><strong>客户端</strong>(调用对象的代码) 在不知道对象来源(对象由哪个类产生)的情况下，要求创建一个对象。思想出发点是：通过将<strong>创建对象</strong>的代码 与 <strong>使用对象</strong>的代码<strong>解耦</strong>，简化对象创建过程。</p>
-</blockquote>
-<h5 id="1-工厂方法"><a href="#1-工厂方法" class="headerlink" title="1. 工厂方法"></a>1. 工厂方法</h5><blockquote>
-<p><strong>工厂方法</strong>：基于单一的函数来处理对象创建任务。通过传参数，体现意图，创建需要的对象。每个工厂方法从逻辑上将具有相同点的对象创建过程划分为一组。有链接数据库的工厂方法，有创建图形的工厂方法。</p>
-<p><strong>用例</strong>：1. 塑料玩具制造，材料相同，使用不同模具生产不同的玩具。</p>
-<p>​           2. Django 框架中的  表单 就是基于工厂方法，支持创建不同的种类的字段。</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python"># 示例
-from django import forms
-class PersonForm(forms.Form):
-    name = forms.CharField(max_length=100)
-    birth_date = forms.DateField(required=Flase)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</blockquote>
-<h5 id="2-抽象工厂"><a href="#2-抽象工厂" class="headerlink" title="2. 抽象工厂"></a>2. 抽象工厂</h5><blockquote>
-<p>抽象工厂 是<strong>一般化的工厂方法</strong>，可以理解为 工厂过程的 <strong>泛化</strong>(generalization)。</p>
-<p>一个抽象工厂 是 <strong>一些工厂方法 逻辑的 集合</strong>，这其中，每一个工厂方法负责生成一种不同的对象。</p>
-<p><strong>用例</strong>：1. 汽车制造方面，机械冲压不同车型的零件（车门、发动机盖子、挡泥板等）。</p>
-<p>如何知道使用 <strong>工厂方法</strong> 还是 <strong>抽象工厂</strong> 方法？</p>
-<p><strong>答</strong>： 通常从简单的工厂方法开始。若发现需要多个工厂方法，且将这些方法组合起来创建一系列对象是有意义的，就用抽象工厂。</p>
-</blockquote>
-<h4 id="第二章：建造者模式-Builder"><a href="#第二章：建造者模式-Builder" class="headerlink" title="第二章：建造者模式(Builder)"></a>第二章：建造者模式(Builder)</h4><blockquote>
-<p> 如需创建  一个由多个部分组成的对象，而且创建过程需要一步一步地完成，只有创建了所有部分，该对象才是完整的。这种情况下 建造者模式 可以提供帮助。</p>
-<p> 建造者模式：将<strong>复杂</strong>对象的<strong>构建</strong>与其<strong>表示</strong>分离。参与者包含两方面：<strong>建造者</strong>(builder)和<strong>指挥者</strong>(director)。</p>
-<p> <strong>建造者</strong>：负责创建复杂对象的各个部分的组件。例如：HTML页面生成器，中的部分有：标题、主体、脚注等；</p>
-<p> <strong>指挥者</strong>：使用 建造者实例  控制构建过程的组件。如调用建造者函数来设置标题，头部等等。</p>
-<p> <strong>用例</strong>： </p>
-<blockquote>
-<ol>
-<li><strong>快餐店场景。</strong>不同的汉堡（经典、芝士等）和不同包装(大杯、中杯、超大杯)，制作汉堡和包装过程相同，区别表现形式不同。这种情况下 <strong>指挥者</strong>是 <strong>收银员</strong>，<strong>建造者</strong> 是负责处理订单的<strong>员工</strong>。</li>
-<li><strong>组装电脑</strong>。 有CPU、内存、硬盘、电源、主板、键盘、显示器 不同的组合。这种情况下，组装工程师  是 指挥者。</li>
-</ol>
-</blockquote>
-<p> 与工厂模式 <strong>区别</strong>：工厂模式实在<strong>单个步骤</strong>中创建对象，而建造者是在<strong>多个步骤</strong>中创建对象，几乎总是使用指挥者。</p>
-<p> <strong>实现</strong>：</p>
-<p> ​     核心组成几个类:</p>
-<blockquote>
-<ol>
-<li>Builder ：抽象建造者，定义多个通用方法及构建方法；</li>
-<li>ConcreteBuilder：具体建造者，可有多个（产品高低中配流程建造）；</li>
-<li>Director:指挥者 ，具体控制整个组合过程，将需求交给建造者，由建造者去创建对象；</li>
-<li>Product: 具体产品角色。</li>
-</ol>
-</blockquote>
-</blockquote>
-<h4 id="第三章-：其他创建型模式"><a href="#第三章-：其他创建型模式" class="headerlink" title="第三章 ：其他创建型模式"></a>第三章 ：其他创建型模式</h4><h5 id="1-原型模式"><a href="#1-原型模式" class="headerlink" title="1. 原型模式"></a>1. 原型模式</h5><blockquote>
-<p><strong>情况1</strong>：当创建对象比较复杂，为提高对象实例创建的效率；<strong>情况2</strong>：需要保存对象的状态，以便未来某个时间点通过副本恢复。以上两种情况需要使用 <strong>克隆</strong> 技术，基于<strong>现有对象创建对象</strong>时，原型模式非常有用。</p>
-<p>其思想是使用一个具有某个对象完整结构的副本来生成新的对象。</p>
-<p>当现有对象需要保持不变，而通过创建它的精确副本，以便更改副本的某些部分时候，原型模式应用意义在此。</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python"># 该模式为python内置特性
-# clone()函数
-# 参数为一个对象，返回副本
-A2 = copy.deepcopy(A1)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p><strong>用例</strong>：日常DevOps团队管理对个网站时候，需要共同维护一些数据。</p>
-<p><strong>浅拷贝</strong>: 只会拷贝一些基本数据类型的副本(int、string、boolean), 复杂数据类型不会拷贝，仅拷贝引用；</p>
-<p><strong>深拷贝</strong>：基于serializeable 序列化读取二进制流实现。此处涉及  序列化 和 反序列化操作。</p>
-</blockquote>
-<h5 id="2-单例模式"><a href="#2-单例模式" class="headerlink" title="2. 单例模式"></a>2. 单例模式</h5><blockquote>
-<p><strong>单例模式</strong> 提供了一种实现类的方法，从该类中只能创建一个对象，因此成为 单例。</p>
-<p><strong>例如</strong>为程序存储和维护一个全局状态。</p>
-<p><strong>单例模式</strong> 将类的实例化限制为<strong>一个</strong>对象，需要一些机制来防止类的多次实例化，并<strong>防止克隆</strong>。</p>
-<p><strong>用例</strong>：通用：控制对共享资源的并发访问、发号器（自增序号生成器）、Redis连接对象等。</p>
-<p><strong>分类</strong>：懒汉和饿汉模式。<strong>懒汉模式</strong>：所谓懒加载，延迟创建对象，再用的时候再创建；加载cls时候，对象就创建好了，是为<strong>饿汉模式</strong>。</p>
-<p><strong>实现</strong>：Python3中使用 <strong>元类</strong> 技巧。首先为单例模式实现一个元类，它是用于实现单例模式的类的类（或类型）。</p>
-<p><strong>元类实现</strong>：通过构造函数私有化，懒汉模式时需保证多线程安全（类似Synchronized)加锁，基于双重检查锁定 DCL（Double-Checked-Locking）。</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python"># 假设一个网页抓取类
-class URLFetcher(metaclass=SingletonType):
- pass<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-</blockquote>
-<h4 id="第四章-：适配器模式"><a href="#第四章-：适配器模式" class="headerlink" title="第四章 ：适配器模式"></a>第四章 ：适配器模式</h4><blockquote>
-<p>适配器属于<strong>结构型</strong>设计模式，提出了一种组合对象以创建新功能的方法。</p>
-<p><strong>适配器模式</strong>，使得两个或多个不兼容的接口兼容，允许将具有不同接口的血多对象调整为一个统一的接口。或可以理解为：调整已经存在（实现）的接口的对象，以实现另一个接口，这也称之为 <strong>接口适应</strong>。</p>
-<p><strong>用例</strong>： 到国外，欧美充电器接口（iterface_a())，不兼容 大陆的 充电器接口（iterface_b()) ,这时候需要将 a 接口 转换为  b接口。软件上，Python中的Pyramid Web框架利用适配器使现有想能够符合特定的API。</p>
-<p><strong>实现</strong>：</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python"># 定义一个适配器类
-# __init__()方法的obj参数就是我们想要修改的对象
-# adapted_methods 是一个字典，它包含与客户端调用的方法 和应该调用方法匹配的键值对
-class Adapter:
-    def __init__(self, obj, adapted_methods):
-        self.obj = obj
-        self.__dict__.update(adapted_methods)
-    def __str__(self):
-        return str(self.obj)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-</blockquote>
-<h4 id="第五章-：装饰器模式"><a href="#第五章-：装饰器模式" class="headerlink" title="第五章 ：装饰器模式"></a>第五章 ：装饰器模式</h4><blockquote>
-<p><strong>装饰器模式</strong>：通常用于扩展函数、方法或类行为的技术，可以在不适用继承的情况下扩展对象的行为，降低耦合；透明，跟适配器 显式方式不一样。</p>
-<p><strong>用例</strong>：枪上面 安装  消音器，或者相机 安装不同的镜头。</p>
-<p><strong>实现</strong>：它获取函数对象func_in 作为输入，并返回另一个函数对象 func_out。</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python"># Python 的functools.wraps() 为创建装饰器时候提供方便
-# 创建一个memoize()装饰器
-# 接受一个需要缓存的函数fn作为输入，使用一个名为cache的dict作为缓存的数据容器。
-
-import functools
-
-def memoize(fn):
-    cache =  dict()
-    
-    @functools.wraps(fn)
-    def memoizer(*args):
-        if args not in cache:
-            cache[args] =  fn(*args)
-        return cache[args]
-    
-    return memoizer<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-</blockquote>
-<h4 id="第六章：桥接模式"><a href="#第六章：桥接模式" class="headerlink" title="第六章：桥接模式"></a>第六章：桥接模式</h4><blockquote>
-<p>桥接模式  是预先设计，以便将实现与抽象解耦；</p>
-<p>用例：在多个对象中<strong>共享实现</strong>时候，网络上的信息产品共享，说明书等，软件中像设备驱动程序。</p>
-<p>实现： 1 为抽象的接口 定义类（Cls）</p>
-<p>​            2 为实现者定义ClsFetcher类</p>
-<p>​            3 定义多个实现类 implementation</p>
-</blockquote>
-<h4 id="第七章-外观模式"><a href="#第七章-外观模式" class="headerlink" title="第七章 外观模式"></a>第七章 外观模式</h4><blockquote>
-<p>外观设计： 帮助我们隐藏系统内部复杂特性，并通过一个简化的接口，只向客户端公开需要的内容。</p>
-<p>用例： 计算机启动过程的封装；汽车/摩托车钥匙；银行客服等；</p>
-<p>实现： </p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python"># 客户端调用 透明，内部修改透明；
-# 实现一个简单的 微内核 操作系统
-# 功能有文件服务器、进程服务器、内核服务器
-from enum import Enum
-from abc import ABCMeta,abstractmethod
-
-class User:
-    pass
-
-class Process:
-    pass
-
-class File:
-    pass
-
-# 定义server 类
-State = Enum('State', 'new running sleeping restart zombie')
-class Server(metaclass=ABCMeta):
-    @abstractmethod
-    def __init__(self):
-        pass
-    
-    def __str__(self):
-        return self.name
-    
-    @abstractmethod
-    def boot(self):
-        pass
-    
-    @abstractmethod
-    def kill(self, restart=True):
-        pass
-    
-# 定义 FileServer 类
-class FileServer(Sever):
-    def __init__(self):
-        self.name = 'FileSever'
-        self.state = State.new
-        
-    def boot(self):
-        print(f'boot the {self.name}')
-        ''' 启动文件服务器操作 '''
-        self.state = State.running
-    
-    def kill(self,restart=True):
-        print(f'Kill {self}')
-        '''终止文件服务器所需要的操作'''
-        self.state = State.restart if restart else State.zombie
-        
-    def create_file(self, user, name, permissions):
-        '''检查访问权限、用户权限的有效性'''
-        print(f" trying to create the file '{name}' for user '{user}' with permissions {permissions} ")
-    
-    
-# 定义 ProcessServer
-# 方法同上
-def ProcessServer(Server):
-    pass
-
-# 定义客户端调用外观
-
-class OperatingSystem:
-    '''外观'''
-    def __init__(self):
-        self.fs = FileServer()
-        self.ps = ProcessServer()
-        
-    def start(self):
-        [i.boot() for i in (self.fs,self.ps)]
-        
-    def create_file(self, user, name, permissions):
-        return self.fs.create_file(user, name, permissions)
-    
-    def create_process(self, user, name):
-        return self.ps.create_process(user, name)
-    
-    
-def main():
-    os = OperatingSysterm()
-    os.start()
-    os.create_file('foo', 'hello', '-rw-r-r')
-    os.create_process('bar', 'ls /tmp')
-    
-if __name__ == '__main__':
-    main()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</blockquote>
-<h4 id="第八章-其他结构型模式"><a href="#第八章-其他结构型模式" class="headerlink" title="第八章 其他结构型模式"></a>第八章 其他结构型模式</h4><blockquote>
-<p>还存在其他结构型模式：享元模式、MVC模式、代理模式。</p>
-</blockquote>
-<h5 id="1-享元模式"><a href="#1-享元模式" class="headerlink" title="1. 享元模式"></a>1. 享元模式</h5><blockquote>
-<p><strong>WHY</strong>： OOP’System 可能会由于对象创建的开销面临性能问题。这在嵌入式系统、PDA等移动设备中非常明显。</p>
-<p><strong>WHAT</strong>：享元模式可以让相似的对象共享资源来最小化内存的使用。 通过在相似对象之间引入数据共享技术来提高性能。一个享元就是一个共享对象，包含状态独立，不可变的数据(内部数据)。</p>
-<p><strong>用例</strong>：游戏中的 队伍中的士兵，森林中的树木等；</p>
-<p><strong>WHERE</strong>：应用程序需要使用大量的对象，对象之间存在相似度；应用程序不依赖于对象ID；对象太多，以至于存储/渲染代价太大。</p>
-<p><strong>HOW</strong>： 示例见书本P57页，停车场范例。</p>
-</blockquote>
-<h5 id="2-MVC模式"><a href="#2-MVC模式" class="headerlink" title="2. MVC模式"></a>2. MVC模式</h5><blockquote>
-<p><strong>关注点分离（SOC）</strong>原则是软件工程设计原则之一。背后思想应用程序分成不同的部分，每一个部分处理一个单独的关注点。分层设计中的层就是关注点的一个实例。</p>
-<p><strong>MVC</strong>：Model-模型+View-视图+Controller-控制器的简称，实现了模型与其表示之间的解耦。通常来说MVC是架构模式，涉及面较设计模式宽泛；惯用法—-&gt; 设计模式—-&gt;架构模式  三层递进。</p>
-<p>Model是应用的核心组件，代表信息的源头，包含应用程序的业务逻辑、数据状态和规则。View是模型的可视化表示，是数据的表现形式。Controller是模型与试图之间的连接器或粘合剂，M和V之间的通信需要通过C进行。</p>
-<p>基于MVC衍生出很多不同的模式：如MVT(Python的WEB框架Django)、MVA(模型-视图-适配器)、MVP(模型-视图-演示者)等。带来好处是，分工明确，维护容易。</p>
-<p><strong>用例</strong>：盖房子，水电工、瓦工等，餐馆里服务员接受订单，饭菜厨师做。</p>
-<p><strong>实现</strong>:   智能的模型、纤薄的控制器和傻瓜式的视图。</p>
-<p>​           示例：P67页  打印引用语例子</p>
-</blockquote>
-<h5 id="3-代理模式"><a href="#3-代理模式" class="headerlink" title="3. 代理模式"></a>3. 代理模式</h5><blockquote>
-<p>**代理模式(Proxy)**：顾名思义，代理被访问的对象或访问的对象，该模式用于在访问实际对象之前要执行相关的操作。有如下四种：</p>
-<blockquote>
-<ol>
-<li><strong>远程代理</strong>：作为实际存在于不同地址空间（网络服务器）中的对象的本地表示。</li>
-<li><strong>虚拟代理</strong>：使用延迟初始化将计算开销大的对象的创建延迟到需要的时候进行。</li>
-<li><strong>保护/防护代理</strong>，控制对于敏感对象的访问。</li>
-<li><strong>智能代理/引用代理</strong>：对象被访问时候执行额外的操作，如引用计数或线程安全检查。</li>
-</ol>
-</blockquote>
-<p><strong>用例</strong>：<strong>正向代理</strong>（VPN)，代理的对象是客户端，服务器不知道是谁在访问；</p>
-<p>​          **反向代理(**Nginx), 代理的对象是访问的服务器，客户端不知道访问的是哪个服务器。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>ITstudy</category>
-      </categories>
-      <tags>
-        <tag>IT</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>读《Effective Python:编写高质量Python代码的59个有效方法》小记</title>
     <url>/2020/12/31/du-effective-python-bian-xie-gao-zhi-liang-python-dai-ma-de-59-ge-you-xiao-fang-fa-xiao-ji/</url>
     <content><![CDATA[<h1 align="center">读《Effective Python:编写高质量Python代码的59个有效方法》小记 </h1>
@@ -1843,6 +1565,298 @@ def log(msg, when=None):
       </categories>
       <tags>
         <tag>风景</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>精通Python设计模式</title>
+    <url>/2021/01/06/jing-tong-python-she-ji-mo-shi/</url>
+    <content><![CDATA[<h1 align="center">精通Python设计模式</h1>
+
+<h4 id="写在前面的话"><a href="#写在前面的话" class="headerlink" title="写在前面的话"></a>写在前面的话</h4><blockquote>
+<p> <strong>初衷</strong>：日久健忘，有此笔记可略复查，践行DRY原则（Don’t Repeat Yourself）。</p>
+<p> <strong>模式</strong> 即是 一类问题成熟的解决方案，可复用编程解决方案。</p>
+<p> 通俗来说，就是“<strong>套路</strong>”，自古套路得人心，所有的应用都是基于生活的抽象，IT应用也不例外。</p>
+<p> <strong>设计模式</strong>是基于面向对象系统中重复出现的设计问题。之于个人，一个老派的coder出身的ITer，对面向对象的把握也是泛泛了解，当下从<strong>面向对象</strong>（OO）—&gt; <strong>面向构件</strong>（OC）—&gt; <strong>面向服务</strong>（SO），各种层级具有一定抽象。</p>
+<p> <strong>目标</strong>：强化面向对象思维，用OO视角去思考问题。</p>
+</blockquote>
+<img src="/2021/01/06/jing-tong-python-she-ji-mo-shi/cover.jpg" class="" title="封面">
+
+<h4 id="面向对象设计"><a href="#面向对象设计" class="headerlink" title="面向对象设计"></a>面向对象设计</h4><blockquote>
+<p>面向对象设计（<strong>OOD</strong>） 遵循“SOLID（稳定的）”原则。</p>
+<p><strong>单一职责原则</strong>（<strong>S</strong>ingle Responsibility Principle）：一个类只负责一个功能，是实现“高内聚、低耦合”方针；</p>
+<p><strong>开闭原则</strong>（<strong>O</strong>pen Closed Principle）： 对扩展开放，对修改关闭。</p>
+<p><strong>里氏替换</strong>原则（<strong>L</strong>iskov Substitution Principle）：基类出现的地方，子类一定能替换。程序中尽量使用基类类型对 对象进行定义，运行时候再确定子类的类型，用子类对象来替换基类对象。</p>
+<p><strong>接口隔离原则</strong>（<strong>I</strong>nterface Segregation Principle）：使用多个接口，比使用单一接口好的多，保证接口纯洁性，降低耦合度。</p>
+<p><strong>依赖倒置原则</strong>（<strong>D</strong>ependence Inversion Principle）：是开闭原则基础，针对接口编程，依赖于抽象 不依赖于具体。</p>
+<p><strong>迪米特法则</strong>（<strong>L</strong>aw of Demeter）：最小知道原则，一个实体应当尽量减少与其他实体之间的相互作用，使得模块相对独立。</p>
+</blockquote>
+<h4 id="模式分类"><a href="#模式分类" class="headerlink" title="模式分类"></a>模式分类</h4><blockquote>
+<p><strong>三类</strong>：创建型、结构型、行为型。</p>
+<p><strong>创建型</strong>：指用来创建的对象的一系列模式的统称；</p>
+<p><strong>结构型</strong>：主要用来表示对象与类之间的组合关系；</p>
+<p><strong>行为型</strong>：表示类与对象或对象与对象之间的交互关系。</p>
+<p>常用的 <strong>大致</strong> 分为 23种。</p>
+</blockquote>
+<img src="/2021/01/06/jing-tong-python-she-ji-mo-shi/DesignPattern.png" class="" title="封面">
+
+<h4 id="第一章：-工厂模式-Factory"><a href="#第一章：-工厂模式-Factory" class="headerlink" title="第一章： 工厂模式(Factory)"></a>第一章： 工厂模式(Factory)</h4><blockquote>
+<p>顾名思义，典型的<strong>创建型</strong>模式，包含 <strong>工厂</strong> 和 <strong>抽象工厂</strong> 两种。</p>
+<p><strong>客户端</strong>(调用对象的代码) 在不知道对象来源(对象由哪个类产生)的情况下，要求创建一个对象。思想出发点是：通过将<strong>创建对象</strong>的代码 与 <strong>使用对象</strong>的代码<strong>解耦</strong>，简化对象创建过程。</p>
+</blockquote>
+<h5 id="1-工厂方法"><a href="#1-工厂方法" class="headerlink" title="1. 工厂方法"></a>1. 工厂方法</h5><blockquote>
+<p><strong>工厂方法</strong>：基于单一的函数来处理对象创建任务。通过传参数，体现意图，创建需要的对象。每个工厂方法从逻辑上将具有相同点的对象创建过程划分为一组。有链接数据库的工厂方法，有创建图形的工厂方法。</p>
+<p><strong>用例</strong>：1. 塑料玩具制造，材料相同，使用不同模具生产不同的玩具。</p>
+<p>​           2. Django 框架中的  表单 就是基于工厂方法，支持创建不同的种类的字段。</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"># 示例
+from django import forms
+class PersonForm(forms.Form):
+    name = forms.CharField(max_length=100)
+    birth_date = forms.DateField(required=Flase)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</blockquote>
+<h5 id="2-抽象工厂"><a href="#2-抽象工厂" class="headerlink" title="2. 抽象工厂"></a>2. 抽象工厂</h5><blockquote>
+<p>抽象工厂 是<strong>一般化的工厂方法</strong>，可以理解为 工厂过程的 <strong>泛化</strong>(generalization)。</p>
+<p>一个抽象工厂 是 <strong>一些工厂方法 逻辑的 集合</strong>，这其中，每一个工厂方法负责生成一种不同的对象。</p>
+<p><strong>用例</strong>：1. 汽车制造方面，机械冲压不同车型的零件（车门、发动机盖子、挡泥板等）。</p>
+<p>如何知道使用 <strong>工厂方法</strong> 还是 <strong>抽象工厂</strong> 方法？</p>
+<p><strong>答</strong>： 通常从简单的工厂方法开始。若发现需要多个工厂方法，且将这些方法组合起来创建一系列对象是有意义的，就用抽象工厂。</p>
+</blockquote>
+<h4 id="第二章：建造者模式-Builder"><a href="#第二章：建造者模式-Builder" class="headerlink" title="第二章：建造者模式(Builder)"></a>第二章：建造者模式(Builder)</h4><blockquote>
+<p> 如需创建  一个由多个部分组成的对象，而且创建过程需要一步一步地完成，只有创建了所有部分，该对象才是完整的。这种情况下 建造者模式 可以提供帮助。</p>
+<p> 建造者模式：将<strong>复杂</strong>对象的<strong>构建</strong>与其<strong>表示</strong>分离。参与者包含两方面：<strong>建造者</strong>(builder)和<strong>指挥者</strong>(director)。</p>
+<p> <strong>建造者</strong>：负责创建复杂对象的各个部分的组件。例如：HTML页面生成器，中的部分有：标题、主体、脚注等；</p>
+<p> <strong>指挥者</strong>：使用 建造者实例  控制构建过程的组件。如调用建造者函数来设置标题，头部等等。</p>
+<p> <strong>用例</strong>： </p>
+<blockquote>
+<ol>
+<li><strong>快餐店场景。</strong>不同的汉堡（经典、芝士等）和不同包装(大杯、中杯、超大杯)，制作汉堡和包装过程相同，区别表现形式不同。这种情况下 <strong>指挥者</strong>是 <strong>收银员</strong>，<strong>建造者</strong> 是负责处理订单的<strong>员工</strong>。</li>
+<li><strong>组装电脑</strong>。 有CPU、内存、硬盘、电源、主板、键盘、显示器 不同的组合。这种情况下，组装工程师  是 指挥者。</li>
+</ol>
+</blockquote>
+<p> 与工厂模式 <strong>区别</strong>：工厂模式实在<strong>单个步骤</strong>中创建对象，而建造者是在<strong>多个步骤</strong>中创建对象，几乎总是使用指挥者。</p>
+<p> <strong>实现</strong>：</p>
+<p> ​     核心组成几个类:</p>
+<blockquote>
+<ol>
+<li>Builder ：抽象建造者，定义多个通用方法及构建方法；</li>
+<li>ConcreteBuilder：具体建造者，可有多个（产品高低中配流程建造）；</li>
+<li>Director:指挥者 ，具体控制整个组合过程，将需求交给建造者，由建造者去创建对象；</li>
+<li>Product: 具体产品角色。</li>
+</ol>
+</blockquote>
+</blockquote>
+<h4 id="第三章-：其他创建型模式"><a href="#第三章-：其他创建型模式" class="headerlink" title="第三章 ：其他创建型模式"></a>第三章 ：其他创建型模式</h4><h5 id="1-原型模式"><a href="#1-原型模式" class="headerlink" title="1. 原型模式"></a>1. 原型模式</h5><blockquote>
+<p><strong>情况1</strong>：当创建对象比较复杂，为提高对象实例创建的效率；<strong>情况2</strong>：需要保存对象的状态，以便未来某个时间点通过副本恢复。以上两种情况需要使用 <strong>克隆</strong> 技术，基于<strong>现有对象创建对象</strong>时，原型模式非常有用。</p>
+<p>其思想是使用一个具有某个对象完整结构的副本来生成新的对象。</p>
+<p>当现有对象需要保持不变，而通过创建它的精确副本，以便更改副本的某些部分时候，原型模式应用意义在此。</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"># 该模式为python内置特性
+# clone()函数
+# 参数为一个对象，返回副本
+A2 = copy.deepcopy(A1)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>用例</strong>：日常DevOps团队管理对个网站时候，需要共同维护一些数据。</p>
+<p><strong>浅拷贝</strong>: 只会拷贝一些基本数据类型的副本(int、string、boolean), 复杂数据类型不会拷贝，仅拷贝引用；</p>
+<p><strong>深拷贝</strong>：基于serializeable 序列化读取二进制流实现。此处涉及  序列化 和 反序列化操作。</p>
+</blockquote>
+<h5 id="2-单例模式"><a href="#2-单例模式" class="headerlink" title="2. 单例模式"></a>2. 单例模式</h5><blockquote>
+<p><strong>单例模式</strong> 提供了一种实现类的方法，从该类中只能创建一个对象，因此成为 单例。</p>
+<p><strong>例如</strong>为程序存储和维护一个全局状态。</p>
+<p><strong>单例模式</strong> 将类的实例化限制为<strong>一个</strong>对象，需要一些机制来防止类的多次实例化，并<strong>防止克隆</strong>。</p>
+<p><strong>用例</strong>：通用：控制对共享资源的并发访问、发号器（自增序号生成器）、Redis连接对象等。</p>
+<p><strong>分类</strong>：懒汉和饿汉模式。<strong>懒汉模式</strong>：所谓懒加载，延迟创建对象，再用的时候再创建；加载cls时候，对象就创建好了，是为<strong>饿汉模式</strong>。</p>
+<p><strong>实现</strong>：Python3中使用 <strong>元类</strong> 技巧。首先为单例模式实现一个元类，它是用于实现单例模式的类的类（或类型）。</p>
+<p><strong>元类实现</strong>：通过构造函数私有化，懒汉模式时需保证多线程安全（类似Synchronized)加锁，基于双重检查锁定 DCL（Double-Checked-Locking）。</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"># 假设一个网页抓取类
+class URLFetcher(metaclass=SingletonType):
+ pass<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+</blockquote>
+<h4 id="第四章-：适配器模式"><a href="#第四章-：适配器模式" class="headerlink" title="第四章 ：适配器模式"></a>第四章 ：适配器模式</h4><blockquote>
+<p>适配器属于<strong>结构型</strong>设计模式，提出了一种组合对象以创建新功能的方法。</p>
+<p><strong>适配器模式</strong>，使得两个或多个不兼容的接口兼容，允许将具有不同接口的血多对象调整为一个统一的接口。或可以理解为：调整已经存在（实现）的接口的对象，以实现另一个接口，这也称之为 <strong>接口适应</strong>。</p>
+<p><strong>用例</strong>： 到国外，欧美充电器接口（iterface_a())，不兼容 大陆的 充电器接口（iterface_b()) ,这时候需要将 a 接口 转换为  b接口。软件上，Python中的Pyramid Web框架利用适配器使现有想能够符合特定的API。</p>
+<p><strong>实现</strong>：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"># 定义一个适配器类
+# __init__()方法的obj参数就是我们想要修改的对象
+# adapted_methods 是一个字典，它包含与客户端调用的方法 和应该调用方法匹配的键值对
+class Adapter:
+    def __init__(self, obj, adapted_methods):
+        self.obj = obj
+        self.__dict__.update(adapted_methods)
+    def __str__(self):
+        return str(self.obj)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+</blockquote>
+<h4 id="第五章-：装饰器模式"><a href="#第五章-：装饰器模式" class="headerlink" title="第五章 ：装饰器模式"></a>第五章 ：装饰器模式</h4><blockquote>
+<p><strong>装饰器模式</strong>：通常用于扩展函数、方法或类行为的技术，可以在不适用继承的情况下扩展对象的行为，降低耦合；透明，跟适配器 显式方式不一样。</p>
+<p><strong>用例</strong>：枪上面 安装  消音器，或者相机 安装不同的镜头。</p>
+<p><strong>实现</strong>：它获取函数对象func_in 作为输入，并返回另一个函数对象 func_out。</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"># Python 的functools.wraps() 为创建装饰器时候提供方便
+# 创建一个memoize()装饰器
+# 接受一个需要缓存的函数fn作为输入，使用一个名为cache的dict作为缓存的数据容器。
+
+import functools
+
+def memoize(fn):
+    cache =  dict()
+    
+    @functools.wraps(fn)
+    def memoizer(*args):
+        if args not in cache:
+            cache[args] =  fn(*args)
+        return cache[args]
+    
+    return memoizer<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+</blockquote>
+<h4 id="第六章：桥接模式"><a href="#第六章：桥接模式" class="headerlink" title="第六章：桥接模式"></a>第六章：桥接模式</h4><blockquote>
+<p>桥接模式  是预先设计，以便将实现与抽象解耦；</p>
+<p>用例：在多个对象中<strong>共享实现</strong>时候，网络上的信息产品共享，说明书等，软件中像设备驱动程序。</p>
+<p>实现： 1 为抽象的接口 定义类（Cls）</p>
+<p>​            2 为实现者定义ClsFetcher类</p>
+<p>​            3 定义多个实现类 implementation</p>
+</blockquote>
+<h4 id="第七章-外观模式"><a href="#第七章-外观模式" class="headerlink" title="第七章 外观模式"></a>第七章 外观模式</h4><blockquote>
+<p>外观设计： 帮助我们隐藏系统内部复杂特性，并通过一个简化的接口，只向客户端公开需要的内容。</p>
+<p>用例： 计算机启动过程的封装；汽车/摩托车钥匙；银行客服等；</p>
+<p>实现： </p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"># 客户端调用 透明，内部修改透明；
+# 实现一个简单的 微内核 操作系统
+# 功能有文件服务器、进程服务器、内核服务器
+from enum import Enum
+from abc import ABCMeta,abstractmethod
+
+class User:
+    pass
+
+class Process:
+    pass
+
+class File:
+    pass
+
+# 定义server 类
+State = Enum('State', 'new running sleeping restart zombie')
+class Server(metaclass=ABCMeta):
+    @abstractmethod
+    def __init__(self):
+        pass
+    
+    def __str__(self):
+        return self.name
+    
+    @abstractmethod
+    def boot(self):
+        pass
+    
+    @abstractmethod
+    def kill(self, restart=True):
+        pass
+    
+# 定义 FileServer 类
+class FileServer(Sever):
+    def __init__(self):
+        self.name = 'FileSever'
+        self.state = State.new
+        
+    def boot(self):
+        print(f'boot the {self.name}')
+        ''' 启动文件服务器操作 '''
+        self.state = State.running
+    
+    def kill(self,restart=True):
+        print(f'Kill {self}')
+        '''终止文件服务器所需要的操作'''
+        self.state = State.restart if restart else State.zombie
+        
+    def create_file(self, user, name, permissions):
+        '''检查访问权限、用户权限的有效性'''
+        print(f" trying to create the file '{name}' for user '{user}' with permissions {permissions} ")
+    
+    
+# 定义 ProcessServer
+# 方法同上
+def ProcessServer(Server):
+    pass
+
+# 定义客户端调用外观
+
+class OperatingSystem:
+    '''外观'''
+    def __init__(self):
+        self.fs = FileServer()
+        self.ps = ProcessServer()
+        
+    def start(self):
+        [i.boot() for i in (self.fs,self.ps)]
+        
+    def create_file(self, user, name, permissions):
+        return self.fs.create_file(user, name, permissions)
+    
+    def create_process(self, user, name):
+        return self.ps.create_process(user, name)
+    
+    
+def main():
+    os = OperatingSysterm()
+    os.start()
+    os.create_file('foo', 'hello', '-rw-r-r')
+    os.create_process('bar', 'ls /tmp')
+    
+if __name__ == '__main__':
+    main()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</blockquote>
+<h4 id="第八章-其他结构型模式"><a href="#第八章-其他结构型模式" class="headerlink" title="第八章 其他结构型模式"></a>第八章 其他结构型模式</h4><blockquote>
+<p>还存在其他结构型模式：享元模式、MVC模式、代理模式。</p>
+</blockquote>
+<h5 id="1-享元模式"><a href="#1-享元模式" class="headerlink" title="1. 享元模式"></a>1. 享元模式</h5><blockquote>
+<p><strong>WHY</strong>： OOP’System 可能会由于对象创建的开销面临性能问题。这在嵌入式系统、PDA等移动设备中非常明显。</p>
+<p><strong>WHAT</strong>：享元模式可以让相似的对象共享资源来最小化内存的使用。 通过在相似对象之间引入数据共享技术来提高性能。一个享元就是一个共享对象，包含状态独立，不可变的数据(内部数据)。</p>
+<p><strong>用例</strong>：游戏中的 队伍中的士兵，森林中的树木等；</p>
+<p><strong>WHERE</strong>：应用程序需要使用大量的对象，对象之间存在相似度；应用程序不依赖于对象ID；对象太多，以至于存储/渲染代价太大。</p>
+<p><strong>HOW</strong>： 示例见书本P57页，停车场范例。</p>
+</blockquote>
+<h5 id="2-MVC模式"><a href="#2-MVC模式" class="headerlink" title="2. MVC模式"></a>2. MVC模式</h5><blockquote>
+<p><strong>关注点分离（SOC）</strong>原则是软件工程设计原则之一。背后思想应用程序分成不同的部分，每一个部分处理一个单独的关注点。分层设计中的层就是关注点的一个实例。</p>
+<p><strong>MVC</strong>：Model-模型+View-视图+Controller-控制器的简称，实现了模型与其表示之间的解耦。通常来说MVC是架构模式，涉及面较设计模式宽泛；惯用法—-&gt; 设计模式—-&gt;架构模式  三层递进。</p>
+<p>Model是应用的核心组件，代表信息的源头，包含应用程序的业务逻辑、数据状态和规则。View是模型的可视化表示，是数据的表现形式。Controller是模型与试图之间的连接器或粘合剂，M和V之间的通信需要通过C进行。</p>
+<p>基于MVC衍生出很多不同的模式：如MVT(Python的WEB框架Django)、MVA(模型-视图-适配器)、MVP(模型-视图-演示者)等。带来好处是，分工明确，维护容易。</p>
+<p><strong>用例</strong>：盖房子，水电工、瓦工等，餐馆里服务员接受订单，饭菜厨师做。</p>
+<p><strong>实现</strong>:   智能的模型、纤薄的控制器和傻瓜式的视图。</p>
+<p>​           示例：P67页  打印引用语例子</p>
+</blockquote>
+<h5 id="3-代理模式"><a href="#3-代理模式" class="headerlink" title="3. 代理模式"></a>3. 代理模式</h5><blockquote>
+<p>**代理模式(Proxy)**：顾名思义，代理被访问的对象或访问的对象，该模式用于在访问实际对象之前要执行相关的操作。有如下四种：</p>
+<blockquote>
+<ol>
+<li><strong>远程代理</strong>：作为实际存在于不同地址空间（网络服务器）中的对象的本地表示。</li>
+<li><strong>虚拟代理</strong>：使用延迟初始化将计算开销大的对象的创建延迟到需要的时候进行。</li>
+<li><strong>保护/防护代理</strong>，控制对于敏感对象的访问。</li>
+<li><strong>智能代理/引用代理</strong>：对象被访问时候执行额外的操作，如引用计数或线程安全检查。</li>
+</ol>
+</blockquote>
+<p><strong>用例</strong>：<strong>正向代理</strong>（VPN)，代理的对象是客户端，服务器不知道是谁在访问；</p>
+<p>​          **反向代理(**Nginx), 代理的对象是访问的服务器，客户端不知道访问的是哪个服务器。</p>
+</blockquote>
+<h4 id="第九章-职责链模式"><a href="#第九章-职责链模式" class="headerlink" title="第九章 职责链模式"></a>第九章 职责链模式</h4><blockquote>
+<p><strong>职责链模式</strong>：类似于计算机网络，当希望用多个关联的对象满足单个请求，或者事先不知道某个特定的请求应该由对象链上的哪个来处理时候，就会使用职责链模式。</p>
+<p><strong>应用程序</strong>层面，关注点是  <strong>对象</strong>  和 <strong>请求流</strong>上。客户端只知道第一个处理元素，不知道所有处理元素的引用，每个处理元素知道它的下一个相邻节点，也即后继元素，而不知道其他元素。类似于单链表，不允许双向导航，实现了发送方（客户端） 与 接收方（处理元素）之间的解耦。</p>
+<p><strong>思想</strong>：松耦合系统背后的思想是简化维护的过程，同时更容易理解系统是如何工作；</p>
+<p><strong>用例</strong>：1.自动取款机/贩卖机，当纸币从单一入口进去，不同的纸币被分配到合适的容器中。2.软件领域：Java的servlet过滤器是在HTTP请求到达目标之前执行的代码片段。在使用servlet过滤器时候，有一个过滤器链。每个过滤器执行不同的操作（用户身份验证、日志记录、数据压缩等），并将请求转发到下一个过滤器，知道链耗尽，或者出现错误时中断，例如身份验证连续验证三次失败。3. 财务审批工作流。</p>
+<p><strong>实现</strong>：一个简单的基于事件的系统 BOOK P76页。</p>
+</blockquote>
+<h4 id="第十章-命令模式"><a href="#第十章-命令模式" class="headerlink" title="第十章 命令模式"></a>第十章 命令模式</h4><blockquote>
+<p><strong>命令模式(COMMAND）</strong>：该模式将操作（撤销、恢复、复制、粘贴）封装为对象，不必<strong>直接</strong>执行一个命令，它可以按照您的意愿执行。调用该命令的对象 与 知道如何执行该命令的对象解耦。调用程序不需要知道该命令的任何细节。若有必要，可以对多个对象进行分组，以允许调用程序按顺序执行，这在实现多级撤销命令时候非常有用。</p>
+<p><strong>用例</strong>：1. 餐馆吃饭，向服务员点菜。点单的单据就是命令的一个例子。写好订单，服务员放入厨师执行的单据队列中。每个单据都是独立，可以用来执行许多不同的命令。2. GUI按钮和菜单项。3.事务行为和日志。4. 宏。</p>
+<p><strong>实现</strong>：见BOOK P87页</p>
+</blockquote>
+<h4 id="第十一章-观察者模式"><a href="#第十一章-观察者模式" class="headerlink" title="第十一章  观察者模式"></a>第十一章  观察者模式</h4><blockquote>
+</blockquote>
+]]></content>
+      <categories>
+        <category>ITstudy</category>
+      </categories>
+      <tags>
+        <tag>IT</tag>
       </tags>
   </entry>
 </search>

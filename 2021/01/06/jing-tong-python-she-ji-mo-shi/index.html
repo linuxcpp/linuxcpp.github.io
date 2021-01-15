@@ -382,14 +382,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3.7k
+                    4.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    13 分
+                    15 分
                 </div>
                 
 
@@ -407,10 +407,10 @@
                 <h1 align="center">精通Python设计模式</h1>
 
 <h4 id="写在前面的话"><a href="#写在前面的话" class="headerlink" title="写在前面的话"></a>写在前面的话</h4><blockquote>
+<p> <strong>初衷</strong>：日久健忘，有此笔记可略复查，践行DRY原则（Don’t Repeat Yourself）。</p>
 <p> <strong>模式</strong> 即是 一类问题成熟的解决方案，可复用编程解决方案。</p>
 <p> 通俗来说，就是“<strong>套路</strong>”，自古套路得人心，所有的应用都是基于生活的抽象，IT应用也不例外。</p>
 <p> <strong>设计模式</strong>是基于面向对象系统中重复出现的设计问题。之于个人，一个老派的coder出身的ITer，对面向对象的把握也是泛泛了解，当下从<strong>面向对象</strong>（OO）—&gt; <strong>面向构件</strong>（OC）—&gt; <strong>面向服务</strong>（SO），各种层级具有一定抽象。</p>
-<p> <strong>题外</strong>：呜呼，正因此领域的不深入，导致个人第一次的 <strong>系统分析师</strong> 考试 <strong>案例分析</strong> 此方面失分太多，导致结果不尽如人意（差3分）<span class="github-emoji"><span>😺</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f63a.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>。</p>
 <p> <strong>目标</strong>：强化面向对象思维，用OO视角去思考问题。</p>
 </blockquote>
 <img src="/2021/01/06/jing-tong-python-she-ji-mo-shi/cover.jpg" class="" title="封面">
@@ -670,6 +670,20 @@ if __name__ == '__main__':
 </blockquote>
 <p><strong>用例</strong>：<strong>正向代理</strong>（VPN)，代理的对象是客户端，服务器不知道是谁在访问；</p>
 <p>​          **反向代理(**Nginx), 代理的对象是访问的服务器，客户端不知道访问的是哪个服务器。</p>
+</blockquote>
+<h4 id="第九章-职责链模式"><a href="#第九章-职责链模式" class="headerlink" title="第九章 职责链模式"></a>第九章 职责链模式</h4><blockquote>
+<p><strong>职责链模式</strong>：类似于计算机网络，当希望用多个关联的对象满足单个请求，或者事先不知道某个特定的请求应该由对象链上的哪个来处理时候，就会使用职责链模式。</p>
+<p><strong>应用程序</strong>层面，关注点是  <strong>对象</strong>  和 <strong>请求流</strong>上。客户端只知道第一个处理元素，不知道所有处理元素的引用，每个处理元素知道它的下一个相邻节点，也即后继元素，而不知道其他元素。类似于单链表，不允许双向导航，实现了发送方（客户端） 与 接收方（处理元素）之间的解耦。</p>
+<p><strong>思想</strong>：松耦合系统背后的思想是简化维护的过程，同时更容易理解系统是如何工作；</p>
+<p><strong>用例</strong>：1.自动取款机/贩卖机，当纸币从单一入口进去，不同的纸币被分配到合适的容器中。2.软件领域：Java的servlet过滤器是在HTTP请求到达目标之前执行的代码片段。在使用servlet过滤器时候，有一个过滤器链。每个过滤器执行不同的操作（用户身份验证、日志记录、数据压缩等），并将请求转发到下一个过滤器，知道链耗尽，或者出现错误时中断，例如身份验证连续验证三次失败。3. 财务审批工作流。</p>
+<p><strong>实现</strong>：一个简单的基于事件的系统 BOOK P76页。</p>
+</blockquote>
+<h4 id="第十章-命令模式"><a href="#第十章-命令模式" class="headerlink" title="第十章 命令模式"></a>第十章 命令模式</h4><blockquote>
+<p><strong>命令模式(COMMAND）</strong>：该模式将操作（撤销、恢复、复制、粘贴）封装为对象，不必<strong>直接</strong>执行一个命令，它可以按照您的意愿执行。调用该命令的对象 与 知道如何执行该命令的对象解耦。调用程序不需要知道该命令的任何细节。若有必要，可以对多个对象进行分组，以允许调用程序按顺序执行，这在实现多级撤销命令时候非常有用。</p>
+<p><strong>用例</strong>：1. 餐馆吃饭，向服务员点菜。点单的单据就是命令的一个例子。写好订单，服务员放入厨师执行的单据队列中。每个单据都是独立，可以用来执行许多不同的命令。2. GUI按钮和菜单项。3.事务行为和日志。4. 宏。</p>
+<p><strong>实现</strong>：见BOOK P87页</p>
+</blockquote>
+<h4 id="第十一章-观察者模式"><a href="#第十一章-观察者模式" class="headerlink" title="第十一章  观察者模式"></a>第十一章  观察者模式</h4><blockquote>
 </blockquote>
 
             </div>
@@ -1229,7 +1243,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">28.6k</span>&nbsp;字
+                class="white-color">29.2k</span>&nbsp;字
             
             
             
