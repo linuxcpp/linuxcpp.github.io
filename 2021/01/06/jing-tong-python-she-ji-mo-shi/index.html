@@ -691,18 +691,16 @@ if __name__ == '__main__':
 </blockquote>
 <h4 id="第十二章-状态模式"><a href="#第十二章-状态模式" class="headerlink" title="第十二章 状态模式"></a>第十二章 状态模式</h4><blockquote>
 <p><strong>面向对象编程(OOP)</strong> 聚焦于维护相互作用的对象的状态。解决问题时候，<strong>有限状态</strong>机(通常称为状态机) 是一个非常方便的<strong>状态转换</strong>建模工具。</p>
-<p>状态机是一台抽象机器，它具有两个关键属性–状态和转换。状态是系统的当前（激活）状态。状态机的一个很好的特性是可以表示为图（称为状态图），其中每个状态是一个节点，每个转换是两个节点之间的一条线。</p>
-<p>用例：交通灯、自动售货机。在软件工程领域，事件驱动的系统也是一个例子。在事件驱动系统中，从一个状态的转换出发一个事件/消息。如电脑游戏，当主角接近怪物时，怪物可能从守卫状态变换为攻击状态。</p>
+<p>状态机是一台抽象机器，它具有两个关键属性–状态和转换。状态是系统的当前（激活）状态。状态机的一个很好的特性是可以表示为<strong>图</strong>（称为状态图），其中每个状态是一个节点，每个转换是两个节点之间的一条线。</p>
+<p><strong>用例</strong>：交通灯、自动售货机。在软件工程领域，事件驱动的系统也是一个例子。在事件驱动系统中，从一个状态的转换出发一个事件/消息。如电脑游戏，当主角接近怪物时，怪物可能从守卫状态变换为攻击状态。</p>
 <p><code>Thomas Jaeger</code>的话：</p>
   <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"># 状态设计模式能够在上下文中对无线数量的状态进行完全封装，以提高可维护性和灵活性。<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>实现：</p>
+<p><strong>实现</strong>：</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"># Python 中复用 state_machine 模块 中State、Event、acts_as_state_machine
 # 安装：pip install state_machine
 # 使用装饰器 @before、@after 
-# 具体示例：BOOK P104<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
-</blockquote>
+# 具体示例：BOOK P104<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></blockquote>
 
             </div>
             <hr/>
