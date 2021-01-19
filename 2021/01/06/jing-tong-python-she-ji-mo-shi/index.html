@@ -382,14 +382,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    4.3k
+                    4.8k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    15 分
+                    17 分
                 </div>
                 
 
@@ -684,6 +684,24 @@ if __name__ == '__main__':
 <p><strong>实现</strong>：见BOOK P87页</p>
 </blockquote>
 <h4 id="第十一章-观察者模式"><a href="#第十一章-观察者模式" class="headerlink" title="第十一章  观察者模式"></a>第十一章  观察者模式</h4><blockquote>
+<p><strong>观察者模式（Observer）</strong>： 当需要在另一个状态变化更新一组对象时，该模式有应用的必要。其描述单个对象（发布者，也成为主题或可观察对象） 和一个或多个对象（订阅者，也成为观察者）之间的发布-订阅关系。</p>
+<p><strong>用例：</strong>1. 对于MVC框架来说，发布者是模型，订阅者是视图，MVC模式中 往往 多种视图使用同一模型的数据，当修改模型时候，需要更新两个视图。2. 拍卖场景，竞买人是订阅者，拍卖人为主题，更新竞买价格，并将新价格广播给所有的竞买人。3. RSS订阅和社交媒体的关注。4.事件驱动系统：事件是主题，监听器是订阅者。</p>
+<p><strong>思想：</strong>与关注点分离原则思想相同，即增加发布者和订阅者之间的解耦。</p>
+<p><strong>实现</strong>：见BOOK P92页</p>
+</blockquote>
+<h4 id="第十二章-状态模式"><a href="#第十二章-状态模式" class="headerlink" title="第十二章 状态模式"></a>第十二章 状态模式</h4><blockquote>
+<p><strong>面向对象编程(OOP)</strong> 聚焦于维护相互作用的对象的状态。解决问题时候，<strong>有限状态</strong>机(通常称为状态机) 是一个非常方便的<strong>状态转换</strong>建模工具。</p>
+<p>状态机是一台抽象机器，它具有两个关键属性–状态和转换。状态是系统的当前（激活）状态。状态机的一个很好的特性是可以表示为图（称为状态图），其中每个状态是一个节点，每个转换是两个节点之间的一条线。</p>
+<p>用例：交通灯、自动售货机。在软件工程领域，事件驱动的系统也是一个例子。在事件驱动系统中，从一个状态的转换出发一个事件/消息。如电脑游戏，当主角接近怪物时，怪物可能从守卫状态变换为攻击状态。</p>
+<p><code>Thomas Jaeger</code>的话：</p>
+  <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"># 状态设计模式能够在上下文中对无线数量的状态进行完全封装，以提高可维护性和灵活性。<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>实现：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"># Python 中复用 state_machine 模块 中State、Event、acts_as_state_machine
+# 安装：pip install state_machine
+# 使用装饰器 @before、@after 
+# 具体示例：BOOK P104<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
 </blockquote>
 
             </div>
@@ -1243,7 +1261,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">29.2k</span>&nbsp;字
+                class="white-color">29.7k</span>&nbsp;字
             
             
             
