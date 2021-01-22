@@ -1702,7 +1702,7 @@ def log(msg, when=None):
 </blockquote>
 <img src="/2021/01/06/jing-tong-python-she-ji-mo-shi/DesignPattern.png" class="" title="封面">
 
-<h4 id="第一章：-工厂模式-Factory"><a href="#第一章：-工厂模式-Factory" class="headerlink" title="第一章： 工厂模式(Factory)"></a>第一章： 工厂模式(Factory)</h4><blockquote>
+<h4 id="第一章-工厂模式-Factory"><a href="#第一章-工厂模式-Factory" class="headerlink" title="第一章 : 工厂模式(Factory)"></a>第一章 : 工厂模式(Factory)</h4><blockquote>
 <p>顾名思义，典型的<strong>创建型</strong>模式，包含 <strong>工厂</strong> 和 <strong>抽象工厂</strong> 两种。</p>
 <p><strong>客户端</strong>(调用对象的代码) 在不知道对象来源(对象由哪个类产生)的情况下，要求创建一个对象。思想出发点是：通过将<strong>创建对象</strong>的代码 与 <strong>使用对象</strong>的代码<strong>解耦</strong>，简化对象创建过程。</p>
 </blockquote>
@@ -1818,7 +1818,7 @@ def memoize(fn):
 <p>​            2 为实现者定义ClsFetcher类</p>
 <p>​            3 定义多个实现类 implementation</p>
 </blockquote>
-<h4 id="第七章-外观模式"><a href="#第七章-外观模式" class="headerlink" title="第七章 外观模式"></a>第七章 外观模式</h4><blockquote>
+<h4 id="第七章：外观模式"><a href="#第七章：外观模式" class="headerlink" title="第七章：外观模式"></a>第七章：外观模式</h4><blockquote>
 <p>外观设计： 帮助我们隐藏系统内部复杂特性，并通过一个简化的接口，只向客户端公开需要的内容。</p>
 <p>用例： 计算机启动过程的封装；汽车/摩托车钥匙；银行客服等；</p>
 <p>实现： </p>
@@ -1908,7 +1908,7 @@ def main():
 if __name__ == '__main__':
     main()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </blockquote>
-<h4 id="第八章-其他结构型模式"><a href="#第八章-其他结构型模式" class="headerlink" title="第八章 其他结构型模式"></a>第八章 其他结构型模式</h4><blockquote>
+<h4 id="第八章-其他结构型模式"><a href="#第八章-其他结构型模式" class="headerlink" title="第八章:   其他结构型模式"></a>第八章:   其他结构型模式</h4><blockquote>
 <p>还存在其他结构型模式：享元模式、MVC模式、代理模式。</p>
 </blockquote>
 <h5 id="1-享元模式"><a href="#1-享元模式" class="headerlink" title="1. 享元模式"></a>1. 享元模式</h5><blockquote>
@@ -1940,25 +1940,25 @@ if __name__ == '__main__':
 <p><strong>用例</strong>：<strong>正向代理</strong>（VPN)，代理的对象是客户端，服务器不知道是谁在访问；</p>
 <p>​          **反向代理(**Nginx), 代理的对象是访问的服务器，客户端不知道访问的是哪个服务器。</p>
 </blockquote>
-<h4 id="第九章-职责链模式"><a href="#第九章-职责链模式" class="headerlink" title="第九章 职责链模式"></a>第九章 职责链模式</h4><blockquote>
+<h4 id="第九章-职责链模式"><a href="#第九章-职责链模式" class="headerlink" title="第九章: 职责链模式"></a>第九章: 职责链模式</h4><blockquote>
 <p><strong>职责链模式</strong>：类似于计算机网络，当希望用多个关联的对象满足单个请求，或者事先不知道某个特定的请求应该由对象链上的哪个来处理时候，就会使用职责链模式。</p>
 <p><strong>应用程序</strong>层面，关注点是  <strong>对象</strong>  和 <strong>请求流</strong>上。客户端只知道第一个处理元素，不知道所有处理元素的引用，每个处理元素知道它的下一个相邻节点，也即后继元素，而不知道其他元素。类似于单链表，不允许双向导航，实现了发送方（客户端） 与 接收方（处理元素）之间的解耦。</p>
 <p><strong>思想</strong>：松耦合系统背后的思想是简化维护的过程，同时更容易理解系统是如何工作；</p>
 <p><strong>用例</strong>：1.自动取款机/贩卖机，当纸币从单一入口进去，不同的纸币被分配到合适的容器中。2.软件领域：Java的servlet过滤器是在HTTP请求到达目标之前执行的代码片段。在使用servlet过滤器时候，有一个过滤器链。每个过滤器执行不同的操作（用户身份验证、日志记录、数据压缩等），并将请求转发到下一个过滤器，知道链耗尽，或者出现错误时中断，例如身份验证连续验证三次失败。3. 财务审批工作流。</p>
 <p><strong>实现</strong>：一个简单的基于事件的系统 BOOK P76页。</p>
 </blockquote>
-<h4 id="第十章-命令模式"><a href="#第十章-命令模式" class="headerlink" title="第十章 命令模式"></a>第十章 命令模式</h4><blockquote>
+<h4 id="第十章-命令模式"><a href="#第十章-命令模式" class="headerlink" title="第十章: 命令模式"></a>第十章: 命令模式</h4><blockquote>
 <p><strong>命令模式(COMMAND）</strong>：该模式将操作（撤销、恢复、复制、粘贴）封装为对象，不必<strong>直接</strong>执行一个命令，它可以按照您的意愿执行。调用该命令的对象 与 知道如何执行该命令的对象解耦。调用程序不需要知道该命令的任何细节。若有必要，可以对多个对象进行分组，以允许调用程序按顺序执行，这在实现多级撤销命令时候非常有用。</p>
 <p><strong>用例</strong>：1. 餐馆吃饭，向服务员点菜。点单的单据就是命令的一个例子。写好订单，服务员放入厨师执行的单据队列中。每个单据都是独立，可以用来执行许多不同的命令。2. GUI按钮和菜单项。3.事务行为和日志。4. 宏。</p>
 <p><strong>实现</strong>：见BOOK P87页</p>
 </blockquote>
-<h4 id="第十一章-观察者模式"><a href="#第十一章-观察者模式" class="headerlink" title="第十一章  观察者模式"></a>第十一章  观察者模式</h4><blockquote>
+<h4 id="第十一章-观察者模式"><a href="#第十一章-观察者模式" class="headerlink" title="第十一章:  观察者模式"></a>第十一章:  观察者模式</h4><blockquote>
 <p><strong>观察者模式（Observer）</strong>： 当需要在另一个状态变化更新一组对象时，该模式有应用的必要。其描述单个对象（发布者，也成为主题或可观察对象） 和一个或多个对象（订阅者，也成为观察者）之间的发布-订阅关系。</p>
 <p><strong>用例：</strong>1. 对于MVC框架来说，发布者是模型，订阅者是视图，MVC模式中 往往 多种视图使用同一模型的数据，当修改模型时候，需要更新两个视图。2. 拍卖场景，竞买人是订阅者，拍卖人为主题，更新竞买价格，并将新价格广播给所有的竞买人。3. RSS订阅和社交媒体的关注。4.事件驱动系统：事件是主题，监听器是订阅者。</p>
 <p><strong>思想：</strong>与关注点分离原则思想相同，即增加发布者和订阅者之间的解耦。</p>
 <p><strong>实现</strong>：见BOOK P92页</p>
 </blockquote>
-<h4 id="第十二章-状态模式"><a href="#第十二章-状态模式" class="headerlink" title="第十二章 状态模式"></a>第十二章 状态模式</h4><blockquote>
+<h4 id="第十二章-状态模式"><a href="#第十二章-状态模式" class="headerlink" title="第十二章:  状态模式"></a>第十二章:  状态模式</h4><blockquote>
 <p><strong>面向对象编程(OOP)</strong> 聚焦于维护相互作用的对象的状态。解决问题时候，<strong>有限状态</strong>机(通常称为状态机) 是一个非常方便的<strong>状态转换</strong>建模工具。</p>
 <p>状态机是一台抽象机器，它具有两个关键属性–状态和转换。状态是系统的当前（激活）状态。状态机的一个很好的特性是可以表示为<strong>图</strong>（称为状态图），其中每个状态是一个节点，每个转换是两个节点之间的一条线。</p>
 <p><strong>用例</strong>：交通灯、自动售货机。在软件工程领域，事件驱动的系统也是一个例子。在事件驱动系统中，从一个状态的转换出发一个事件/消息。如电脑游戏，当主角接近怪物时，怪物可能从守卫状态变换为攻击状态。</p>
@@ -1969,7 +1969,23 @@ if __name__ == '__main__':
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"># Python 中复用 state_machine 模块 中State、Event、acts_as_state_machine
 # 安装：pip install state_machine
 # 使用装饰器 @before、@after 
-# 具体示例：BOOK P104<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></blockquote>
+# 具体示例：BOOK P104<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+</blockquote>
+<h4 id="第十三章-其他行为型模式"><a href="#第十三章-其他行为型模式" class="headerlink" title="第十三章:  其他行为型模式"></a>第十三章:  其他行为型模式</h4><h5 id="1-解释器模式"><a href="#1-解释器模式" class="headerlink" title="1. 解释器模式"></a>1. 解释器模式</h5><blockquote>
+<p><strong>思想：</strong>非初学者用户和领域专家能够使用简单的语言，在处理应用程序时候获得更高的效率。</p>
+<p><strong>用例：</strong>音乐家是解释器的一种模式。乐谱音乐的语言，音乐家是这种语法的解释者。</p>
+<p><strong>目标：</strong>向专家（通常不是程序员）提供正确的编程抽象，以使其具有生产力。解释器同时也适应于物联网（IoT)。</p>
+<p>解释器模式用于向高级用户和领域专家提供类似于编程的框架，但不暴露编程语言的复杂性。这是通过实现DSL来完成的。内部DSL构建在宿主编程语言之上并依赖于它，而外部DSL是从头实现的，不依赖于现有编程语言。解释器只与内部DSL相关。</p>
+<p><strong>实现</strong>：见BOOK P113页</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"># 许多Python模板引擎使用内部DSL。
+# PyT是用于生成(X)HTML的高性能Python DSL
+# 虽然解析通常不是由解释器模式处理的，但实现部分，我们使用Pyparser创建了一个控制智能房屋的DSL，并且发现使用一个好的解析工具可以简化使用模式匹配来解释结果的过程。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+</blockquote>
+<h5 id="2-策略模式"><a href="#2-策略模式" class="headerlink" title="2. 策略模式"></a>2. 策略模式</h5><blockquote>
+<p><strong>思想</strong>：策略模式提倡使用多种算法来解决问题。它的杀手级特性是：在运行透明地切换算法（客户端代码不知道这种变化）。在成本、事件、方便等条件之间存在权衡取舍。</p>
+<p><strong>用例</strong>：排序（顺序、二分）、加密、日志等。</p>
+<p><strong>实现</strong>：见BOOKP119页。</p>
+</blockquote>
 ]]></content>
       <categories>
         <category>ITstudy</category>
