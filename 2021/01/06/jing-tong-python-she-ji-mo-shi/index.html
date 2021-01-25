@@ -382,14 +382,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    5.3k
+                    5.9k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    18 分
+                    21 分
                 </div>
                 
 
@@ -717,6 +717,74 @@ if __name__ == '__main__':
 <p><strong>用例</strong>：排序（顺序、二分）、加密、日志等。</p>
 <p><strong>实现</strong>：见BOOKP119页。</p>
 </blockquote>
+<h5 id="3-备忘录模式"><a href="#3-备忘录模式" class="headerlink" title="3. 备忘录模式"></a>3. 备忘录模式</h5><blockquote>
+<p><strong>思想</strong>： 有时候需要轻松获取对象的内部状态快照，以便在需要时候使用它来恢复对象。</p>
+<p><strong>组成</strong>： 备忘录：一个包含基本状态存储和检索能力的简单对象。</p>
+<p>​           发起人：一个获取和设置备忘录实例值得对象。</p>
+<p>​           管理者：一个可以存储和检索以前创建的所有备忘录实例的对象。</p>
+<p>与 命令模式  有很多相似之处。</p>
+<p><strong>用例</strong>：诸如用语的词典，不停的更新，若了解该语言过去某个时候是如何使用的，就要查看旧版本。为用户提供某种撤销 和恢复功能。另一种用法实现 一个带有确认/取消按钮的UI的对话框。</p>
+<p>实现：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"># 完整示例：BOOK P124页
+# 复用pickle 工具包或 模块来实现一个简单的  引用
+from pickle import dumps,loads
+
+class Quote:
+    def __init__(self,text,author):
+        pass
+    
+    def save_state(self):
+        pass
+    
+    def restore_state(self,memnto):
+        pass
+    
+    def __str__(self):
+        pass <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</blockquote>
+<h5 id="4-迭代器模式"><a href="#4-迭代器模式" class="headerlink" title="4. 迭代器模式"></a>4. 迭代器模式</h5><blockquote>
+<p><strong>WIKI 百科定义</strong>：<br>    迭代器是一种设计模式,其中迭代器用于遍历容器并访问容器的元素。迭代器模式将算法与容器解耦。</p>
+<p>迭代器已经成为Python语言特性之一，在上下文中广泛使用。</p>
+<p><strong>用例</strong>: 1. 在教室里，老师给每个学生发课本；</p>
+<p>​         2.餐馆服务员在一张桌子旁为客人服务，并为每个人点菜。</p>
+<p>当有如下行为时候，使用迭代器模式：</p>
+<pre><code>1. 简化集合中的导航操作；
+ 2. 在任意点获取集合中的下一个对象；
+ 3. 在完成对集合的遍历后停止。</code></pre>
+<p>Python 中容器或序列类型有：列表、字符串、元组、字典、集合等；</p>
+<p><strong>实现</strong>：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"># 自定义，需要实现 __iter()__ 和 __next()__ 方法
+# 一个迭代器 类
+# 一个容器对象类的实例
+# 通过实例属性 设置 容器实例对象 初始化迭代器对象。
+# 完整示例见 BOOK P127页<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</blockquote>
+<h5 id="5-模板模式"><a href="#5-模板模式" class="headerlink" title="5. 模板模式"></a>5. 模板模式</h5><blockquote>
+<p>思想： 在实现具有结构相似性的算法时，我们使用模板来消除冗余代码。</p>
+<p>用例：同一家公司的工人来说的日常工作非常接近于模板的设计模式。所有的工人都或多或少遵循相同日程，但日程的各个部分有很大不同。</p>
+<p>实现：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"># 实现一个 广告牌 模板算法
+def generate_banner(msg,style):
+    print('---start of banner ---')
+    print(style(msg))
+    print('---end of banner ---nn')
+    
+def dot_style(msg):
+    pass
+
+def admire_style(msg):
+    pass
+
+def cow_style(msg):
+    pass
+
+def main():
+    styles = [dots_style,admire_style,cow_style]
+    msg = 'happy coding'
+    [generate_banner(msg,style) for style in styles]
+
+if __name__ == "__main__":
+    main()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></blockquote>
 
             </div>
             <hr/>
@@ -1272,7 +1340,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">31.3k</span>&nbsp;字
+                class="white-color">32k</span>&nbsp;字
             
             
             
