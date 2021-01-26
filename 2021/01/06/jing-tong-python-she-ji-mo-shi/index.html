@@ -382,14 +382,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    5.9k
+                    7.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    21 分
+                    26 分
                 </div>
                 
 
@@ -454,6 +454,7 @@ class PersonForm(forms.Form):
 <p>如何知道使用 <strong>工厂方法</strong> 还是 <strong>抽象工厂</strong> 方法？</p>
 <p><strong>答</strong>： 通常从简单的工厂方法开始。若发现需要多个工厂方法，且将这些方法组合起来创建一系列对象是有意义的，就用抽象工厂。</p>
 </blockquote>
+<p><img src="https://gitee.com/linuxcpp/img/raw/master/img/20210126171856.gif"></p>
 <h4 id="第二章：建造者模式-Builder"><a href="#第二章：建造者模式-Builder" class="headerlink" title="第二章：建造者模式(Builder)"></a>第二章：建造者模式(Builder)</h4><blockquote>
 <p> 如需创建  一个由多个部分组成的对象，而且创建过程需要一步一步地完成，只有创建了所有部分，该对象才是完整的。这种情况下 建造者模式 可以提供帮助。</p>
 <p> 建造者模式：将<strong>复杂</strong>对象的<strong>构建</strong>与其<strong>表示</strong>分离。参与者包含两方面：<strong>建造者</strong>(builder)和<strong>指挥者</strong>(director)。</p>
@@ -640,7 +641,7 @@ if __name__ == '__main__':
     main()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </blockquote>
 <h4 id="第八章-其他结构型模式"><a href="#第八章-其他结构型模式" class="headerlink" title="第八章:   其他结构型模式"></a>第八章:   其他结构型模式</h4><blockquote>
-<p>还存在其他结构型模式：享元模式、MVC模式、代理模式。</p>
+<p>还存在其他结构型模式：<strong>享元模式、MVC模式、代理模式</strong>。</p>
 </blockquote>
 <h5 id="1-享元模式"><a href="#1-享元模式" class="headerlink" title="1. 享元模式"></a>1. 享元模式</h5><blockquote>
 <p><strong>WHY</strong>： OOP’System 可能会由于对象创建的开销面临性能问题。这在嵌入式系统、PDA等移动设备中非常明显。</p>
@@ -702,6 +703,7 @@ if __name__ == '__main__':
 # 使用装饰器 @before、@after 
 # 具体示例：BOOK P104<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 </blockquote>
+<p><img src="https://gitee.com/linuxcpp/img/raw/master/img/20210126171937.png"></p>
 <h4 id="第十三章-其他行为型模式"><a href="#第十三章-其他行为型模式" class="headerlink" title="第十三章:  其他行为型模式"></a>第十三章:  其他行为型模式</h4><h5 id="1-解释器模式"><a href="#1-解释器模式" class="headerlink" title="1. 解释器模式"></a>1. 解释器模式</h5><blockquote>
 <p><strong>思想：</strong>非初学者用户和领域专家能够使用简单的语言，在处理应用程序时候获得更高的效率。</p>
 <p><strong>用例：</strong>音乐家是解释器的一种模式。乐谱音乐的语言，音乐家是这种语法的解释者。</p>
@@ -749,8 +751,8 @@ class Quote:
 <p>​         2.餐馆服务员在一张桌子旁为客人服务，并为每个人点菜。</p>
 <p>当有如下行为时候，使用迭代器模式：</p>
 <pre><code>1. 简化集合中的导航操作；
- 2. 在任意点获取集合中的下一个对象；
- 3. 在完成对集合的遍历后停止。</code></pre>
+2. 在任意点获取集合中的下一个对象；
+3. 在完成对集合的遍历后停止。</code></pre>
 <p>Python 中容器或序列类型有：列表、字符串、元组、字典、集合等；</p>
 <p><strong>实现</strong>：</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"># 自定义，需要实现 __iter()__ 和 __next()__ 方法
@@ -784,7 +786,63 @@ def main():
     [generate_banner(msg,style) for style in styles]
 
 if __name__ == "__main__":
-    main()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></blockquote>
+    main()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</blockquote>
+<h4 id="第十四章-响应式编程中的观察者模式"><a href="#第十四章-响应式编程中的观察者模式" class="headerlink" title="第十四章 响应式编程中的观察者模式"></a>第十四章 响应式编程中的观察者模式</h4><blockquote>
+<p><strong>观察者</strong>模式，一般用于在给定对象的状态发生变化时通知一组对象。这种类型的传统观察者应用发布-订阅原则，允许我们对一些对象更改事件作出反应。</p>
+<p>当必须处理的许多事件并且其中一些事件相互依赖时，传统的方法可能会导致复杂、难以维护的代码。而 <strong>响应式编程</strong> 的范例 为我们提供了一个有趣的选择，简单地说，响应式编程对许多事件、事件流作出反应，并保持整洁。</p>
+<p><strong>用例：</strong> Excel中表格之间的关联，一个单元格内容修改，所关联的公式的单元格内容也会变化。Python中RxPY是一个响应式编程概念的实现。</p>
+<p><strong>集合管道</strong>：集合管道是一种编程模式，在这种模式中，您将一些计算组织为一系列操作，这些操作将收集一个操作的输出，并将其输入到下一个操作中。 如在处理数据时候，对序列对象进行map（映射）、reduce（规约）、groupby（聚合）等操作。</p>
+<p><strong>核心</strong>：对数据流和事件流做出反应，就像在自然界看到的水流一样。</p>
+<p><strong>实现</strong>：见BOOK P136页。</p>
+</blockquote>
+<p><img src="https://gitee.com/linuxcpp/img/raw/master/img/20210126171733.jpeg"></p>
+<h4 id="第十五章-微服务与面向云的模式"><a href="#第十五章-微服务与面向云的模式" class="headerlink" title="第十五章 微服务与面向云的模式"></a>第十五章 微服务与面向云的模式</h4><blockquote>
+<p><strong>微服务</strong>：来源于工程团队不断的时间，以确保服务器、服务交付和操作有更高的响应性和伸缩性。该模式可以将应用程序构建为一组松散耦合的协作服务。在这样的体系结构样式中，应用程序可能由订单管理服务、客户管理服务等服务组成，并独立地开发和部署服务。类似于现代建筑风格。</p>
+<p><strong>用例</strong>：注入很多的异步微服务开发平台，解决分布式数据管理问题，专注于业务逻辑。</p>
+<p>一般构建如下特征的应用程序时候，需考虑微服务体系结构的设计：</p>
+<ol>
+<li>支持不同客户端，桌面或移动客户端等；</li>
+<li>有一个供第三方使用的API；</li>
+<li>必须使用消息传递与其他应用程序通信；</li>
+<li>通过访问数据库、与其他系统通信以及返回正确类型的响应（JSON、ＸＭＬ等）；</li>
+<li>有对应于应用程序的不同功能区域的逻辑组件。</li>
+</ol>
+<p><strong>实现</strong>：微服务往往跟<strong>容器技术</strong>结合使用，如Ｄｏｃｋｅｒ，这方面类似于Python开发中每个项目对应不同的 <strong>虚拟环境</strong> （VirtualEnv）。</p>
+<p>分类：</p>
+<pre><code>1. 重试模式
+ 2. 断路器模式
+ 3. 旁路缓存模式
+ 4. 节流模式</code></pre>
+</blockquote>
+<h5 id="1-重试模式"><a href="#1-重试模式" class="headerlink" title="1. 重试模式"></a>1. 重试模式</h5><blockquote>
+<p><strong>重试</strong> 是微服务 和 基于云的基础设施环境中需要日益增多的一种方法。在这些环境中，组件彼此协作，但不是由相同的团队开发、部署和操作的。</p>
+<p>WHY： 日常操作中，程序可能经历所谓的瞬时故障或失败，这意味着一些小问题看起来像故障，但其实并不是由程序本身导致的，而是由于网络或外部服务器/服务性能限制造成的。</p>
+<p>建议使用重试模式，以减轻在于外部组件或服务通信时候，由于网络故障或服务器过载而识别的瞬时故障信息。</p>
+<p>重试模式，属于容错机制范畴(还有超时），往往通过参数来调整重试策略，比如 <strong>固定等待</strong> （两次重试之间等待一个固定时间）或 <strong>指数退避</strong>（随着时间的推移，以增量的方式增加重试时间的长度）</p>
+</blockquote>
+<h5 id="2-断路器模式"><a href="#2-断路器模式" class="headerlink" title="2. 断路器模式"></a>2. 断路器模式</h5><blockquote>
+<p><strong>WHY：</strong>使用断路器，可以将脆弱的函数调用（或与外部服务的集成点）包装在一个特殊的断路器对象中，用于监视故障。一旦故障达到某一阀值，断路器就会跳闸，进一步调用都会返回错误，从而保护调用。</p>
+<p>断路器也是一种容错机制，Python中  可以使用PyBreak库在应用程序中添加断路器。</p>
+</blockquote>
+<h5 id="3-旁路缓存模式"><a href="#3-旁路缓存模式" class="headerlink" title="3. 旁路缓存模式"></a>3. 旁路缓存模式</h5><blockquote>
+<p><strong>WHY:</strong> 对于不经常修改的数据和不依赖于存储中的一组条目（多个键）的一致性的数据存储，旁路模式非常有用。一般有两种情况：</p>
+<pre><code>1. 需获取数据时候，若从缓存中找到，就返回，没找到，再从数据库中读取，将读取项放入缓存并返回它。类似于 程序运行  内存加载。
+ 2. 更新数据项时候，在数据库写入该项，并从缓存中删除相应的数据项。</code></pre>
+</blockquote>
+<h5 id="4-节流模式"><a href="#4-节流模式" class="headerlink" title="4. 节流模式"></a>4. 节流模式</h5><blockquote>
+<p><strong>WHY:</strong> 服务是一种资源，访问可用性资源往往是有代价的，所以必要情况下，资源应采取一定的访问控制保护机制，并确保服务不会因为某个特定的租户而不堪重负, 防止被用户过度使用。</p>
+<p><strong>用例：</strong>对于某些WEB API 服务，将总访问量限制在N次/每天；限制已验证用户的读写次数。</p>
+</blockquote>
+<h4 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h4><blockquote>
+<p>“<strong>设计模式是被发现的，而不是被发明的</strong>”。</p>
+<p>​                                                          —Alex Martelli 另一位Python的重要贡献者。</p>
+<p>作为一本“简约”自学参考书籍，书本的章节清晰，入点比较大众化，适合一般阅读。</p>
+<p>之所以对此书做了笔记，<strong>本因</strong>是个人作为从“过程编程”时代的过来人，对面向对象的抽象概念了解不是很透; <strong>直接因素</strong>是个人在2020年度的 软考高级考试–系统分析师中，面向对象方面失分较多，最终在案例上差了3分，甚觉哀感。所以忙活了手指头，摘记了此书的一部分，供以后随手参阅。</p>
+<p>​                                                                                                白馍馍</p>
+<p>​                                                                                             2021-01-26</p>
+</blockquote>
+<p><img src="https://gitee.com/linuxcpp/img/raw/master/img/20210126171715.jpeg"></p>
 
             </div>
             <hr/>
@@ -1340,7 +1398,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">32k</span>&nbsp;字
+                class="white-color">33.5k</span>&nbsp;字
             
             
             
