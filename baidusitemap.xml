@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://daozheng.wang/2021/01/27/shan-hai-yi-shou-zhi/</loc>
+    <lastmod>2021-01-28</lastmod>
+  </url>
+  <url>
+    <loc>http://daozheng.wang/2020/12/31/du-effective-python-bian-xie-gao-zhi-liang-python-dai-ma-de-59-ge-you-xiao-fang-fa-xiao-ji/</loc>
+    <lastmod>2021-01-27</lastmod>
+  </url>
+  <url>
     <loc>http://daozheng.wang/2021/01/06/jing-tong-python-she-ji-mo-shi/</loc>
     <lastmod>2021-01-26</lastmod>
   </url>
   <url>
     <loc>http://daozheng.wang/2021/01/19/han-yu-yu-ying-yu-de-jiao-rong/</loc>
     <lastmod>2021-01-19</lastmod>
-  </url>
-  <url>
-    <loc>http://daozheng.wang/2020/12/31/du-effective-python-bian-xie-gao-zhi-liang-python-dai-ma-de-59-ge-you-xiao-fang-fa-xiao-ji/</loc>
-    <lastmod>2021-01-13</lastmod>
   </url>
   <url>
     <loc>http://daozheng.wang/2020/12/24/hui-yi-fu-qin-he-wo-yi-xie-shi/</loc>
