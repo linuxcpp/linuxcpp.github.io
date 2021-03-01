@@ -4,7 +4,7 @@
   <url>
     <loc>http://daozheng.wang/2021/02/28/jia-ting-jiao-yu-xie-ci-lu/</loc>
     
-    <lastmod>2021-02-28</lastmod>
+    <lastmod>2021-03-01</lastmod>
     
   </url>
   
@@ -186,7 +186,7 @@
 
   <url>
     <loc>http://daozheng.wang/</loc>
-    <lastmod>2021-02-28</lastmod>
+    <lastmod>2021-03-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -194,49 +194,49 @@
   
   <url>
     <loc>http://daozheng.wang/tags/%E8%AF%BB%E4%B9%A6/</loc>
-    <lastmod>2021-02-28</lastmod>
+    <lastmod>2021-03-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://daozheng.wang/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2021-02-28</lastmod>
+    <lastmod>2021-03-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://daozheng.wang/tags/Info/</loc>
-    <lastmod>2021-02-28</lastmod>
+    <lastmod>2021-03-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://daozheng.wang/tags/Book/</loc>
-    <lastmod>2021-02-28</lastmod>
+    <lastmod>2021-03-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://daozheng.wang/tags/%E6%91%98%E8%AE%B0/</loc>
-    <lastmod>2021-02-28</lastmod>
+    <lastmod>2021-03-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://daozheng.wang/tags/IT/</loc>
-    <lastmod>2021-02-28</lastmod>
+    <lastmod>2021-03-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://daozheng.wang/tags/%E9%A3%8E%E6%99%AF/</loc>
-    <lastmod>2021-02-28</lastmod>
+    <lastmod>2021-03-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -244,36 +244,43 @@
 
   
   <url>
+    <loc>http://daozheng.wang/categories/%E8%AF%BB%E4%B9%A6/</loc>
+    <lastmod>2021-03-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://daozheng.wang/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2021-02-28</lastmod>
+    <lastmod>2021-03-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://daozheng.wang/categories/Info/</loc>
-    <lastmod>2021-02-28</lastmod>
+    <lastmod>2021-03-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://daozheng.wang/categories/%E6%91%98%E8%AE%B0/</loc>
-    <lastmod>2021-02-28</lastmod>
+    <lastmod>2021-03-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://daozheng.wang/categories/ITstudy/</loc>
-    <lastmod>2021-02-28</lastmod>
+    <lastmod>2021-03-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://daozheng.wang/categories/%E9%A3%8E%E6%99%AF/</loc>
-    <lastmod>2021-02-28</lastmod>
+    <lastmod>2021-03-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
