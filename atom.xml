@@ -6,7 +6,7 @@
   <link href="http://daozheng.wang/atom.xml" rel="self"/>
   
   <link href="http://daozheng.wang/"/>
-  <updated>2021-03-16T00:27:47.656Z</updated>
+  <updated>2021-04-06T03:05:09.249Z</updated>
   <id>http://daozheng.wang/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>详解Python中的可哈希对象与不可哈希对象</title>
+    <link href="http://daozheng.wang/2021/04/06/xiang-jie-python-zhong-de-ke-ha-xi-dui-xiang-yu-bu-ke-ha-xi-dui-xiang/"/>
+    <id>http://daozheng.wang/2021/04/06/xiang-jie-python-zhong-de-ke-ha-xi-dui-xiang-yu-bu-ke-ha-xi-dui-xiang/</id>
+    <published>2021-04-06T02:45:21.000Z</published>
+    <updated>2021-04-06T03:05:09.249Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 align=&quot;center&quot;&gt;详解Python中的可哈希对象与不可哈希对象&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="http://daozheng.wang/categories/Python/"/>
+    
+    
+    <category term="Python" scheme="http://daozheng.wang/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>文苑撷句</title>
@@ -176,7 +205,7 @@
     <link href="http://daozheng.wang/2020/12/31/du-effective-python-bian-xie-gao-zhi-liang-python-dai-ma-de-59-ge-you-xiao-fang-fa-xiao-ji/"/>
     <id>http://daozheng.wang/2020/12/31/du-effective-python-bian-xie-gao-zhi-liang-python-dai-ma-de-59-ge-you-xiao-fang-fa-xiao-ji/</id>
     <published>2020-12-31T02:56:40.000Z</published>
-    <updated>2021-01-27T02:37:25.165Z</updated>
+    <updated>2021-04-06T02:45:54.217Z</updated>
     
     
       
@@ -191,10 +220,10 @@
     
     
     
-    <category term="ITstudy" scheme="http://daozheng.wang/categories/ITstudy/"/>
+    <category term="Python" scheme="http://daozheng.wang/categories/Python/"/>
     
     
-    <category term="IT" scheme="http://daozheng.wang/tags/IT/"/>
+    <category term="Python" scheme="http://daozheng.wang/tags/Python/"/>
     
   </entry>
   
@@ -498,31 +527,6 @@
         
         
     <summary type="html">&lt;img src=&quot;/2020/12/21/er-ling-yi-jiu-zhi-zhong-qiu/0.jpg&quot; class=&quot;&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="生活记录" scheme="http://daozheng.wang/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
-    
-    
-    <category term="生活记录" scheme="http://daozheng.wang/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>亥冬小温故</title>
-    <link href="http://daozheng.wang/2020/12/21/hai-dong-xiao-wen-gu/"/>
-    <id>http://daozheng.wang/2020/12/21/hai-dong-xiao-wen-gu/</id>
-    <published>2020-12-21T01:45:52.000Z</published>
-    <updated>2021-02-01T01:29:55.041Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;img src=&quot;/2020/12/21/hai-dong-xiao-wen-gu/0.jpg&quot; class=&quot;&quot;</summary>
         
       
     
