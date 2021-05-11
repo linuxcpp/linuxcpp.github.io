@@ -716,6 +716,51 @@
       </tags>
   </entry>
   <entry>
+    <title>戊申月中游万佛湖</title>
+    <url>/2020/12/21/wu-shen-yue-zhong-you-wan-fo-hu/</url>
+    <content><![CDATA[<img src="/2020/12/21/wu-shen-yue-zhong-you-wan-fo-hu/3.jpg" class="" title="万佛岛入口">
+
+
+
+<blockquote>
+<p><strong>碧水谣.戊申月中游万佛湖</strong></p>
+<p>万佛湖岸，金风摇衫。丝竹翠茂深林静，舫舟划叠浪涌山。秋阳灿，波光滟，周郎桥上东风便。﻿</p>
+<p>燕子岛甸，孔雀鸣转。碧水吟长翡玉动，龙山绵卧九凤天。菩萨蛮，香蕴远，二乔不见铜雀山。﻿</p>
+</blockquote>
+<img src="/2020/12/21/wu-shen-yue-zhong-you-wan-fo-hu/0.jpg" class="" title="宝塔">
+
+<hr>
+<img src="/2020/12/21/wu-shen-yue-zhong-you-wan-fo-hu/1.jpg" class="" title="观音">
+
+<hr>
+<img src="/2020/12/21/wu-shen-yue-zhong-you-wan-fo-hu/2.jpg" class="" title="楼台碧水一瞥">
+
+<hr>
+<img src="/2020/12/21/wu-shen-yue-zhong-you-wan-fo-hu/4.jpg" class="" title="楼台碧水一瞥">
+
+<hr>
+<img src="/2020/12/21/wu-shen-yue-zhong-you-wan-fo-hu/5.jpg" class="" title="老树游龙">
+
+<hr>
+<img src="/2020/12/21/wu-shen-yue-zhong-you-wan-fo-hu/6.jpg" class="" title="彩鱼游龙">
+
+<hr>
+<img src="/2020/12/21/wu-shen-yue-zhong-you-wan-fo-hu/7.jpg" class="" title="戏台">
+
+<hr>
+<img src="/2020/12/21/wu-shen-yue-zhong-you-wan-fo-hu/8.jpg" class="" title="长桥">
+
+
+
+]]></content>
+      <categories>
+        <category>生活记录</category>
+      </categories>
+      <tags>
+        <tag>生活记录</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>我和儿子那些事（一）</title>
     <url>/2020/12/21/wo-he-er-zi-na-xie-shi-yi/</url>
     <content><![CDATA[<img src="/2020/12/21/wo-he-er-zi-na-xie-shi-yi/0.jpg" class="" title="前阵子带他玩雪">
@@ -790,51 +835,6 @@
 <img src="/2020/12/21/wo-he-er-zi-na-xie-shi-yi/12.jpg" class="" title="喜欢吃蛋糕">
 
 <img src="/2020/12/21/wo-he-er-zi-na-xie-shi-yi/13.jpg" class="" title="幼儿园第一顿饭">
-
-]]></content>
-      <categories>
-        <category>生活记录</category>
-      </categories>
-      <tags>
-        <tag>生活记录</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>戊申月中游万佛湖</title>
-    <url>/2020/12/21/wu-shen-yue-zhong-you-wan-fo-hu/</url>
-    <content><![CDATA[<img src="/2020/12/21/wu-shen-yue-zhong-you-wan-fo-hu/3.jpg" class="" title="万佛岛入口">
-
-
-
-<blockquote>
-<p><strong>碧水谣.戊申月中游万佛湖</strong></p>
-<p>万佛湖岸，金风摇衫。丝竹翠茂深林静，舫舟划叠浪涌山。秋阳灿，波光滟，周郎桥上东风便。﻿</p>
-<p>燕子岛甸，孔雀鸣转。碧水吟长翡玉动，龙山绵卧九凤天。菩萨蛮，香蕴远，二乔不见铜雀山。﻿</p>
-</blockquote>
-<img src="/2020/12/21/wu-shen-yue-zhong-you-wan-fo-hu/0.jpg" class="" title="宝塔">
-
-<hr>
-<img src="/2020/12/21/wu-shen-yue-zhong-you-wan-fo-hu/1.jpg" class="" title="观音">
-
-<hr>
-<img src="/2020/12/21/wu-shen-yue-zhong-you-wan-fo-hu/2.jpg" class="" title="楼台碧水一瞥">
-
-<hr>
-<img src="/2020/12/21/wu-shen-yue-zhong-you-wan-fo-hu/4.jpg" class="" title="楼台碧水一瞥">
-
-<hr>
-<img src="/2020/12/21/wu-shen-yue-zhong-you-wan-fo-hu/5.jpg" class="" title="老树游龙">
-
-<hr>
-<img src="/2020/12/21/wu-shen-yue-zhong-you-wan-fo-hu/6.jpg" class="" title="彩鱼游龙">
-
-<hr>
-<img src="/2020/12/21/wu-shen-yue-zhong-you-wan-fo-hu/7.jpg" class="" title="戏台">
-
-<hr>
-<img src="/2020/12/21/wu-shen-yue-zhong-you-wan-fo-hu/8.jpg" class="" title="长桥">
-
-
 
 ]]></content>
       <categories>
@@ -2360,6 +2360,263 @@ def log(msg, when=None):
       </tags>
   </entry>
   <entry>
+    <title>详解Python中的可哈希对象与不可哈希对象</title>
+    <url>/2021/04/06/xiang-jie-python-zhong-de-ke-ha-xi-dui-xiang-yu-bu-ke-ha-xi-dui-xiang/</url>
+    <content><![CDATA[<h1 align="center">详解Python中的可哈希对象与不可哈希对象</h1>
+
+<blockquote>
+<ul>
+<li><p><a href="https://blog.csdn.net/qq_27825451/article/details/102820692">原文出处-1</a></p>
+</li>
+<li><p><a href="https://blog.csdn.net/qq_27825451/article/details/102822506">原文出处-2</a></p>
+</li>
+</ul>
+<p>以上两篇算是搜集比较详细，为起到<code>信息冗余</code> ，供后期不时查阅，特整理</p>
+</blockquote>
+<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><blockquote>
+<p> 我们经常会听见很多的概念，哈希值，哈希表，可哈希对象，不可哈希对象，散列表，字典，映射，等等，那么这么多的概念后面到底又有什么区别和联系，它们的本质又是怎么样的，本此系列文章将针对这些概念进行说明，鉴于篇幅较多，本次系列文章将分为两篇来说明，此为第一篇，介绍数据结构哈希表与哈希值。</p>
+</blockquote>
+<h4 id="一、什么是哈希表与哈希值"><a href="#一、什么是哈希表与哈希值" class="headerlink" title="一、什么是哈希表与哈希值"></a>一、什么是哈希表与哈希值</h4><h5 id="1-1-从一个简单的现象说起"><a href="#1-1-从一个简单的现象说起" class="headerlink" title="1.1 从一个简单的现象说起"></a>1.1 从一个简单的现象说起</h5><blockquote>
+<p>顺序存储的结构类型需要一个一个地按顺序访问元素，比如一个数组为[1,2,3,4,5,6,7,8]，当我们需要查找元素7在那个地方的时候，我们从第一个元素开始依次与7对比，找到相等的就是我们需要的7.</p>
+</blockquote>
+<p>当这个总量很大且我们所要访问的元素比较靠后时，性能就会很低，因为要依次查找。</p>
+<p>哪有没有更简单的方法呢？肯定有。</p>
+<p>由于每一个元素在计算机内都是存储在某一段内存（地址）中的，如果我需要查找的元素是7，而且我知道了7这个元素存储在那个地址上，那我要查找7，我直接到这个内存去取出来即可，这其实就是<strong>哈希表的思想</strong>。</p>
+<p>在我们的生活中，有很多这样的例子，比如查词典，查找通讯录等等，如果都是一个一个遍历，这简直不敢想象。</p>
+<p>​    让我们想一下，若在手机通信录中查找一个人，那我们应该不会从第 1 个人一直找下去，因为这样实在是太慢了。我们其实是这样做的：首先看这个人的名字的首字母是什么，比如姓张，那么我们一定会滑到最后，因为“Z”姓的名字都在最后。还有在查字典时，要查找一个单词，肯定不会从头翻到尾，而是首先通过这个单词的首字母，找到对应的那一页；再找第 2 个字母、第 3 个字母……这样可以快速跳到那个单词所在的页。</p>
+<p>那么问题来了，我要怎么才能知道7是存储在哪个地方的呢？也就是说7这个元素应该与它所在的位置有一个一一对应的关系，这个对应的关系其实就是一种函数映射，及按照某一种规则的映射，这个规则就是<strong>哈希函数</strong>，也称之为<strong>散列函数</strong>。</p>
+<h5 id="1-2-哈希表（散列表）——hash-table"><a href="#1-2-哈希表（散列表）——hash-table" class="headerlink" title="1.2 哈希表（散列表）——hash table"></a>1.2 哈希表（散列表）——hash table</h5><p><strong>哈希表</strong>，又称之为<strong>散列表</strong>，是一种空间换时间的存储结构，是在算法中提升效率的一种比较常用的方式，但是所需空间太大也会让人头疼，所以通常需要在二者之间权衡。我们会在之后的具体算法章节中得到更多的领悟。</p>
+<p>哈希表（散列表），是<strong>能够通过给定的关键字的值直接访问到具体对应的值的一个数据结构</strong>。也就是说，把关键字映射到一个表中的位置来直接访问记录，以加快访问速度。</p>
+<h6 id="（1）一些关键概念"><a href="#（1）一些关键概念" class="headerlink" title="（1）一些关键概念"></a>（1）一些关键概念</h6><blockquote>
+<ul>
+<li>关键字，也称之为键，或者是Key，这就是我们哈希函数计算的依据</li>
+<li>记录，也称之为值，，也称之为哈希值，或者是Value，也就是我们通过key然后经过哈希函数运算之后得到的结果，存储这个记录，即存放哈希函数得到的结果的数组称之为 哈希表 或者是 散列表</li>
+</ul>
+</blockquote>
+<h6 id="（2）总结"><a href="#（2）总结" class="headerlink" title="（2）总结"></a>（2）总结</h6><blockquote>
+<p>哈希函数（散列函数），本质上只是 key到value的一种映射关系；<br>哈希表，散列表本质上是一个数组，存储的是经过哈希函数运算之后得到的value；</p>
+</blockquote>
+<p>总而言之一句话：</p>
+<blockquote>
+<p>存储位置=hash(键)</p>
+<p>value = hash(key)</p>
+</blockquote>
+<h5 id="1-3-举一个小的例子"><a href="#1-3-举一个小的例子" class="headerlink" title="1.3 举一个小的例子"></a>1.3 举一个小的例子</h5><p>举一个例子，有一个数组：【5,8,12,17,20】，这里的键Key就是这5个元素，我们假设一个哈希函数为：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">hash(x)=x%17+3<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<p>得出如下结果：hash(5)=8、hash(8)=11、hash(12)=15、hash(17)=3、hash(20)=6。我们把【5,8,12,17,20】分别放到地址为8、11、15、3、6的位置上。当要检索17对应的值的时候，只要首先计算17的哈希值为3，然后到地址为3的地方去取数据就可以了，可见检索速度是非常快的。</p>
+<p>注意：这个地方好像跟字典很像，我们后面再详细说明。</p>
+<h5 id="1-4-哈希表的问题——碰撞Clollision"><a href="#1-4-哈希表的问题——碰撞Clollision" class="headerlink" title="1.4 哈希表的问题——碰撞Clollision"></a>1.4 哈希表的问题——碰撞Clollision</h5><p>其中有个特殊情况，就是通过不同的 Key，可能访问到同一个地址，这种现象叫作碰撞（Collision）。</p>
+<p>通常键的取值范围比哈希表地址集合大很多，因此有可能经过同一哈希函数的计算，把不同的键映射到了同一个地址上面，这就叫冲突。比如，有一组“键-值对”，其键分别为12361、7251、3309、30976，采用的哈希函数是：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">public static int hash(int key)
+{
+    return key%73+13420;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>则将会得到hash(12361)=hash(7251)=hash(3309)=hash(30976)=13444，即不同的键通过哈希函数对应到了同一个地址，我们称这种哈希计算结果相同的不同键为<strong>同义词</strong>。</p>
+<p>如果“键-值对”在加入哈希表的时候产生了冲突，就必须找另外一个地方来存放它，冲突太多会降低数据插入和搜索的效率，因此希望能找到一个不容易产生冲突的函数，即构造一个地址分布比较均匀的哈希函数。</p>
+<h5 id="1-5-哈希函数的构造以及常见的哈希函数"><a href="#1-5-哈希函数的构造以及常见的哈希函数" class="headerlink" title="1.5 哈希函数的构造以及常见的哈希函数"></a>1.5 哈希函数的构造以及常见的哈希函数</h5><p>一个好的散列表设计，除了需要选择一个性能较好的哈希函数，否则冲突是无法避免的，所以通常还需要有一个好的冲突处理方式，目前，这个哈希函数比较常用的实现方法比较多，通常需要考虑几个因素：关键字的长度、哈希表的大小、关键字的分布情况、记录的查找频率，等等。常见的一些哈希函数有：</p>
+<blockquote>
+<ul>
+<li>直接寻址法：</li>
+<li>数字分析法：</li>
+<li>平方取中法：</li>
+<li>取随机数法：</li>
+<li>除留取余法：</li>
+</ul>
+</blockquote>
+<p>当出现冲突的时候，处理冲突的一些方法有：</p>
+<blockquote>
+<ul>
+<li>开放地址法（也叫开放寻址法）：</li>
+<li>再哈希法：</li>
+<li>链地址法：</li>
+<li>建立一个公共溢出区：</li>
+</ul>
+</blockquote>
+<h5 id="1-6-哈希表（散列表）的特点"><a href="#1-6-哈希表（散列表）的特点" class="headerlink" title="1.6 哈希表（散列表）的特点"></a>1.6 哈希表（散列表）的特点</h5><p>根据散列表的存储结构，我们可以得出散列表的以下特点。</p>
+<h6 id="（1）访问速度很快"><a href="#（1）访问速度很快" class="headerlink" title="（1）访问速度很快"></a>（1）访问速度很快</h6><p>由于散列表有散列函数，可以将指定的 Key 都映射到一个地址上，所以在访问一个 Key（键）对应的 Value（值）时，根本不需要一个一个地进行查找，可以直接跳到那个地址。所以我们在对散列表进行添加、删除、修改、查找等任何操作时，速度都很快。</p>
+<h6 id="（2）需要额外的空间"><a href="#（2）需要额外的空间" class="headerlink" title="（2）需要额外的空间"></a>（2）需要额外的空间</h6><p>首先，散列表实际上是存不满的，如果一个散列表刚好能够存满，那么肯定是个巧合。而且当散列表中元素的使用率越来越高时，性能会下降，所以一般会选择扩容来解决这个问题。另外，如果有冲突的话，则也是需要额外的空间去存储的，比如链地址法，不但需要额外的空间，甚至需要使用其他数据结构。比如上面的例子中，本来我只需要存储数据【5,8,12,17,20】即可，但是使用哈希表我还需要存储经过哈希运算的的哈希值【8,11,15,3,6】，这就是所谓的“用空间换取时间”</p>
+<p>这个特点有个很常用的词可以表达，叫作“空间换时间”，在大多数时候，对于算法的实现，为了能够有更好的性能，往往会考虑牺牲些空间，让算法能够更快些。</p>
+<h6 id="（3）无序"><a href="#（3）无序" class="headerlink" title="（3）无序"></a>（3）无序</h6><p>散列表还有一个非常明显的特点，那就是无序。为了能够更快地访问元素，散列表是根据散列函数直接找到存储地址的，这样我们的访问速度就能够更快，但是对于有序访问却没有办法应对。</p>
+<h6 id="（4）可能会产生碰撞"><a href="#（4）可能会产生碰撞" class="headerlink" title="（4）可能会产生碰撞"></a>（4）可能会产生碰撞</h6><p>没有完美的散列函数，无论如何总会产生冲突，这时就需要采用冲突解决方案，这也使散列表更加复杂。通常在不同的高级语言的实现中，对于冲突的解决方案不一定一样。</p>
+<h5 id="1-7-hash值需要遵守的约定"><a href="#1-7-hash值需要遵守的约定" class="headerlink" title="1.7 hash值需要遵守的约定"></a>1.7 hash值需要遵守的约定</h5><blockquote>
+<ul>
+<li>一致性（consistent），在程序的一次执行过程中，对同一个对象必须一致地返回同一个整数。</li>
+<li>如果两个对象通过equals(Object)比较，结果相等，那么对这两个对象分别调用hashCode方法应该产生相同的整数结果。</li>
+<li>如果两个对象通过java.lang.Object.equals(java.lang.Ojbect)比较，结果不相等，不必保证对这两个对象分别调用hashCode也返回两个不相同的整数。</li>
+</ul>
+</blockquote>
+<h4 id="二、哈希表与字典的联系与区别"><a href="#二、哈希表与字典的联系与区别" class="headerlink" title="二、哈希表与字典的联系与区别"></a>二、哈希表与字典的联系与区别</h4><p>从上面来看哈希表与字典有很多的相同点，他们都是一种 &lt;Key,Value&gt; 的形式，他们都是一种 Map 关系，也就是人们俗称的键值对集合。</p>
+<p>关于他们这两个概念的详细含义，我目前还没有找到特别权威的说法，很多都是依据java里面或者是C#里面的数据集合类来加以说明的，所以这里就不再展开。</p>
+<h4 id="三、可哈希对象与不可哈希对象的直观理解"><a href="#三、可哈希对象与不可哈希对象的直观理解" class="headerlink" title="三、可哈希对象与不可哈希对象的直观理解"></a>三、可哈希对象与不可哈希对象的直观理解</h4><p><strong>前提</strong>：能够较好地理解什么是可变对象mutable与不可变对象inmutable。以及明白哈希值value的唯一性。</p>
+<h5 id="1-1-什么是可哈希-hashable-？"><a href="#1-1-什么是可哈希-hashable-？" class="headerlink" title="1.1 什么是可哈希(hashable)？"></a>1.1 什么是可哈希(hashable)？</h5><p>简要的说可哈希的数据类型，即不可变的数据结构(<strong>数字类型（int，float，bool）字符串str、元组tuple、自定义类的对象</strong>)。</p>
+<h6 id="（1）为什么不可变数据类型是可哈希hashable的呢？哈希有啥作用？"><a href="#（1）为什么不可变数据类型是可哈希hashable的呢？哈希有啥作用？" class="headerlink" title="（1）为什么不可变数据类型是可哈希hashable的呢？哈希有啥作用？"></a>（1）为什么不可变数据类型是可哈希hashable的呢？哈希有啥作用？</h6><p>对于不可变类型而言，不同的值意味着不同的内存，相同的值存储在相同的内存，如果将我们的不可变对象理解成哈希表中的Key,将内存理解为经过哈希运算的哈希值Value，这不正好满足哈希表的性质嘛。如下：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">a=100
+b=100
+c=101
+
+id(a) #1420082496
+id(b) #1420082496 # a,b是一样的
+id(c) #1420082528 # c是不一样的<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>当然了，这不是说哈希值就是id地址，这还是不一样的，参见下面：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">In [21]: hash(a)
+Out[21]: 100     # 并不是说哈希值就是它本身哈，一个对象的哈希值是什么取决于__hash__魔术方法的运算过程
+
+In [22]: hash(b)
+Out[22]: 100
+
+In [23]: hash(c)
+Out[23]: 101<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>再看一个例子：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">In [24]: x="ilove"
+
+In [25]: y="i"+"love"
+
+In [26]: z="iloveyou"
+
+In [27]: id(x),id(y),id(z)
+Out[27]: (3122841661600, 3122841661600, 3122841929584)  # x,y的id是一样的
+
+In [28]: hash(x),hash(y),hash(z)
+Out[28]: (4255912298523051991, 4255912298523051991, -3820205610162521985) # x,y 的哈希值是一样的<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h5 id="1-2-什么是不可哈希-unhashable-？"><a href="#1-2-什么是不可哈希-unhashable-？" class="headerlink" title="1.2 什么是不可哈希(unhashable)？"></a>1.2 什么是不可哈希(unhashable)？</h5><p>同理，不可哈希的数据类型，即可变的数据结构 (字典dict，列表list，集合set)<br>对于可变对象而言，比如一个列表，更改列表的值，但是对象的地址本身是不变的，也就是说不同的Key,映射到了相同的Value，这显然是不符合哈希值的特性的，即出现了哈希运算里面的冲突。如下：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">a=[1,2,3]
+print(id(a))
+
+def func(p):
+    p.append(4)
+    return p
+
+b=func(a)
+print(id(b))
+'''
+2399750863880   是一样的哦
+2399750863880
+'''<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>如果此时对a和b使用hash函数，则会出错，如下：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">TypeError: unhashable type: 'list'<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>总结：上面的说明仅仅是感性上的认识哦，并不是本质原因哈！</p>
+<h4 id="四、从实质上来理解hashable和unhashable对象"><a href="#四、从实质上来理解hashable和unhashable对象" class="headerlink" title="四、从实质上来理解hashable和unhashable对象"></a>四、从实质上来理解hashable和unhashable对象</h4><h5 id="2-1-什么是hashable-可哈希性"><a href="#2-1-什么是hashable-可哈希性" class="headerlink" title="2.1 什么是hashable(可哈希性)"></a>2.1 什么是hashable(可哈希性)</h5><blockquote>
+<p>An object is hashable if it has a hash value which never changes during its lifetime (it needs a <strong>hash</strong>() method), and can be compared to other objects (it needs an <strong>eq</strong>()or <strong>cmp</strong>() method). Hashable objects which compare equal must have the same hash value.</p>
+</blockquote>
+<p>如果一个对象是可哈希的,那么在它的生存期内必须不可变(而且该对象需要一个哈希函数),而且可以和其他对象比较(需要比较方法).比较值相同的对象一定有相同的哈希值，即一个对象必须要包含有以下几个魔术方法：</p>
+<p><strong>eq</strong>():用于比较两个对象是否相等<br><strong>cmp</strong>():用于比较两个对象的大小关系，它与<strong>eq__只要有一个就可以了<br>__hash</strong>()：实际上就是哈希函数（散列函数），返回经过运算得到的哈希值<br>前面既然说了整数int是可哈希对象，不放我们看一下它具不具备这几个魔术方法：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">In [51]: a=100
+
+In [52]: dir(a)
+Out[52]:
+[...
+ '__eq__',
+ ...
+ '__hash__',
+...
+]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>我们发现他的确具有上面说的这几个魔术方法。</p>
+<p>列表是不可哈希的，我们看一下列表的魔术方法有哪一些：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">In [54]: a=[1,2,3]
+
+In [55]: dir(a)
+Out[55]:
+[...
+ '__eq__',
+...
+ '__hash__',
+...
+']<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>我们发现一个问题，为什么可变对象list明明是不可哈希的，为什么也有着两个方法呢？</p>
+<p>因为所有类型的基类object中实现了这两个魔术方法，但是并不是说有这两个方法就一定是可哈希的，关键是要如何实现<strong>eq</strong>()方法和<strong>hash</strong>()方法，list并没有实现，只是有这几个魔术方法而已，在实现的里面出发了上面的异常。我们可以看一下基类object的魔术方法，如下：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">In [56]: dir(object)
+Out[56]:
+[...
+ '__eq__',
+ ...
+ '__hash__',
+...
+]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="2-2-自定义类型的对象是不是可哈希的呢？"><a href="#2-2-自定义类型的对象是不是可哈希的呢？" class="headerlink" title="2.2 自定义类型的对象是不是可哈希的呢？"></a>2.2 自定义类型的对象是不是可哈希的呢？</h5><p>看一下如下代码：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">class Animal:
+    def __init__(self, name):
+        self.name=name
+    def eat(self):
+        print("i love eat !")
+        
+a=Animal("dog")
+print(hash(a))  # 83529594295<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>我们发现自定义的类的对象是可哈希的，虽然我们不知道这个哈希值是如何得到的，但是我们知道他的确是可哈希对象。</p>
+<p>前面说了哈希值的计算实际上是通过__hash__魔术方法来实现的，我们不妨自定义一下类的魔术方法，如下：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">class Animal:
+    def __init__(self, name):
+        self.name=name
+    def __hash__(self):  # 自定义哈希函数
+        return 1000      # 注意哈希函数的返回值要是integer哦！
+    def eat(self):
+        print("i love eat !")
+        
+a=Animal("dog")
+print(hash(a))  # 返回 1000<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>现在对于什么是python的可哈希对象和哈希函数如何实现应该有了比较清楚的了解了。</p>
+<h4 id="五、为什么字典-key-必须是不可变的（可哈希hashable）？"><a href="#五、为什么字典-key-必须是不可变的（可哈希hashable）？" class="headerlink" title="五、为什么字典 key 必须是不可变的（可哈希hashable）？"></a>五、为什么字典 key 必须是不可变的（可哈希hashable）？</h4><h5 id="3-1-字典如何在-CPython-中实现？"><a href="#3-1-字典如何在-CPython-中实现？" class="headerlink" title="3.1 字典如何在 CPython 中实现？"></a>3.1 字典如何在 CPython 中实现？</h5><p>CPython 的字典实现为可调整大小的哈希表。与 B-树相比，这在大多数情况下为查找（目前最常见的操作）提供了更好的性能，并且实现更简单。</p>
+<p>字典的工作方式是使用 hash() 内置函数计算字典中存储的每个键的 hash 代码。hash 代码根据键和每个进程的种子而变化很大；例如，”Python” 的 hash 值为-539294296，而”python”(一个按位不同的字符串)的 hash 值为 1142331976。然后，hash 代码用于计算内部数组中将存储该值的位置。假设您存储的键都具有不同的 hash 值，这意味着字典需要恒定的时间 – O(1)，用 Big-O 表示法 – 来检索一个键。</p>
+<h5 id="3-2-字典-key-必须是不可变的（可哈希hashable）"><a href="#3-2-字典-key-必须是不可变的（可哈希hashable）" class="headerlink" title="3.2 字典 key 必须是不可变的（可哈希hashable）"></a>3.2 字典 key 必须是不可变的（可哈希hashable）</h5><p>字典的哈希表实现使用从键值计算的哈希值来查找键。</p>
+<h6 id="（1）为什么可变对象不能作为键Key？"><a href="#（1）为什么可变对象不能作为键Key？" class="headerlink" title="（1）为什么可变对象不能作为键Key？"></a>（1）为什么可变对象不能作为键Key？</h6><p>先来看一个简单的例子：</p>
+<p>d = {[1, 2]: ‘100’}  # 构造一个字典，key是列表[1,2] ，是一个可变对象，是不可哈希的<br>print(d[[1, 2]])     # 通过key去访问字典的值，触发keyerror异常<br>为什么会触发异常呢？哈希按其地址（对象 id）列出的。在上面的两行代码中，第一行中的key是一个列表对象[1,2],第二行中要访问的的时候的那个key虽然也是[1,2]，但是由于列表list是可变对象，虽然这两行的列表值一样，但是他们并不是同一个对象，它们的存储地址是不一样的，即id是不一样的，id不一样也导致了根据id计算得到的哈希值是不一样的，自然没有办法找到原来的那一个[1,2]的哈希值在哪里了。</p>
+<p>注意：这需要能够很好的理解可变对象与不可变对象的内存分配才好哦！</p>
+<h6 id="（2）为什么不可变对象能作为键Key？"><a href="#（2）为什么不可变对象能作为键Key？" class="headerlink" title="（2）为什么不可变对象能作为键Key？"></a>（2）为什么不可变对象能作为键Key？</h6><p>将上面例子中的列表[1,2]换成元组（1,2），先来看一个简单的例子：</p>
+<p>d = {(1, 2): ‘100’}  # 构造一个字典，key是元组(1,2) ，是一个不可变对象，是可哈希的<br>print(d[(1, 2)])     # 通过key去访问字典的值，打印 ‘100’<br>为什么这里不会触发异常呢？哈希按其地址（对象 id）列出的。在上面的两行代码中，第一行中的key是一个元组对象（1,2），第二行中要访问的的时候的那个key也是（1,2），但是由于元组tuple是不可变对象，那么这两行的元组值一样，所以它们的存储地址是一样的，即id是一样的，id一样也导致了根据id计算得到的哈希值是一样的，哈希值一样我自然可以搜索得到那个100在哪个地方了。</p>
+<h6 id="（3）总结："><a href="#（3）总结：" class="headerlink" title="（3）总结："></a>（3）总结：</h6><p>字典的key一定要是不可变对象，要是能够哈希的对象，即hashable对象，包括：</p>
+<p>数字类型（int，float，bool）字符串str、元组tuple、自定义类的对象，这几类，比如下面的字典：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">class Animal:
+    def __init__(self, name):
+        self.name=name
+    def __hash__(self):  # 自定义哈希函数
+        return 1000      # 注意哈希函数的返回值要是integer哦！
+    def eat(self):
+        print("i love eat !")
+        
+a=Animal("dog")
+print(hash(a))  # 返回 1000
+d={100:"a",     # 整数作为key
+   100.1:"b",   # 浮点数作为key
+   True:"c",    # 布尔值作为key
+   "name":"d",  # 字符串作为key
+   (1,2):"e",   # 元组作为key
+   a:"f"}       # 自定义对象作为key
+
+for k in d.keys():
+    print(d[k])
+'''
+a
+b
+c
+d
+e
+f
+'''<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<img src="https://gitee.com/linuxcpp/img/raw/master/img/20210316082651.png" alt="私账留痕" style="zoom: 25%;">]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>精通Python设计模式</title>
     <url>/2021/01/06/jing-tong-python-she-ji-mo-shi/</url>
     <content><![CDATA[<h1 align="center">精通Python设计模式</h1>
@@ -2802,263 +3059,6 @@ if __name__ == "__main__":
       </categories>
       <tags>
         <tag>IT</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>详解Python中的可哈希对象与不可哈希对象</title>
-    <url>/2021/04/06/xiang-jie-python-zhong-de-ke-ha-xi-dui-xiang-yu-bu-ke-ha-xi-dui-xiang/</url>
-    <content><![CDATA[<h1 align="center">详解Python中的可哈希对象与不可哈希对象</h1>
-
-<blockquote>
-<ul>
-<li><p><a href="https://blog.csdn.net/qq_27825451/article/details/102820692">原文出处-1</a></p>
-</li>
-<li><p><a href="https://blog.csdn.net/qq_27825451/article/details/102822506">原文出处-2</a></p>
-</li>
-</ul>
-<p>以上两篇算是搜集比较详细，为起到<code>信息冗余</code> ，供后期不时查阅，特整理</p>
-</blockquote>
-<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><blockquote>
-<p> 我们经常会听见很多的概念，哈希值，哈希表，可哈希对象，不可哈希对象，散列表，字典，映射，等等，那么这么多的概念后面到底又有什么区别和联系，它们的本质又是怎么样的，本此系列文章将针对这些概念进行说明，鉴于篇幅较多，本次系列文章将分为两篇来说明，此为第一篇，介绍数据结构哈希表与哈希值。</p>
-</blockquote>
-<h4 id="一、什么是哈希表与哈希值"><a href="#一、什么是哈希表与哈希值" class="headerlink" title="一、什么是哈希表与哈希值"></a>一、什么是哈希表与哈希值</h4><h5 id="1-1-从一个简单的现象说起"><a href="#1-1-从一个简单的现象说起" class="headerlink" title="1.1 从一个简单的现象说起"></a>1.1 从一个简单的现象说起</h5><blockquote>
-<p>顺序存储的结构类型需要一个一个地按顺序访问元素，比如一个数组为[1,2,3,4,5,6,7,8]，当我们需要查找元素7在那个地方的时候，我们从第一个元素开始依次与7对比，找到相等的就是我们需要的7.</p>
-</blockquote>
-<p>当这个总量很大且我们所要访问的元素比较靠后时，性能就会很低，因为要依次查找。</p>
-<p>哪有没有更简单的方法呢？肯定有。</p>
-<p>由于每一个元素在计算机内都是存储在某一段内存（地址）中的，如果我需要查找的元素是7，而且我知道了7这个元素存储在那个地址上，那我要查找7，我直接到这个内存去取出来即可，这其实就是<strong>哈希表的思想</strong>。</p>
-<p>在我们的生活中，有很多这样的例子，比如查词典，查找通讯录等等，如果都是一个一个遍历，这简直不敢想象。</p>
-<p>​    让我们想一下，若在手机通信录中查找一个人，那我们应该不会从第 1 个人一直找下去，因为这样实在是太慢了。我们其实是这样做的：首先看这个人的名字的首字母是什么，比如姓张，那么我们一定会滑到最后，因为“Z”姓的名字都在最后。还有在查字典时，要查找一个单词，肯定不会从头翻到尾，而是首先通过这个单词的首字母，找到对应的那一页；再找第 2 个字母、第 3 个字母……这样可以快速跳到那个单词所在的页。</p>
-<p>那么问题来了，我要怎么才能知道7是存储在哪个地方的呢？也就是说7这个元素应该与它所在的位置有一个一一对应的关系，这个对应的关系其实就是一种函数映射，及按照某一种规则的映射，这个规则就是<strong>哈希函数</strong>，也称之为<strong>散列函数</strong>。</p>
-<h5 id="1-2-哈希表（散列表）——hash-table"><a href="#1-2-哈希表（散列表）——hash-table" class="headerlink" title="1.2 哈希表（散列表）——hash table"></a>1.2 哈希表（散列表）——hash table</h5><p><strong>哈希表</strong>，又称之为<strong>散列表</strong>，是一种空间换时间的存储结构，是在算法中提升效率的一种比较常用的方式，但是所需空间太大也会让人头疼，所以通常需要在二者之间权衡。我们会在之后的具体算法章节中得到更多的领悟。</p>
-<p>哈希表（散列表），是<strong>能够通过给定的关键字的值直接访问到具体对应的值的一个数据结构</strong>。也就是说，把关键字映射到一个表中的位置来直接访问记录，以加快访问速度。</p>
-<h6 id="（1）一些关键概念"><a href="#（1）一些关键概念" class="headerlink" title="（1）一些关键概念"></a>（1）一些关键概念</h6><blockquote>
-<ul>
-<li>关键字，也称之为键，或者是Key，这就是我们哈希函数计算的依据</li>
-<li>记录，也称之为值，，也称之为哈希值，或者是Value，也就是我们通过key然后经过哈希函数运算之后得到的结果，存储这个记录，即存放哈希函数得到的结果的数组称之为 哈希表 或者是 散列表</li>
-</ul>
-</blockquote>
-<h6 id="（2）总结"><a href="#（2）总结" class="headerlink" title="（2）总结"></a>（2）总结</h6><blockquote>
-<p>哈希函数（散列函数），本质上只是 key到value的一种映射关系；<br>哈希表，散列表本质上是一个数组，存储的是经过哈希函数运算之后得到的value；</p>
-</blockquote>
-<p>总而言之一句话：</p>
-<blockquote>
-<p>存储位置=hash(键)</p>
-<p>value = hash(key)</p>
-</blockquote>
-<h5 id="1-3-举一个小的例子"><a href="#1-3-举一个小的例子" class="headerlink" title="1.3 举一个小的例子"></a>1.3 举一个小的例子</h5><p>举一个例子，有一个数组：【5,8,12,17,20】，这里的键Key就是这5个元素，我们假设一个哈希函数为：</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">hash(x)=x%17+3<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-
-
-<p>得出如下结果：hash(5)=8、hash(8)=11、hash(12)=15、hash(17)=3、hash(20)=6。我们把【5,8,12,17,20】分别放到地址为8、11、15、3、6的位置上。当要检索17对应的值的时候，只要首先计算17的哈希值为3，然后到地址为3的地方去取数据就可以了，可见检索速度是非常快的。</p>
-<p>注意：这个地方好像跟字典很像，我们后面再详细说明。</p>
-<h5 id="1-4-哈希表的问题——碰撞Clollision"><a href="#1-4-哈希表的问题——碰撞Clollision" class="headerlink" title="1.4 哈希表的问题——碰撞Clollision"></a>1.4 哈希表的问题——碰撞Clollision</h5><p>其中有个特殊情况，就是通过不同的 Key，可能访问到同一个地址，这种现象叫作碰撞（Collision）。</p>
-<p>通常键的取值范围比哈希表地址集合大很多，因此有可能经过同一哈希函数的计算，把不同的键映射到了同一个地址上面，这就叫冲突。比如，有一组“键-值对”，其键分别为12361、7251、3309、30976，采用的哈希函数是：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">public static int hash(int key)
-{
-    return key%73+13420;
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>则将会得到hash(12361)=hash(7251)=hash(3309)=hash(30976)=13444，即不同的键通过哈希函数对应到了同一个地址，我们称这种哈希计算结果相同的不同键为<strong>同义词</strong>。</p>
-<p>如果“键-值对”在加入哈希表的时候产生了冲突，就必须找另外一个地方来存放它，冲突太多会降低数据插入和搜索的效率，因此希望能找到一个不容易产生冲突的函数，即构造一个地址分布比较均匀的哈希函数。</p>
-<h5 id="1-5-哈希函数的构造以及常见的哈希函数"><a href="#1-5-哈希函数的构造以及常见的哈希函数" class="headerlink" title="1.5 哈希函数的构造以及常见的哈希函数"></a>1.5 哈希函数的构造以及常见的哈希函数</h5><p>一个好的散列表设计，除了需要选择一个性能较好的哈希函数，否则冲突是无法避免的，所以通常还需要有一个好的冲突处理方式，目前，这个哈希函数比较常用的实现方法比较多，通常需要考虑几个因素：关键字的长度、哈希表的大小、关键字的分布情况、记录的查找频率，等等。常见的一些哈希函数有：</p>
-<blockquote>
-<ul>
-<li>直接寻址法：</li>
-<li>数字分析法：</li>
-<li>平方取中法：</li>
-<li>取随机数法：</li>
-<li>除留取余法：</li>
-</ul>
-</blockquote>
-<p>当出现冲突的时候，处理冲突的一些方法有：</p>
-<blockquote>
-<ul>
-<li>开放地址法（也叫开放寻址法）：</li>
-<li>再哈希法：</li>
-<li>链地址法：</li>
-<li>建立一个公共溢出区：</li>
-</ul>
-</blockquote>
-<h5 id="1-6-哈希表（散列表）的特点"><a href="#1-6-哈希表（散列表）的特点" class="headerlink" title="1.6 哈希表（散列表）的特点"></a>1.6 哈希表（散列表）的特点</h5><p>根据散列表的存储结构，我们可以得出散列表的以下特点。</p>
-<h6 id="（1）访问速度很快"><a href="#（1）访问速度很快" class="headerlink" title="（1）访问速度很快"></a>（1）访问速度很快</h6><p>由于散列表有散列函数，可以将指定的 Key 都映射到一个地址上，所以在访问一个 Key（键）对应的 Value（值）时，根本不需要一个一个地进行查找，可以直接跳到那个地址。所以我们在对散列表进行添加、删除、修改、查找等任何操作时，速度都很快。</p>
-<h6 id="（2）需要额外的空间"><a href="#（2）需要额外的空间" class="headerlink" title="（2）需要额外的空间"></a>（2）需要额外的空间</h6><p>首先，散列表实际上是存不满的，如果一个散列表刚好能够存满，那么肯定是个巧合。而且当散列表中元素的使用率越来越高时，性能会下降，所以一般会选择扩容来解决这个问题。另外，如果有冲突的话，则也是需要额外的空间去存储的，比如链地址法，不但需要额外的空间，甚至需要使用其他数据结构。比如上面的例子中，本来我只需要存储数据【5,8,12,17,20】即可，但是使用哈希表我还需要存储经过哈希运算的的哈希值【8,11,15,3,6】，这就是所谓的“用空间换取时间”</p>
-<p>这个特点有个很常用的词可以表达，叫作“空间换时间”，在大多数时候，对于算法的实现，为了能够有更好的性能，往往会考虑牺牲些空间，让算法能够更快些。</p>
-<h6 id="（3）无序"><a href="#（3）无序" class="headerlink" title="（3）无序"></a>（3）无序</h6><p>散列表还有一个非常明显的特点，那就是无序。为了能够更快地访问元素，散列表是根据散列函数直接找到存储地址的，这样我们的访问速度就能够更快，但是对于有序访问却没有办法应对。</p>
-<h6 id="（4）可能会产生碰撞"><a href="#（4）可能会产生碰撞" class="headerlink" title="（4）可能会产生碰撞"></a>（4）可能会产生碰撞</h6><p>没有完美的散列函数，无论如何总会产生冲突，这时就需要采用冲突解决方案，这也使散列表更加复杂。通常在不同的高级语言的实现中，对于冲突的解决方案不一定一样。</p>
-<h5 id="1-7-hash值需要遵守的约定"><a href="#1-7-hash值需要遵守的约定" class="headerlink" title="1.7 hash值需要遵守的约定"></a>1.7 hash值需要遵守的约定</h5><blockquote>
-<ul>
-<li>一致性（consistent），在程序的一次执行过程中，对同一个对象必须一致地返回同一个整数。</li>
-<li>如果两个对象通过equals(Object)比较，结果相等，那么对这两个对象分别调用hashCode方法应该产生相同的整数结果。</li>
-<li>如果两个对象通过java.lang.Object.equals(java.lang.Ojbect)比较，结果不相等，不必保证对这两个对象分别调用hashCode也返回两个不相同的整数。</li>
-</ul>
-</blockquote>
-<h4 id="二、哈希表与字典的联系与区别"><a href="#二、哈希表与字典的联系与区别" class="headerlink" title="二、哈希表与字典的联系与区别"></a>二、哈希表与字典的联系与区别</h4><p>从上面来看哈希表与字典有很多的相同点，他们都是一种 &lt;Key,Value&gt; 的形式，他们都是一种 Map 关系，也就是人们俗称的键值对集合。</p>
-<p>关于他们这两个概念的详细含义，我目前还没有找到特别权威的说法，很多都是依据java里面或者是C#里面的数据集合类来加以说明的，所以这里就不再展开。</p>
-<h4 id="三、可哈希对象与不可哈希对象的直观理解"><a href="#三、可哈希对象与不可哈希对象的直观理解" class="headerlink" title="三、可哈希对象与不可哈希对象的直观理解"></a>三、可哈希对象与不可哈希对象的直观理解</h4><p><strong>前提</strong>：能够较好地理解什么是可变对象mutable与不可变对象inmutable。以及明白哈希值value的唯一性。</p>
-<h5 id="1-1-什么是可哈希-hashable-？"><a href="#1-1-什么是可哈希-hashable-？" class="headerlink" title="1.1 什么是可哈希(hashable)？"></a>1.1 什么是可哈希(hashable)？</h5><p>简要的说可哈希的数据类型，即不可变的数据结构(<strong>数字类型（int，float，bool）字符串str、元组tuple、自定义类的对象</strong>)。</p>
-<h6 id="（1）为什么不可变数据类型是可哈希hashable的呢？哈希有啥作用？"><a href="#（1）为什么不可变数据类型是可哈希hashable的呢？哈希有啥作用？" class="headerlink" title="（1）为什么不可变数据类型是可哈希hashable的呢？哈希有啥作用？"></a>（1）为什么不可变数据类型是可哈希hashable的呢？哈希有啥作用？</h6><p>对于不可变类型而言，不同的值意味着不同的内存，相同的值存储在相同的内存，如果将我们的不可变对象理解成哈希表中的Key,将内存理解为经过哈希运算的哈希值Value，这不正好满足哈希表的性质嘛。如下：</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">a=100
-b=100
-c=101
-
-id(a) #1420082496
-id(b) #1420082496 # a,b是一样的
-id(c) #1420082528 # c是不一样的<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>当然了，这不是说哈希值就是id地址，这还是不一样的，参见下面：</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">In [21]: hash(a)
-Out[21]: 100     # 并不是说哈希值就是它本身哈，一个对象的哈希值是什么取决于__hash__魔术方法的运算过程
-
-In [22]: hash(b)
-Out[22]: 100
-
-In [23]: hash(c)
-Out[23]: 101<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>再看一个例子：</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">In [24]: x="ilove"
-
-In [25]: y="i"+"love"
-
-In [26]: z="iloveyou"
-
-In [27]: id(x),id(y),id(z)
-Out[27]: (3122841661600, 3122841661600, 3122841929584)  # x,y的id是一样的
-
-In [28]: hash(x),hash(y),hash(z)
-Out[28]: (4255912298523051991, 4255912298523051991, -3820205610162521985) # x,y 的哈希值是一样的<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-<h5 id="1-2-什么是不可哈希-unhashable-？"><a href="#1-2-什么是不可哈希-unhashable-？" class="headerlink" title="1.2 什么是不可哈希(unhashable)？"></a>1.2 什么是不可哈希(unhashable)？</h5><p>同理，不可哈希的数据类型，即可变的数据结构 (字典dict，列表list，集合set)<br>对于可变对象而言，比如一个列表，更改列表的值，但是对象的地址本身是不变的，也就是说不同的Key,映射到了相同的Value，这显然是不符合哈希值的特性的，即出现了哈希运算里面的冲突。如下：</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">a=[1,2,3]
-print(id(a))
-
-def func(p):
-    p.append(4)
-    return p
-
-b=func(a)
-print(id(b))
-'''
-2399750863880   是一样的哦
-2399750863880
-'''<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>如果此时对a和b使用hash函数，则会出错，如下：</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">TypeError: unhashable type: 'list'<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>总结：上面的说明仅仅是感性上的认识哦，并不是本质原因哈！</p>
-<h4 id="四、从实质上来理解hashable和unhashable对象"><a href="#四、从实质上来理解hashable和unhashable对象" class="headerlink" title="四、从实质上来理解hashable和unhashable对象"></a>四、从实质上来理解hashable和unhashable对象</h4><h5 id="2-1-什么是hashable-可哈希性"><a href="#2-1-什么是hashable-可哈希性" class="headerlink" title="2.1 什么是hashable(可哈希性)"></a>2.1 什么是hashable(可哈希性)</h5><blockquote>
-<p>An object is hashable if it has a hash value which never changes during its lifetime (it needs a <strong>hash</strong>() method), and can be compared to other objects (it needs an <strong>eq</strong>()or <strong>cmp</strong>() method). Hashable objects which compare equal must have the same hash value.</p>
-</blockquote>
-<p>如果一个对象是可哈希的,那么在它的生存期内必须不可变(而且该对象需要一个哈希函数),而且可以和其他对象比较(需要比较方法).比较值相同的对象一定有相同的哈希值，即一个对象必须要包含有以下几个魔术方法：</p>
-<p><strong>eq</strong>():用于比较两个对象是否相等<br><strong>cmp</strong>():用于比较两个对象的大小关系，它与<strong>eq__只要有一个就可以了<br>__hash</strong>()：实际上就是哈希函数（散列函数），返回经过运算得到的哈希值<br>前面既然说了整数int是可哈希对象，不放我们看一下它具不具备这几个魔术方法：</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">In [51]: a=100
-
-In [52]: dir(a)
-Out[52]:
-[...
- '__eq__',
- ...
- '__hash__',
-...
-]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>我们发现他的确具有上面说的这几个魔术方法。</p>
-<p>列表是不可哈希的，我们看一下列表的魔术方法有哪一些：</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">In [54]: a=[1,2,3]
-
-In [55]: dir(a)
-Out[55]:
-[...
- '__eq__',
-...
- '__hash__',
-...
-']<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>我们发现一个问题，为什么可变对象list明明是不可哈希的，为什么也有着两个方法呢？</p>
-<p>因为所有类型的基类object中实现了这两个魔术方法，但是并不是说有这两个方法就一定是可哈希的，关键是要如何实现<strong>eq</strong>()方法和<strong>hash</strong>()方法，list并没有实现，只是有这几个魔术方法而已，在实现的里面出发了上面的异常。我们可以看一下基类object的魔术方法，如下：</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">In [56]: dir(object)
-Out[56]:
-[...
- '__eq__',
- ...
- '__hash__',
-...
-]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h5 id="2-2-自定义类型的对象是不是可哈希的呢？"><a href="#2-2-自定义类型的对象是不是可哈希的呢？" class="headerlink" title="2.2 自定义类型的对象是不是可哈希的呢？"></a>2.2 自定义类型的对象是不是可哈希的呢？</h5><p>看一下如下代码：</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">class Animal:
-    def __init__(self, name):
-        self.name=name
-    def eat(self):
-        print("i love eat !")
-        
-a=Animal("dog")
-print(hash(a))  # 83529594295<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>我们发现自定义的类的对象是可哈希的，虽然我们不知道这个哈希值是如何得到的，但是我们知道他的确是可哈希对象。</p>
-<p>前面说了哈希值的计算实际上是通过__hash__魔术方法来实现的，我们不妨自定义一下类的魔术方法，如下：</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">class Animal:
-    def __init__(self, name):
-        self.name=name
-    def __hash__(self):  # 自定义哈希函数
-        return 1000      # 注意哈希函数的返回值要是integer哦！
-    def eat(self):
-        print("i love eat !")
-        
-a=Animal("dog")
-print(hash(a))  # 返回 1000<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>现在对于什么是python的可哈希对象和哈希函数如何实现应该有了比较清楚的了解了。</p>
-<h4 id="五、为什么字典-key-必须是不可变的（可哈希hashable）？"><a href="#五、为什么字典-key-必须是不可变的（可哈希hashable）？" class="headerlink" title="五、为什么字典 key 必须是不可变的（可哈希hashable）？"></a>五、为什么字典 key 必须是不可变的（可哈希hashable）？</h4><h5 id="3-1-字典如何在-CPython-中实现？"><a href="#3-1-字典如何在-CPython-中实现？" class="headerlink" title="3.1 字典如何在 CPython 中实现？"></a>3.1 字典如何在 CPython 中实现？</h5><p>CPython 的字典实现为可调整大小的哈希表。与 B-树相比，这在大多数情况下为查找（目前最常见的操作）提供了更好的性能，并且实现更简单。</p>
-<p>字典的工作方式是使用 hash() 内置函数计算字典中存储的每个键的 hash 代码。hash 代码根据键和每个进程的种子而变化很大；例如，”Python” 的 hash 值为-539294296，而”python”(一个按位不同的字符串)的 hash 值为 1142331976。然后，hash 代码用于计算内部数组中将存储该值的位置。假设您存储的键都具有不同的 hash 值，这意味着字典需要恒定的时间 – O(1)，用 Big-O 表示法 – 来检索一个键。</p>
-<h5 id="3-2-字典-key-必须是不可变的（可哈希hashable）"><a href="#3-2-字典-key-必须是不可变的（可哈希hashable）" class="headerlink" title="3.2 字典 key 必须是不可变的（可哈希hashable）"></a>3.2 字典 key 必须是不可变的（可哈希hashable）</h5><p>字典的哈希表实现使用从键值计算的哈希值来查找键。</p>
-<h6 id="（1）为什么可变对象不能作为键Key？"><a href="#（1）为什么可变对象不能作为键Key？" class="headerlink" title="（1）为什么可变对象不能作为键Key？"></a>（1）为什么可变对象不能作为键Key？</h6><p>先来看一个简单的例子：</p>
-<p>d = {[1, 2]: ‘100’}  # 构造一个字典，key是列表[1,2] ，是一个可变对象，是不可哈希的<br>print(d[[1, 2]])     # 通过key去访问字典的值，触发keyerror异常<br>为什么会触发异常呢？哈希按其地址（对象 id）列出的。在上面的两行代码中，第一行中的key是一个列表对象[1,2],第二行中要访问的的时候的那个key虽然也是[1,2]，但是由于列表list是可变对象，虽然这两行的列表值一样，但是他们并不是同一个对象，它们的存储地址是不一样的，即id是不一样的，id不一样也导致了根据id计算得到的哈希值是不一样的，自然没有办法找到原来的那一个[1,2]的哈希值在哪里了。</p>
-<p>注意：这需要能够很好的理解可变对象与不可变对象的内存分配才好哦！</p>
-<h6 id="（2）为什么不可变对象能作为键Key？"><a href="#（2）为什么不可变对象能作为键Key？" class="headerlink" title="（2）为什么不可变对象能作为键Key？"></a>（2）为什么不可变对象能作为键Key？</h6><p>将上面例子中的列表[1,2]换成元组（1,2），先来看一个简单的例子：</p>
-<p>d = {(1, 2): ‘100’}  # 构造一个字典，key是元组(1,2) ，是一个不可变对象，是可哈希的<br>print(d[(1, 2)])     # 通过key去访问字典的值，打印 ‘100’<br>为什么这里不会触发异常呢？哈希按其地址（对象 id）列出的。在上面的两行代码中，第一行中的key是一个元组对象（1,2），第二行中要访问的的时候的那个key也是（1,2），但是由于元组tuple是不可变对象，那么这两行的元组值一样，所以它们的存储地址是一样的，即id是一样的，id一样也导致了根据id计算得到的哈希值是一样的，哈希值一样我自然可以搜索得到那个100在哪个地方了。</p>
-<h6 id="（3）总结："><a href="#（3）总结：" class="headerlink" title="（3）总结："></a>（3）总结：</h6><p>字典的key一定要是不可变对象，要是能够哈希的对象，即hashable对象，包括：</p>
-<p>数字类型（int，float，bool）字符串str、元组tuple、自定义类的对象，这几类，比如下面的字典：</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">class Animal:
-    def __init__(self, name):
-        self.name=name
-    def __hash__(self):  # 自定义哈希函数
-        return 1000      # 注意哈希函数的返回值要是integer哦！
-    def eat(self):
-        print("i love eat !")
-        
-a=Animal("dog")
-print(hash(a))  # 返回 1000
-d={100:"a",     # 整数作为key
-   100.1:"b",   # 浮点数作为key
-   True:"c",    # 布尔值作为key
-   "name":"d",  # 字符串作为key
-   (1,2):"e",   # 元组作为key
-   a:"f"}       # 自定义对象作为key
-
-for k in d.keys():
-    print(d[k])
-'''
-a
-b
-c
-d
-e
-f
-'''<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<img src="https://gitee.com/linuxcpp/img/raw/master/img/20210316082651.png" alt="私账留痕" style="zoom: 25%;">]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
       </tags>
   </entry>
 </search>
