@@ -3,11 +3,11 @@
   <title>白馍馍</title>
   
   <subtitle>随心所欲不逾矩</subtitle>
-  <link href="http://daozheng.wang/atom.xml" rel="self"/>
+  <link href="http://www.wangdaozheng.cn/atom.xml" rel="self"/>
   
-  <link href="http://daozheng.wang/"/>
-  <updated>2021-05-12T00:20:13.219Z</updated>
-  <id>http://daozheng.wang/</id>
+  <link href="http://www.wangdaozheng.cn/"/>
+  <updated>2021-07-14T08:03:41.048Z</updated>
+  <id>http://www.wangdaozheng.cn/</id>
   
   <author>
     <name>王磊</name>
@@ -17,9 +17,22 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>我的系统分析师之路</title>
+    <link href="http://www.wangdaozheng.cn/2021/07/14/wo-de-xi-tong-fen-xi-shi-zhi-lu/"/>
+    <id>http://www.wangdaozheng.cn/2021/07/14/wo-de-xi-tong-fen-xi-shi-zhi-lu/</id>
+    <published>2021-07-14T08:03:41.000Z</published>
+    <updated>2021-07-14T08:03:41.048Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>一次理发</title>
-    <link href="http://daozheng.wang/2021/05/11/yi-ci-li-fa/"/>
-    <id>http://daozheng.wang/2021/05/11/yi-ci-li-fa/</id>
+    <link href="http://www.wangdaozheng.cn/2021/05/11/yi-ci-li-fa/"/>
+    <id>http://www.wangdaozheng.cn/2021/05/11/yi-ci-li-fa/</id>
     <published>2021-05-11T08:18:06.000Z</published>
     <updated>2021-05-12T00:20:13.219Z</updated>
     
@@ -35,14 +48,14 @@
     
     
     
-    <category term="生活记录" scheme="http://daozheng.wang/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
+    <category term="生活记录" scheme="http://www.wangdaozheng.cn/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
     
   </entry>
   
   <entry>
     <title>详解Python中的可哈希对象与不可哈希对象</title>
-    <link href="http://daozheng.wang/2021/04/06/xiang-jie-python-zhong-de-ke-ha-xi-dui-xiang-yu-bu-ke-ha-xi-dui-xiang/"/>
-    <id>http://daozheng.wang/2021/04/06/xiang-jie-python-zhong-de-ke-ha-xi-dui-xiang-yu-bu-ke-ha-xi-dui-xiang/</id>
+    <link href="http://www.wangdaozheng.cn/2021/04/06/xiang-jie-python-zhong-de-ke-ha-xi-dui-xiang-yu-bu-ke-ha-xi-dui-xiang/"/>
+    <id>http://www.wangdaozheng.cn/2021/04/06/xiang-jie-python-zhong-de-ke-ha-xi-dui-xiang-yu-bu-ke-ha-xi-dui-xiang/</id>
     <published>2021-04-06T02:45:21.000Z</published>
     <updated>2021-04-06T03:05:09.249Z</updated>
     
@@ -61,17 +74,17 @@
     
     
     
-    <category term="Python" scheme="http://daozheng.wang/categories/Python/"/>
+    <category term="Python" scheme="http://www.wangdaozheng.cn/categories/Python/"/>
     
     
-    <category term="Python" scheme="http://daozheng.wang/tags/Python/"/>
+    <category term="Python" scheme="http://www.wangdaozheng.cn/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>文苑撷句</title>
-    <link href="http://daozheng.wang/2021/03/16/wen-yuan-xie-ju/"/>
-    <id>http://daozheng.wang/2021/03/16/wen-yuan-xie-ju/</id>
+    <link href="http://www.wangdaozheng.cn/2021/03/16/wen-yuan-xie-ju/"/>
+    <id>http://www.wangdaozheng.cn/2021/03/16/wen-yuan-xie-ju/</id>
     <published>2021-03-16T00:18:21.000Z</published>
     <updated>2021-03-16T00:27:47.656Z</updated>
     
@@ -88,17 +101,17 @@
     
     
     
-    <category term="reading" scheme="http://daozheng.wang/categories/reading/"/>
+    <category term="reading" scheme="http://www.wangdaozheng.cn/categories/reading/"/>
     
     
-    <category term="reading" scheme="http://daozheng.wang/tags/reading/"/>
+    <category term="reading" scheme="http://www.wangdaozheng.cn/tags/reading/"/>
     
   </entry>
   
   <entry>
     <title>《家庭教育》撷词录</title>
-    <link href="http://daozheng.wang/2021/02/28/jia-ting-jiao-yu-xie-ci-lu/"/>
-    <id>http://daozheng.wang/2021/02/28/jia-ting-jiao-yu-xie-ci-lu/</id>
+    <link href="http://www.wangdaozheng.cn/2021/02/28/jia-ting-jiao-yu-xie-ci-lu/"/>
+    <id>http://www.wangdaozheng.cn/2021/02/28/jia-ting-jiao-yu-xie-ci-lu/</id>
     <published>2021-02-28T05:16:03.000Z</published>
     <updated>2021-03-01T00:50:43.054Z</updated>
     
@@ -115,17 +128,17 @@
     
     
     
-    <category term="reading" scheme="http://daozheng.wang/categories/reading/"/>
+    <category term="reading" scheme="http://www.wangdaozheng.cn/categories/reading/"/>
     
     
-    <category term="reading" scheme="http://daozheng.wang/tags/reading/"/>
+    <category term="reading" scheme="http://www.wangdaozheng.cn/tags/reading/"/>
     
   </entry>
   
   <entry>
     <title>二零二零年之串烧</title>
-    <link href="http://daozheng.wang/2021/01/28/er-ling-er-ling-nian-zhi-chuan-shao/"/>
-    <id>http://daozheng.wang/2021/01/28/er-ling-er-ling-nian-zhi-chuan-shao/</id>
+    <link href="http://www.wangdaozheng.cn/2021/01/28/er-ling-er-ling-nian-zhi-chuan-shao/"/>
+    <id>http://www.wangdaozheng.cn/2021/01/28/er-ling-er-ling-nian-zhi-chuan-shao/</id>
     <published>2021-01-28T13:36:24.000Z</published>
     <updated>2021-02-01T01:30:06.680Z</updated>
     
@@ -140,17 +153,17 @@
     
     
     
-    <category term="生活记录" scheme="http://daozheng.wang/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
+    <category term="生活记录" scheme="http://www.wangdaozheng.cn/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
     
     
-    <category term="生活记录" scheme="http://daozheng.wang/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
+    <category term="生活记录" scheme="http://www.wangdaozheng.cn/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
     
   </entry>
   
   <entry>
     <title>《山海异兽志》彩图版</title>
-    <link href="http://daozheng.wang/2021/01/27/shan-hai-yi-shou-zhi/"/>
-    <id>http://daozheng.wang/2021/01/27/shan-hai-yi-shou-zhi/</id>
+    <link href="http://www.wangdaozheng.cn/2021/01/27/shan-hai-yi-shou-zhi/"/>
+    <id>http://www.wangdaozheng.cn/2021/01/27/shan-hai-yi-shou-zhi/</id>
     <published>2021-01-27T10:31:46.000Z</published>
     <updated>2021-01-28T11:20:57.189Z</updated>
     
@@ -166,14 +179,14 @@
     
     
     
-    <category term="Book" scheme="http://daozheng.wang/tags/Book/"/>
+    <category term="Book" scheme="http://www.wangdaozheng.cn/tags/Book/"/>
     
   </entry>
   
   <entry>
     <title>汉语与英语的交融</title>
-    <link href="http://daozheng.wang/2021/01/19/han-yu-yu-ying-yu-de-jiao-rong/"/>
-    <id>http://daozheng.wang/2021/01/19/han-yu-yu-ying-yu-de-jiao-rong/</id>
+    <link href="http://www.wangdaozheng.cn/2021/01/19/han-yu-yu-ying-yu-de-jiao-rong/"/>
+    <id>http://www.wangdaozheng.cn/2021/01/19/han-yu-yu-ying-yu-de-jiao-rong/</id>
     <published>2021-01-19T11:44:54.000Z</published>
     <updated>2021-01-19T14:20:01.180Z</updated>
     
@@ -189,17 +202,17 @@
     
     
     
-    <category term="摘记" scheme="http://daozheng.wang/categories/%E6%91%98%E8%AE%B0/"/>
+    <category term="摘记" scheme="http://www.wangdaozheng.cn/categories/%E6%91%98%E8%AE%B0/"/>
     
     
-    <category term="摘记" scheme="http://daozheng.wang/tags/%E6%91%98%E8%AE%B0/"/>
+    <category term="摘记" scheme="http://www.wangdaozheng.cn/tags/%E6%91%98%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>精通Python设计模式</title>
-    <link href="http://daozheng.wang/2021/01/06/jing-tong-python-she-ji-mo-shi/"/>
-    <id>http://daozheng.wang/2021/01/06/jing-tong-python-she-ji-mo-shi/</id>
+    <link href="http://www.wangdaozheng.cn/2021/01/06/jing-tong-python-she-ji-mo-shi/"/>
+    <id>http://www.wangdaozheng.cn/2021/01/06/jing-tong-python-she-ji-mo-shi/</id>
     <published>2021-01-06T02:03:34.000Z</published>
     <updated>2021-02-01T01:14:38.744Z</updated>
     
@@ -216,17 +229,17 @@
     
     
     
-    <category term="ITstudy" scheme="http://daozheng.wang/categories/ITstudy/"/>
+    <category term="ITstudy" scheme="http://www.wangdaozheng.cn/categories/ITstudy/"/>
     
     
-    <category term="IT" scheme="http://daozheng.wang/tags/IT/"/>
+    <category term="IT" scheme="http://www.wangdaozheng.cn/tags/IT/"/>
     
   </entry>
   
   <entry>
     <title>读《Effective Python:编写高质量Python代码的59个有效方法》小记</title>
-    <link href="http://daozheng.wang/2020/12/31/du-effective-python-bian-xie-gao-zhi-liang-python-dai-ma-de-59-ge-you-xiao-fang-fa-xiao-ji/"/>
-    <id>http://daozheng.wang/2020/12/31/du-effective-python-bian-xie-gao-zhi-liang-python-dai-ma-de-59-ge-you-xiao-fang-fa-xiao-ji/</id>
+    <link href="http://www.wangdaozheng.cn/2020/12/31/du-effective-python-bian-xie-gao-zhi-liang-python-dai-ma-de-59-ge-you-xiao-fang-fa-xiao-ji/"/>
+    <id>http://www.wangdaozheng.cn/2020/12/31/du-effective-python-bian-xie-gao-zhi-liang-python-dai-ma-de-59-ge-you-xiao-fang-fa-xiao-ji/</id>
     <published>2020-12-31T02:56:40.000Z</published>
     <updated>2021-04-06T02:45:54.217Z</updated>
     
@@ -243,17 +256,17 @@
     
     
     
-    <category term="Python" scheme="http://daozheng.wang/categories/Python/"/>
+    <category term="Python" scheme="http://www.wangdaozheng.cn/categories/Python/"/>
     
     
-    <category term="Python" scheme="http://daozheng.wang/tags/Python/"/>
+    <category term="Python" scheme="http://www.wangdaozheng.cn/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>回忆父亲和我一些事</title>
-    <link href="http://daozheng.wang/2020/12/24/hui-yi-fu-qin-he-wo-yi-xie-shi/"/>
-    <id>http://daozheng.wang/2020/12/24/hui-yi-fu-qin-he-wo-yi-xie-shi/</id>
+    <link href="http://www.wangdaozheng.cn/2020/12/24/hui-yi-fu-qin-he-wo-yi-xie-shi/"/>
+    <id>http://www.wangdaozheng.cn/2020/12/24/hui-yi-fu-qin-he-wo-yi-xie-shi/</id>
     <published>2020-12-24T12:29:50.000Z</published>
     <updated>2021-02-01T01:21:57.143Z</updated>
     
@@ -269,14 +282,14 @@
     
     
     
-    <category term="生活记录" scheme="http://daozheng.wang/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
+    <category term="生活记录" scheme="http://www.wangdaozheng.cn/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
     
   </entry>
   
   <entry>
     <title>圆明园四十景图咏</title>
-    <link href="http://daozheng.wang/2020/12/21/yuan-ming-yuan-si-shi-jing-tu-yong/"/>
-    <id>http://daozheng.wang/2020/12/21/yuan-ming-yuan-si-shi-jing-tu-yong/</id>
+    <link href="http://www.wangdaozheng.cn/2020/12/21/yuan-ming-yuan-si-shi-jing-tu-yong/"/>
+    <id>http://www.wangdaozheng.cn/2020/12/21/yuan-ming-yuan-si-shi-jing-tu-yong/</id>
     <published>2020-12-21T03:40:04.000Z</published>
     <updated>2020-12-22T06:34:45.931Z</updated>
     
@@ -292,17 +305,17 @@
     
     
     
-    <category term="风景" scheme="http://daozheng.wang/categories/%E9%A3%8E%E6%99%AF/"/>
+    <category term="风景" scheme="http://www.wangdaozheng.cn/categories/%E9%A3%8E%E6%99%AF/"/>
     
     
-    <category term="风景" scheme="http://daozheng.wang/tags/%E9%A3%8E%E6%99%AF/"/>
+    <category term="风景" scheme="http://www.wangdaozheng.cn/tags/%E9%A3%8E%E6%99%AF/"/>
     
   </entry>
   
   <entry>
     <title>戊申月中游万佛湖</title>
-    <link href="http://daozheng.wang/2020/12/21/wu-shen-yue-zhong-you-wan-fo-hu/"/>
-    <id>http://daozheng.wang/2020/12/21/wu-shen-yue-zhong-you-wan-fo-hu/</id>
+    <link href="http://www.wangdaozheng.cn/2020/12/21/wu-shen-yue-zhong-you-wan-fo-hu/"/>
+    <id>http://www.wangdaozheng.cn/2020/12/21/wu-shen-yue-zhong-you-wan-fo-hu/</id>
     <published>2020-12-21T02:43:01.000Z</published>
     <updated>2020-12-22T01:24:49.471Z</updated>
     
@@ -317,17 +330,17 @@
     
     
     
-    <category term="生活记录" scheme="http://daozheng.wang/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
+    <category term="生活记录" scheme="http://www.wangdaozheng.cn/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
     
     
-    <category term="生活记录" scheme="http://daozheng.wang/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
+    <category term="生活记录" scheme="http://www.wangdaozheng.cn/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
     
   </entry>
   
   <entry>
     <title>皖南泾县红旅随记</title>
-    <link href="http://daozheng.wang/2020/12/21/wan-nan-jing-xian-hong-lu-sui-ji/"/>
-    <id>http://daozheng.wang/2020/12/21/wan-nan-jing-xian-hong-lu-sui-ji/</id>
+    <link href="http://www.wangdaozheng.cn/2020/12/21/wan-nan-jing-xian-hong-lu-sui-ji/"/>
+    <id>http://www.wangdaozheng.cn/2020/12/21/wan-nan-jing-xian-hong-lu-sui-ji/</id>
     <published>2020-12-21T02:36:06.000Z</published>
     <updated>2020-12-22T07:22:58.435Z</updated>
     
@@ -345,17 +358,17 @@
     
     
     
-    <category term="生活记录" scheme="http://daozheng.wang/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
+    <category term="生活记录" scheme="http://www.wangdaozheng.cn/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
     
     
-    <category term="生活记录" scheme="http://daozheng.wang/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
+    <category term="生活记录" scheme="http://www.wangdaozheng.cn/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
     
   </entry>
   
   <entry>
     <title>周末散记(2018.1.20-21)</title>
-    <link href="http://daozheng.wang/2020/12/21/zhou-mo-san-ji-2018-1-20-21/"/>
-    <id>http://daozheng.wang/2020/12/21/zhou-mo-san-ji-2018-1-20-21/</id>
+    <link href="http://www.wangdaozheng.cn/2020/12/21/zhou-mo-san-ji-2018-1-20-21/"/>
+    <id>http://www.wangdaozheng.cn/2020/12/21/zhou-mo-san-ji-2018-1-20-21/</id>
     <published>2020-12-21T02:33:53.000Z</published>
     <updated>2020-12-22T04:28:37.062Z</updated>
     
@@ -373,17 +386,17 @@
     
     
     
-    <category term="生活记录" scheme="http://daozheng.wang/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
+    <category term="生活记录" scheme="http://www.wangdaozheng.cn/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
     
     
-    <category term="生活记录" scheme="http://daozheng.wang/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
+    <category term="生活记录" scheme="http://www.wangdaozheng.cn/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
     
   </entry>
   
   <entry>
     <title>我和儿子那些事（一）</title>
-    <link href="http://daozheng.wang/2020/12/21/wo-he-er-zi-na-xie-shi-yi/"/>
-    <id>http://daozheng.wang/2020/12/21/wo-he-er-zi-na-xie-shi-yi/</id>
+    <link href="http://www.wangdaozheng.cn/2020/12/21/wo-he-er-zi-na-xie-shi-yi/"/>
+    <id>http://www.wangdaozheng.cn/2020/12/21/wo-he-er-zi-na-xie-shi-yi/</id>
     <published>2020-12-21T02:30:36.000Z</published>
     <updated>2020-12-22T04:45:30.868Z</updated>
     
@@ -398,17 +411,17 @@
     
     
     
-    <category term="生活记录" scheme="http://daozheng.wang/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
+    <category term="生活记录" scheme="http://www.wangdaozheng.cn/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
     
     
-    <category term="生活记录" scheme="http://daozheng.wang/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
+    <category term="生活记录" scheme="http://www.wangdaozheng.cn/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
     
   </entry>
   
   <entry>
     <title>过狗年儿，疏痕碎影</title>
-    <link href="http://daozheng.wang/2020/12/21/guo-gou-nian-er-shu-hen-sui-ying/"/>
-    <id>http://daozheng.wang/2020/12/21/guo-gou-nian-er-shu-hen-sui-ying/</id>
+    <link href="http://www.wangdaozheng.cn/2020/12/21/guo-gou-nian-er-shu-hen-sui-ying/"/>
+    <id>http://www.wangdaozheng.cn/2020/12/21/guo-gou-nian-er-shu-hen-sui-ying/</id>
     <published>2020-12-21T02:25:11.000Z</published>
     <updated>2020-12-22T02:57:59.500Z</updated>
     
@@ -425,17 +438,17 @@
     
     
     
-    <category term="生活记录" scheme="http://daozheng.wang/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
+    <category term="生活记录" scheme="http://www.wangdaozheng.cn/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
     
     
-    <category term="生活记录" scheme="http://daozheng.wang/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
+    <category term="生活记录" scheme="http://www.wangdaozheng.cn/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
     
   </entry>
   
   <entry>
     <title>新中年的迷失</title>
-    <link href="http://daozheng.wang/2020/12/21/xin-zhong-nian-de-mi-shi/"/>
-    <id>http://daozheng.wang/2020/12/21/xin-zhong-nian-de-mi-shi/</id>
+    <link href="http://www.wangdaozheng.cn/2020/12/21/xin-zhong-nian-de-mi-shi/"/>
+    <id>http://www.wangdaozheng.cn/2020/12/21/xin-zhong-nian-de-mi-shi/</id>
     <published>2020-12-21T02:21:50.000Z</published>
     <updated>2020-12-22T06:57:03.546Z</updated>
     
@@ -450,17 +463,17 @@
     
     
     
-    <category term="生活记录" scheme="http://daozheng.wang/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
+    <category term="生活记录" scheme="http://www.wangdaozheng.cn/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
     
     
-    <category term="生活记录" scheme="http://daozheng.wang/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
+    <category term="生活记录" scheme="http://www.wangdaozheng.cn/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
     
   </entry>
   
   <entry>
     <title>二零一八之猫狗</title>
-    <link href="http://daozheng.wang/2020/12/21/er-ling-yi-ba-zhi-mao-gou/"/>
-    <id>http://daozheng.wang/2020/12/21/er-ling-yi-ba-zhi-mao-gou/</id>
+    <link href="http://www.wangdaozheng.cn/2020/12/21/er-ling-yi-ba-zhi-mao-gou/"/>
+    <id>http://www.wangdaozheng.cn/2020/12/21/er-ling-yi-ba-zhi-mao-gou/</id>
     <published>2020-12-21T02:18:59.000Z</published>
     <updated>2020-12-22T07:43:57.263Z</updated>
     
@@ -477,17 +490,17 @@
     
     
     
-    <category term="生活记录" scheme="http://daozheng.wang/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
+    <category term="生活记录" scheme="http://www.wangdaozheng.cn/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
     
     
-    <category term="生活记录" scheme="http://daozheng.wang/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
+    <category term="生活记录" scheme="http://www.wangdaozheng.cn/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
     
   </entry>
   
   <entry>
     <title>游访紫蓬山西庐寺</title>
-    <link href="http://daozheng.wang/2020/12/21/you-fang-zi-peng-shan-xi-lu-si/"/>
-    <id>http://daozheng.wang/2020/12/21/you-fang-zi-peng-shan-xi-lu-si/</id>
+    <link href="http://www.wangdaozheng.cn/2020/12/21/you-fang-zi-peng-shan-xi-lu-si/"/>
+    <id>http://www.wangdaozheng.cn/2020/12/21/you-fang-zi-peng-shan-xi-lu-si/</id>
     <published>2020-12-21T02:13:15.000Z</published>
     <updated>2020-12-22T04:34:32.789Z</updated>
     
@@ -505,35 +518,10 @@
     
     
     
-    <category term="生活记录" scheme="http://daozheng.wang/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
+    <category term="生活记录" scheme="http://www.wangdaozheng.cn/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
     
     
-    <category term="生活记录" scheme="http://daozheng.wang/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>春生夏长</title>
-    <link href="http://daozheng.wang/2020/12/21/chun-sheng-xia-chang/"/>
-    <id>http://daozheng.wang/2020/12/21/chun-sheng-xia-chang/</id>
-    <published>2020-12-21T02:08:18.000Z</published>
-    <updated>2020-12-22T07:23:43.307Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;img src=&quot;/2020/12/21/chun-sheng-xia-chang/0.jpg&quot; class=&quot;&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="生活记录" scheme="http://daozheng.wang/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
-    
-    
-    <category term="生活记录" scheme="http://daozheng.wang/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
+    <category term="生活记录" scheme="http://www.wangdaozheng.cn/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
     
   </entry>
   
